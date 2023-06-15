@@ -1,0 +1,33 @@
+.life__grid {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(22em, 1fr));
+  grid-gap: 2em;
+}
+
+.life__item {
+  padding: 2em;
+  box-shadow: var(--shadow);
+  text-align: center;
+  transition: transform 0.2s linear;
+}
+
+.life__item:hover {
+  transform: translateY(-7px);
+}
+
+.each-slide {
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.life__img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  border-radius: 4px;
+}

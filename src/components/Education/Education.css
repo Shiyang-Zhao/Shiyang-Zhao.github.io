@@ -1,0 +1,53 @@
+.education__grid {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(18em, 1fr));
+  grid-gap: 2em;
+}
+
+.education__item {
+  padding: 2em;
+  box-shadow: var(--shadow);
+  transition: transform 0.2s linear;
+}
+
+.education__item:hover {
+  transform: translateY(-7px);
+}
+
+.education__university {
+  font-size: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+.education__degree {
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+
+.education__date {
+  margin-bottom: 0.5em;
+  color: #888888;
+}
+
+.education__gpa {
+  margin-bottom: 0.5em;
+}
+
+.education__honors {
+  margin-top: 1em;
+}
+
+.education__honor-title {
+  margin-bottom: 0.5em;
+}
+
+.education__honor-list {
+  list-style-type: disc;
+  margin-left: 2em;
+}
+
+.education__honor-list li {
+  margin-bottom: 0.25em;
+}
