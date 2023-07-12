@@ -81,15 +81,15 @@ const education = [
     endDate: 'December 2022',
     GPA: '3.92',
     honor: ['New American University Scholarship UG', 'Dean List']
-  },
-  {
-    university: 'Arizona State University',
-    degree: 'B.S. Computer Science',
-    startDate: 'January 2020',
-    endDate: 'December 2022',
-    GPA: '3.92',
-    honor: ['New American University Scholarship UG', 'Dean List']
   }
+  // {
+  //   university: 'Arizona State University',
+  //   degree: 'B.S. Computer Science',
+  //   startDate: 'January 2020',
+  //   endDate: 'December 2022',
+  //   GPA: '3.92',
+  //   honor: ['New American University Scholarship UG', 'Dean List']
+  // }
 ]
 
 
@@ -97,7 +97,7 @@ const work = [
   {
     jobTitle: 'Software Engineer',
     company: 'RND4IMPACT INC.',
-    startDate: 'April 2023',
+    startDate: 'March 2023',
     endDate: 'Present',
     location: '690 Saratoga Ave #100, San Jose, CA 95129',
     description: ['• Developed full-stack web applications that utilize technologies such as Java, Python, JavaScript, and their libraries and frameworks',
@@ -115,22 +115,22 @@ const projects = [
     name: 'Employee Management System',
     description: 'Developed EmploVerse, an employee management web application using Java Spring, React.js, and MySQL with RBAC and JWT for secure authentication',
     stack: ['Java', 'Spring Boot', 'JavaScript', 'React.js', 'MySQL', 'Heroku', 'AWS'],
-    sourceCode: 'https://github.com',
-    livePreview: 'https://github.com',
+    sourceCode: 'https://github.com/Shiyang-Zhao?tab=repositories',
+    livePreview: 'https://github.com/Shiyang-Zhao?tab=repositories',
   },
   {
-    name: 'File Sharing Web Application',
-    description: 'Built a file sharing web application utilizing Python, Django, Bootstrap that allows users to securely login, upload files, and manage their uploaded files',
-    stack: ['Python', 'Django', 'Bootstrap'],
-    sourceCode: 'https://github.com',
-    livePreview: 'https://github.com',
+    name: 'Social Media Web Application',
+    description: 'Built a social media web application utilizing Python, Django, Bootstrap, and Font Awesome that allows users to connect, engage, and share their moments with a vibrant community',
+    stack: ['Python', 'Django', 'Bootstrap', 'Font Awesome'],
+    sourceCode: 'https://github.com/Shiyang-Zhao?tab=repositories',
+    livePreview: 'https://github.com/Shiyang-Zhao?tab=repositories',
   },
   {
     name: 'Shiyang Zhao Portfolio',
     description: 'Created the portfolio website in minimalist style utilizing JavaScript, React.js, Bootstrap to showcase my skills and creativity',
     stack: ['HTML', 'CSS', 'JavaScript', 'React.js', 'Bootstrap'],
-    sourceCode: 'https://github.com',
-    livePreview: 'https://github.com',
+    sourceCode: 'https://github.com/Shiyang-Zhao?tab=repositories',
+    livePreview: 'https://github.com/Shiyang-Zhao?tab=repositories',
   },
 ]
 
