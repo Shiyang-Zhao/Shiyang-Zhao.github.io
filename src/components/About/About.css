@@ -1,20 +1,52 @@
 .about {
+  display: flex;
+  align-items: center;
+}
+
+.about__left {
+  flex: 0 0 auto;
+  /* This prevents the image from growing */
+  margin-right: 20px;
+  /* Add some space between the image and content */
+}
+
+.profile__image {
+  cursor: pointer;
+  border-radius: 50%;
+  border: 3px solid #fff; /* Add a white border around the image */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  transition: all 0.3s ease; /* Add a smooth transition effect */
+}
+
+/* Hover effect: Increase the size and the shadow on hover */
+.profile__image:hover {
+  border-color: #000000; /* Change the border color on hover */
+  transform: scale(1.05); /* Slightly increase the size on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Increase the shadow on hover */
+}
+
+.about__right {
+  flex: 1;
+  text-align: center;
+  display: flex;
+  /* Use flex to center the about_greeting horizontally */
   flex-direction: column;
-  margin-top: 3em;
+  /* Stack the content vertically */
 }
 
 .about__role {
   margin-top: 1.2em;
 }
 
-.about__desc {
-  font-size: 1rem;
-  max-width: 600px;
-}
-
 .about__desc,
 .about__contact {
+  font-size: 1rem;
+  max-width: 600px;
   margin-top: 2.4em;
+}
+
+.about__contact {
+  align-self: center;
 }
 
 .about .link--icon {
@@ -34,7 +66,7 @@
 
 .about_greeting h1 {
   position: absolute;
-  transform: translate(-50%, -75%);
+  transform: translate(20px, -100px);
   font-size: 3.3rem;
   color: transparent;
 

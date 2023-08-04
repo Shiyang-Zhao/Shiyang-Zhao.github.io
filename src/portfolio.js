@@ -112,23 +112,39 @@ const work = [
 
 const projects = [
   {
-    name: 'Employee Management System',
-    description: 'Developed EmploVerse, an employee management web application using Java Spring, React.js, and MySQL with RBAC and JWT for secure authentication',
+    name: 'Employee Management System - EmploVerse',
+    description: ['• Developed EmploVerse, an employee management web application using Java Spring, React.js, and MySQL with RBAC and JWT for secure authentication',
+      <br />, <br />,
+      '• Streamlined employee management processes, achieving up to 30% improvement in efficiency through seamless CRUD operations, advanced search capabilities, and simplified user access management',
+      <br />, <br />,
+      '• Implemented real-time chat functionality, resulting in a powerful 45% reduction in email correspondence for internal communication',
+      <br />, <br />,
+      '• Achieved a remarkable adoption rate, with 80% of the organization employees actively using EmploVerse for daily employee management tasks',
+      <br />, <br />,
+      '• Utilized AWS and Heroku to deploy and manage, ensuring seamless scalability, robust security, and efficient backend services'],
     stack: ['Java', 'Spring Boot', 'JavaScript', 'React.js', 'MySQL', 'Heroku', 'AWS'],
     sourceCode: 'https://github.com/Shiyang-Zhao?tab=repositories',
     livePreview: 'https://github.com/Shiyang-Zhao?tab=repositories',
   },
   {
-    name: 'Social Media Web Application',
-    description: 'Built a social media web application utilizing Python, Django, Bootstrap, and Font Awesome that allows users to connect, engage, and share their moments with a vibrant community',
-    stack: ['Python', 'Django', 'Bootstrap', 'Font Awesome'],
+    name: 'Social Media Web App - Metasphere',
+    description: ['• Developed Metasphere, a dynamic social media web application utilizing Python, Django, PostgreSQL, Bootstrap, and Font Awesome',
+      <br />, <br />,
+      '• Implemented a robust search, file sharing, and lively comments, and fosters vibrant conversations through private messaging and group chats',
+      <br />, <br />,
+      '• Integrate Jenkins with GitHub using webhooks and Selenium to automate CI/CD pipeline',
+      <br />, <br />,
+      '• Increased the efficiency of file sharing by 20% and user engagement by 40%',
+      <br />, <br />,
+      '• Received positive feedback from users, with a 90% satisfaction rate reported in user surveys'],
+    stack: ['Python', 'Django', 'Bootstrap', 'Font Awesome', 'Selenium', 'Jenkins', 'Git', 'Github'],
     sourceCode: 'https://github.com/Shiyang-Zhao?tab=repositories',
     livePreview: 'https://github.com/Shiyang-Zhao?tab=repositories',
   },
   {
-    name: 'Shiyang Zhao Portfolio',
-    description: 'Created the portfolio website in minimalist style utilizing JavaScript, React.js, Bootstrap to showcase my skills and creativity',
-    stack: ['HTML', 'CSS', 'JavaScript', 'React.js', 'Bootstrap'],
+    name: 'Python Crawler for Graduate Admission Requirement',
+    description: ['• Developed a python crawler to simplify the process of gathering and organizing information about graduate admission requirements for various universities and institutions.'],
+    stack: ['Python', 'Scrapy'],
     sourceCode: 'https://github.com/Shiyang-Zhao?tab=repositories',
     livePreview: 'https://github.com/Shiyang-Zhao?tab=repositories',
   },
@@ -138,7 +154,7 @@ const skills = [
   'Java', 'JavaScript', 'Python', 'C/C++', 'C#',
   'HTML', 'CSS', 'Bootstrap', 'React.js', 'Node.js', 'Django',
   'D3.js', 'Spring Boot', 'Git', 'GitHub', 'Postman', 'PostgreSQL',
-  'MySQL', 'AWS', 'Heroku', '.NET Framwork', 'ASP.NET'
+  'MySQL', 'AWS', 'Heroku', '.NET Framwork', 'ASP.NET', 'Selenium', 'Jenkins'
 ]
 
 const life = [
