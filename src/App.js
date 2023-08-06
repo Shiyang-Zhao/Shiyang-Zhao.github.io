@@ -1,4 +1,4 @@
-import { useContext } from 'react'
+import { useContext, useState, useEffect, useRef } from 'react'
 import { ThemeContext } from './contexts/theme'
 import Header from './components/Header/Header'
 import About from './components/About/About'
@@ -12,6 +12,46 @@ import Contact from './components/Contact/Contact'
 import Footer from './components/Footer/Footer'
 import './App.css'
 
+const FadeInSection = (props) => {
+  const [isVisible, setVisible] = useState(true);
+  const [prevScrollY, setPrevScrollY] = useState(window.scrollY); // Store previous scroll position
+  const [scrollDir, setScrollDir] = useState("scrollDown");
+  const domRef = useRef();
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => setVisible(entry.isIntersecting));
+    }, {
+      // Add a threshold of 10 pixels to the top and bottom
+      rootMargin: '70px 0px',
+    });
+
+    observer.observe(domRef.current);
+
+    // Update the previous scroll position on each scroll event
+    const handleScroll = () => {
+      setPrevScrollY(window.scrollY);
+      if (prevScrollY < window.scrollY) {
+        setScrollDir("scrollDown");
+      } else {
+        setScrollDir("scrollUp");
+      }
+    };
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      observer.unobserve(domRef.current);
+      window.removeEventListener('scroll', handleScroll); // Clean up the scroll event listener
+    };
+  }, [prevScrollY]);
+
+  return (
+    <div ref={domRef} className={`fade-in-section ${isVisible ? 'is-visible' : ''} ${scrollDir}`}>
+      {props.children}
+    </div>
+  )
+}
+
 const App = () => {
   const [{ themeName }] = useContext(ThemeContext)
 
@@ -20,13 +60,27 @@ const App = () => {
       <Header />
 
       <main>
-        <About />
-        <Education />
-        <Work />
-        <Projects />
-        <Skills />
-        <Life />
-        <Contact />
+        <FadeInSection>
+          <About />
+        </FadeInSection>
+        <FadeInSection>
+          <Education />
+        </FadeInSection>
+        <FadeInSection>
+          <Work />
+        </FadeInSection>
+        <FadeInSection>
+          <Projects />
+        </FadeInSection>
+        <FadeInSection>
+          <Skills />
+        </FadeInSection>
+        <FadeInSection>
+          <Life />
+        </FadeInSection>
+        <FadeInSection>
+          <Contact />
+        </FadeInSection>
       </main>
 
       <ScrollToTop />

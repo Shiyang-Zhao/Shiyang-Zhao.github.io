@@ -91,7 +91,7 @@ main {
 }
 
 .section {
-  margin-top: 5em;
+  margin: 5em;
 }
 
 .section__title {
@@ -208,4 +208,28 @@ main {
   .section {
     margin-top: 4em;
   }
+}
+
+/* Fade-in effect from the top */
+.scrollUp {
+  opacity: 0;
+  transform: translateY(-20vh);
+}
+
+.fade-in-section.is-visible.scrollUp {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+/* Fade-in effect from the bottom */
+.scrollDown {
+  opacity: 0;
+  transform: translateY(20vh);
+}
+
+.fade-in-section.is-visible.scrollDown {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
