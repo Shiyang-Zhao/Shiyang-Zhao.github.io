@@ -9,7 +9,7 @@
 .education__item {
   padding: 2em;
   box-shadow: var(--shadow);
-  transition: transform 0.2s linear;
+  transition: all 0.2s linear;
 }
 
 .education__item:hover {
@@ -50,4 +50,10 @@
 
 .education__honor-list li {
   margin-bottom: 0.25em;
+}
+
+@media only screen and (max-width: 800px) {
+  .education__grid {
+    justify-content: center;
+  }
 }

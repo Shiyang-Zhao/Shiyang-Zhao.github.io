@@ -5,3 +5,13 @@
   grid-template-columns: repeat(auto-fit, minmax(18em, 1fr));
   grid-gap: 2em;
 }
+
+.project__item{
+  transition: all 0.2s linear;
+}
+
+@media only screen and (max-width: 800px) {
+  .projects__grid {
+    justify-content: center;
+  }
+}

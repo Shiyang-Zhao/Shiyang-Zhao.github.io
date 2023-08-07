@@ -3,13 +3,17 @@
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(18em, 1fr));
-  box-shadow: var(--shadow);
-  padding: 2em;
-  transition: transform 0.2s linear;
+  grid-gap: 2em;
 }
 
 .work__grid:hover {
   transform: translateY(-7px);
+}
+
+.work__item {
+  padding: 2em;
+  box-shadow: var(--shadow);
+  transition: all 0.2s linear;
 }
 
 .work__title {
@@ -52,6 +56,13 @@
   padding: 0.3em 0.6em;
   border-radius: 4px;
   color: black;
-  background-color:  rgb(184, 184, 184);
+  background-color: rgb(184, 184, 184);
   font-size: 0.9em;
+}
+
+/* Responsive styles for screen sizes up to 800px */
+@media only screen and (max-width: 800px) {
+  .work__grid {
+    justify-content: center;
+  }
 }

@@ -12,12 +12,12 @@ const About = () => {
   return (
     <div className='about'>
       <div className='about__left'>
-        <img src={profileImage} alt='Profile' width={450} className='profile__image'/>
+        <img src={profileImage} alt='Profile' className='profile__image'/>
       </div>
 
       <div className='about__right'>
         {name && (
-          <div className='about_greeting'>
+          <div className='about__greeting'>
             <h1>
               Hi, I am {name}
               <span>Hi, I am {name}</span>
@@ -28,7 +28,7 @@ const About = () => {
         )}
 
         {role && <h2 className='about__role'>A {role}</h2>}
-        <div className='about__desc'>
+        <div className='about__desc1'>
           <Typewriter onInit={(typewriter) => {
             typewriter
               .typeString(`${description && description}`)
@@ -36,6 +36,7 @@ const About = () => {
               .start();
           }}></Typewriter>
         </div>
+        <div className='about__desc2'>{description}</div>
         <div className='about__contact center'>
           {resume && (
             <a href={resume} target="_blank" rel="noreferrer">
