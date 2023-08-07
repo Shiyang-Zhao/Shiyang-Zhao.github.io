@@ -209,6 +209,11 @@
     text-align: center;
   }
 
+  .about__greeting {
+    width: fit-content;
+    height: fit-content;
+  }
+
   .about__greeting h1 {
     font-size: 40px;
     margin: 0 auto;
