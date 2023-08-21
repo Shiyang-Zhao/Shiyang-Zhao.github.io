@@ -16,7 +16,6 @@ import volunteer3 from '../src/files/Volunteer/volunteer (3).jpg'
 import volunteer4 from '../src/files/Volunteer/volunteer (4).jpg'
 import volunteer5 from '../src/files/Volunteer/volunteer (5).jpg'
 import volunteer6 from '../src/files/Volunteer/volunteer (6).jpg'
-import volunteer7 from '../src/files/Volunteer/volunteer (7).jpg'
 import travel1 from '../src/files/Travel/travel (1).jpg'
 import travel2 from '../src/files/Travel/travel (2).jpg'
 import travel3 from '../src/files/Travel/travel (3).jpg'
@@ -41,11 +40,9 @@ import hobbies3 from '../src/files/Hobbies/hobbies (3).jpg'
 import hobbies4 from '../src/files/Hobbies/hobbies (4).jpg'
 import hobbies5 from '../src/files/Hobbies/hobbies (5).jpg'
 import hobbies6 from '../src/files/Hobbies/hobbies (6).jpg'
-import hobbies7 from '../src/files/Hobbies/hobbies (7).jpg'
 import hobbies8 from '../src/files/Hobbies/hobbies (8).jpg'
 import hobbies9 from '../src/files/Hobbies/hobbies (9).jpg'
 import hobbies10 from '../src/files/Hobbies/hobbies (10).jpg'
-import hobbies11 from '../src/files/Hobbies/hobbies (11).jpg'
 import hobbies12 from '../src/files/Hobbies/hobbies (12).jpg'
 import hobbies13 from '../src/files/Hobbies/hobbies (13).jpg'
 import hobbies14 from '../src/files/Hobbies/hobbies (14).jpg'
@@ -53,10 +50,13 @@ import hobbies15 from '../src/files/Hobbies/hobbies (15).jpg'
 import hobbies16 from '../src/files/Hobbies/hobbies (16).jpg'
 import hobbies17 from '../src/files/Hobbies/hobbies (17).jpg'
 import hobbies18 from '../src/files/Hobbies/hobbies (18).jpg'
+import profileImageLight from './files/ProfileImage/profileImageLight.jpg'
+import profileImageDark from './files/ProfileImage/profileImageDark.jpg'
+
 
 const header = {
   homepage: '/',
-  title: 'Portfolio',
+  title: 'Shawn',
 }
 
 const about = {
@@ -102,10 +102,12 @@ const work = [
     location: '690 Saratoga Ave #100, San Jose, CA 95129',
     description: ['• Developed full-stack web applications that utilize technologies such as Java, Python, JavaScript, and their libraries and frameworks',
       <br />,
-      '• Optimized performance by reducing API calls by 40% and using memorization to prevent unnecessary re-renders by 55%',
+      '•	Collaborated with cross-functional teams to gather requirements, design system architectures, and implement solutions',
       <br />,
-      '• Improved overall website performance by 30% resulting in a better user experience'],
-    skills: ['Java', 'Spring Boot', 'JavaScript', 'React.js', 'Node.js', 'Python', 'Django', 'MySQL', 'Heroku', 'AWS']
+      '• •	Utilized agile development methodologies, Scrum, to deliver high-quality software products within scheduled deadlines, achieving a 95% on-time project delivery rate',
+      <br />,
+      '• •	Improved overall website performance by 30%, resulting in faster loading times, smoother user interactions, and an enhanced user experience'],
+    skills: ['Java', 'Spring Boot', 'JavaScript', 'React.js', 'Node.js', 'Python', 'Django', 'MySQL', 'Heroku', 'AWS', 'Selenium', 'Jenkins']
   }
 ]
 
@@ -160,11 +162,11 @@ const skills = [
 const life = [
   {
     name: 'Volunteer',
-    photos: [volunteer1, volunteer2, volunteer3, volunteer4, volunteer5, volunteer6, volunteer7]
+    photos: [volunteer1, volunteer2, volunteer3, volunteer4, volunteer5, volunteer6]
   },
   {
     name: 'Hobbies',
-    photos: [hobbies1, hobbies2, hobbies3, hobbies4, hobbies5, hobbies6, hobbies7, hobbies8, hobbies9, hobbies10, hobbies11, hobbies12, hobbies13, hobbies14, hobbies15, hobbies16, hobbies17, hobbies18]
+    photos: [hobbies1, hobbies2, hobbies3, hobbies4, hobbies5, hobbies6, hobbies8, hobbies9, hobbies10, hobbies12, hobbies13, hobbies14, hobbies15, hobbies16, hobbies17, hobbies18]
   },
   {
     name: 'Pet',
@@ -180,4 +182,4 @@ const contact = {
   email: 'shiyang2575326696@gmail.com',
 }
 
-export { header, about, education, work, projects, skills, life, contact }
+export { header, about, education, work, projects, skills, life, contact, profileImageLight, profileImageDark }

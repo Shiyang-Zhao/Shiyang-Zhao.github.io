@@ -23,7 +23,7 @@ const FadeInSection = (props) => {
       entries.forEach(entry => setVisible(entry.isIntersecting));
     }, {
       // Add a threshold of 10 pixels to the top and bottom
-      rootMargin: '70px 0px',
+      rootMargin: '100px 0px',
     });
 
     observer.observe(domRef.current);

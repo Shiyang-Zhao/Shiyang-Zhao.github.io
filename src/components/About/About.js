@@ -1,18 +1,24 @@
 import GitHubIcon from '@mui/icons-material/GitHub'
 import LinkedInIcon from '@mui/icons-material/LinkedIn'
 import InstagramIcon from '@mui/icons-material/Instagram'
-import profileImage from '../../files/ProfileImage/profileImage.jpg'
-import { about } from '../../portfolio'
+import EmailIcon from '@mui/icons-material/EmailSharp'
+import { profileImageLight, profileImageDark } from '../../portfolio'
+import { ThemeContext } from '../../contexts/theme'
+import { about, contact } from '../../portfolio'
+import { useContext } from 'react'
 import Typewriter from 'typewriter-effect'
 import './About.css'
 
+
 const About = () => {
+  const [{ themeName }] = useContext(ThemeContext)
   const { name, role, description, resume, transcript, social } = about
 
   return (
     <div className='about'>
       <div className='about__left'>
-        <img src={profileImage} alt='Profile' className='profile__image' />
+        {/* <img src={themeName === 'light' ? profileImageLight : profileImageDark} alt='Profile' className='profile__image' /> */}
+        {themeName === 'light' ? <img src={profileImageLight} alt='Profile' className='profile__image__light' /> : <img src={profileImageDark} alt='Profile' className='profile__image__dark' />}
       </div>
 
       <div className='about__right'>
@@ -88,6 +94,17 @@ const About = () => {
                   rel="noreferrer"
                 >
                   <InstagramIcon />
+                </a>
+              )}
+
+              {contact.email && (
+                <a
+                  href={`mailto:${contact.email}`}
+                  aria-label='email'
+                  className='link link--icon'
+                  rel="noreferrer"
+                >
+                  <EmailIcon />
                 </a>
               )}
             </>

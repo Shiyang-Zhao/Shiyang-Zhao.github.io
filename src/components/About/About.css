@@ -10,7 +10,8 @@
   /* Add some space between the image and content */
 }
 
-.profile__image {
+.profile__image__light,
+.profile__image__dark {
   width: 450px;
   cursor: pointer;
   border-radius: 50%;
@@ -22,14 +23,16 @@
   /* Add a smooth transition effect */
 }
 
+.profile__image__dark{
+  border: 3px solid #23283e;
+}
+
 /* Hover effect: Increase the size and the shadow on hover */
-.profile__image:hover {
-  border-color: #000000;
-  /* Change the border color on hover */
+.profile__image__light:hover,
+.profile__image__dark:hover {
+  border-color: rgba(7, 151, 235, 0.909);
   transform: scale(1.05);
-  /* Slightly increase the size on hover */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  /* Increase the shadow on hover */
+  box-shadow: 0 4px 8px rgba(7, 151, 235, 0.909);
 }
 
 .about__right {

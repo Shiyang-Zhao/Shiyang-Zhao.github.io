@@ -31,6 +31,7 @@
   max-height: 100%;
   object-fit: contain;
   border-radius: 4px;
+  aspect-ratio: auto;
 }
 
 @media only screen and (max-width: 800px) {
