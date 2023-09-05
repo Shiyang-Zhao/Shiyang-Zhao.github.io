@@ -4,7 +4,7 @@ import WbSunnyRoundedIcon from '@mui/icons-material/WbSunnyRounded'
 import MenuIcon from '@mui/icons-material/Menu'
 import CloseIcon from '@mui/icons-material/Close'
 import { ThemeContext } from '../../contexts/theme'
-import { projects, skills, contact } from '../../portfolio'
+import { education, work, projects, skills, life, contact } from '../../portfolio'
 import './Navbar.css'
 
 const Navbar = () => {
@@ -19,6 +19,31 @@ const Navbar = () => {
         style={{ display: showNavList ? 'flex' : null }}
         className='nav__list'
       >
+
+        {education.length ? (
+          <li className='nav__list-item'>
+            <a
+              href='#education'
+              onClick={toggleNavList}
+              className='link link--nav'
+            >
+              Education
+            </a>
+          </li>
+        ) : null}
+
+        {work.length ? (
+          <li className='nav__list-item'>
+            <a
+              href='#work'
+              onClick={toggleNavList}
+              className='link link--nav'
+            >
+              Work
+            </a>
+          </li>
+        ) : null}
+
         {projects.length ? (
           <li className='nav__list-item'>
             <a
@@ -39,6 +64,18 @@ const Navbar = () => {
               className='link link--nav'
             >
               Skills
+            </a>
+          </li>
+        ) : null}
+
+        {life.length ? (
+          <li className='nav__list-item'>
+            <a
+              href='#life'
+              onClick={toggleNavList}
+              className='link link--nav'
+            >
+              Life
             </a>
           </li>
         ) : null}

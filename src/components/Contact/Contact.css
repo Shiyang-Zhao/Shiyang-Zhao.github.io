@@ -1,3 +1,7 @@
 .contact {
   flex-direction: column;
 }
+
+.link--icon {
+  margin: 0 10px;
+}

@@ -23,16 +23,16 @@
   /* Add a smooth transition effect */
 }
 
-.profile__image__dark{
+.profile__image__dark {
   border: 3px solid #23283e;
 }
 
 /* Hover effect: Increase the size and the shadow on hover */
 .profile__image__light:hover,
 .profile__image__dark:hover {
-  border-color: rgba(7, 151, 235, 0.909);
+  border-color: var(--clr-primary);
   transform: scale(1.05);
-  box-shadow: 0 4px 8px rgba(7, 151, 235, 0.909);
+  box-shadow: 0 4px 8px var(--clr-primary);
 }
 
 .about__right {
@@ -203,6 +203,19 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+
+  .profile__image__light,
+  .profile__image__dark {
+    aspect-ratio: 1/1;
+    object-fit: cover;
+  }
+
+  .profile__image__light:hover,
+  .profile__image__dark:hover {
+    border-color: var(--clr-primary);
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px var(--clr-primary);
   }
 
   .about__right {

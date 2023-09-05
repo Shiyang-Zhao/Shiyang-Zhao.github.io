@@ -104,9 +104,9 @@ const work = [
       <br />,
       '•	Collaborated with cross-functional teams to gather requirements, design system architectures, and implement solutions',
       <br />,
-      '• •	Utilized agile development methodologies, Scrum, to deliver high-quality software products within scheduled deadlines, achieving a 95% on-time project delivery rate',
+      '• Utilized agile development methodologies, Scrum, to deliver high-quality software products within scheduled deadlines, achieving a 95% on-time project delivery rate',
       <br />,
-      '• •	Improved overall website performance by 30%, resulting in faster loading times, smoother user interactions, and an enhanced user experience'],
+      '• Improved overall website performance by 30%, resulting in faster loading times, smoother user interactions, and an enhanced user experience'],
     skills: ['Java', 'Spring Boot', 'JavaScript', 'React.js', 'Node.js', 'Python', 'Django', 'MySQL', 'Heroku', 'AWS', 'Selenium', 'Jenkins']
   }
 ]
@@ -114,7 +114,7 @@ const work = [
 
 const projects = [
   {
-    name: 'Employee Management System - EmploVerse',
+    name: 'EmploVerse',
     description: ['• Developed EmploVerse, an employee management web application using Java Spring, React.js, and MySQL with RBAC and JWT for secure authentication',
       <br />, <br />,
       '• Streamlined employee management processes, achieving up to 30% improvement in efficiency through seamless CRUD operations, advanced search capabilities, and simplified user access management',
@@ -129,7 +129,7 @@ const projects = [
     livePreview: 'https://github.com/Shiyang-Zhao?tab=repositories',
   },
   {
-    name: 'Social Media Web App - Metasphere',
+    name: 'Metasphere',
     description: ['• Developed Metasphere, a dynamic social media web application utilizing Python, Django, PostgreSQL, Bootstrap, and Font Awesome',
       <br />, <br />,
       '• Implemented a robust search, file sharing, and lively comments, and fosters vibrant conversations through private messaging and group chats',
@@ -144,7 +144,7 @@ const projects = [
     livePreview: 'https://github.com/Shiyang-Zhao?tab=repositories',
   },
   {
-    name: 'Python Crawler for Graduate Admission Requirement',
+    name: 'Python Crawler',
     description: ['• Developed a python crawler to simplify the process of gathering and organizing information about graduate admission requirements for various universities and institutions.'],
     stack: ['Python', 'Scrapy'],
     sourceCode: 'https://github.com/Shiyang-Zhao?tab=repositories',
