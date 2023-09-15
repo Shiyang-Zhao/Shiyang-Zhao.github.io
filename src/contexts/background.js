@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 
 const MatrixAnimation = () => {
     useEffect(() => {
-        var canvas = document.getElementById('matrixCanvas'),
+        var canvas = document.querySelector('canvas'),
             ctx = canvas.getContext('2d');
 
         canvas.width = window.innerWidth;
@@ -20,13 +20,12 @@ const MatrixAnimation = () => {
         }
 
         function draw() {
-            ctx.fillStyle = 'rgba(252, 252, 252, 0.03)'; // Increase opacity here
+            ctx.fillStyle = 'rgba(252, 252, 252, 0.15)'; // Increase opacity here
             ctx.fillRect(0, 0, canvas.width, canvas.height);
 
             for (var i = 0; i < drops.length; i++) {
                 var text = letters[Math.floor(Math.random() * letters.length)];
-                var randomColor = '#' + Math.floor(Math.random() * 16777215).toString(16); // Generate random hex color
-                ctx.fillStyle = randomColor; // Set random color
+                ctx.fillStyle = '#' + Math.floor(Math.random() * 16777215).toString(16); // Generate random hex color
                 ctx.fillText(text, i * fontSize, drops[i] * fontSize);
                 drops[i]++;
 
@@ -43,7 +42,7 @@ const MatrixAnimation = () => {
     }, []);
 
     return (
-        <canvas id="matrixCanvas"></canvas>
+        <canvas className="matrixCanvas"></canvas>
     );
 }
 
