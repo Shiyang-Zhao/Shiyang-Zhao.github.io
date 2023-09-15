@@ -6,6 +6,15 @@
   justify-content: space-between;
 }
 
+.header h3 {
+  z-index: 1;
+  transition: all 0.3s ease;
+}
+
+.header h3:hover {
+  transform: scale(1.1);
+}
+
 @media (max-width: 600px) {
   .header {
     height: 6em;

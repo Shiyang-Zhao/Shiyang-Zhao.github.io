@@ -1,5 +1,6 @@
 import { useContext, useState, useEffect, useRef } from 'react'
 import { ThemeContext } from './contexts/theme'
+import Background from './contexts/background'
 import Header from './components/Header/Header'
 import About from './components/About/About'
 import Education from './components/Education/Education'
@@ -60,6 +61,7 @@ const App = () => {
       <Header />
 
       <main>
+        <Background />
         <FadeInSection>
           <About />
         </FadeInSection>
