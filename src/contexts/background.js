@@ -3,6 +3,7 @@ import { ThemeContext } from './theme'
 
 const MatrixAnimation = () => {
     const [{ themeName }] = useContext(ThemeContext);
+
     useEffect(() => {
         var canvas = document.querySelector('canvas'),
             ctx = canvas.getContext('2d');
@@ -18,11 +19,11 @@ const MatrixAnimation = () => {
 
         var drops = [];
         for (var i = 0; i < columns; i++) {
-            drops[i] = 1;
+            drops[i] = Math.floor(Math.random() * canvas.height / fontSize);
         }
 
         function draw() {
-            ctx.fillStyle = themeName === 'light' ? 'rgba(252, 252, 252, 0.15)' : 'rgba(35, 40, 62, 0.15)' // Increase opacity here
+            ctx.fillStyle = themeName === 'light' ? 'rgba(252, 252, 252, 0.3)' : 'rgba(35, 40, 62, 0.3)' // Increase opacity here
             ctx.fillRect(0, 0, canvas.width, canvas.height);
 
             for (var i = 0; i < drops.length; i++) {
@@ -37,14 +38,13 @@ const MatrixAnimation = () => {
             }
         }
 
-
-        var intervalId = setInterval(draw, 33);
+        var intervalId = setInterval(draw, 30);
 
         return () => clearInterval(intervalId);
     }, [themeName]);
 
     return (
-        <canvas className={`matrixCanvas ${themeName}`} />
+        <canvas className='matrixCanvas' />
     );
 }
 

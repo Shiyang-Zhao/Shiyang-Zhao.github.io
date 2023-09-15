@@ -10,7 +10,6 @@ import { useContext } from 'react'
 import Typewriter from 'typewriter-effect'
 import './About.css'
 
-
 const About = () => {
   const [{ themeName }] = useContext(ThemeContext)
   const { name, role, description, resume, transcript, social } = about
@@ -18,7 +17,10 @@ const About = () => {
   return (
     <div className='about'>
       <div className='about__left'>
-        {themeName === 'light' ? <img src={profileImageLight} alt='Profile' className='profile__image__light' /> : <img src={profileImageDark} alt='Profile' className='profile__image__dark' />}
+        {themeName === 'light' ?
+          <img src={profileImageLight} alt='Profile' className='profile__image__light'/> :
+          <img src={profileImageDark} alt='Profile' className='profile__image__dark'/>
+        }
       </div>
 
       <div className='about__right'>
