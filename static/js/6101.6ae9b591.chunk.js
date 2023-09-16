@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkportfolio=self.webpackChunkportfolio||[]).push([[6101],{6101:function(o,e,f){o.exports=f.p+"static/media/hobby (10).1bfb856fd13e65bcf227.jpg"}}]);
