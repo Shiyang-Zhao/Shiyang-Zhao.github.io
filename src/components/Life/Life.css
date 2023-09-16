@@ -23,6 +23,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 
 .life__img {
@@ -31,6 +32,21 @@
   max-height: 100%;
   object-fit: contain;
   border-radius: 4px;
+  aspect-ratio: auto;
+}
+
+.modal {
+  padding: 20px;
+}
+
+.modal img {
+  top: 50%;
+  left: 50%;
+  max-width: 80vw;
+  max-height: 100vh;
+  position: absolute;
+
+  transform: translate(-50%, -50%);
   aspect-ratio: auto;
 }
 
