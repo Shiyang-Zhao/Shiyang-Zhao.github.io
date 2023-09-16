@@ -11,7 +11,7 @@ const Skills = () => {
         <h2 className='section__title'>Skills</h2>
         <ul className='skills__list'>
           {skills.map((skill) => (
-            <li key={uniqid()} className='skills__list-item btn btn--plain'>
+            <li key={uniqid()} className='skills__list-item btn btn--plain' title={skill.name}>
               <a href={skill.destination}>
                 <img className='skills__list-item-icon' src={skill.url} />
               </a>

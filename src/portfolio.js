@@ -122,11 +122,13 @@ const skills = [
   { name: 'Postman', url: 'https://www.svgrepo.com/show/354202/postman-icon.svg', destination: 'https://www.postman.com/' },
   { name: 'PostgreSQL', url: 'https://cdn-icons-png.flaticon.com/512/5968/5968342.png', destination: 'https://www.postgresql.org/' },
   { name: 'MySQL', url: 'https://cdn4.iconfinder.com/data/icons/logos-3/181/MySQL-1024.png', destination: 'https://www.mysql.com/' },
+  { name: 'Docker', url: 'https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/97_Docker_logo_logos-1024.png', destination: 'https://www.docker.com/' },
   { name: 'AWS', url: 'https://www.svgrepo.com/show/448266/aws.svg', destination: 'https://aws.amazon.com/cn/' },
   { name: 'Heroku', url: 'https://www.svgrepo.com/show/355052/heroku.svg', destination: 'https://dashboard.heroku.com/login' },
   { name: '.NET Framwork', url: 'https://static.wikia.nocookie.net/logopedia/images/c/c7/Microsoft_.NET_StartupImage.svg', destination: 'https://dotnet.microsoft.com/en-us/download/dotnet-framework' },
   { name: 'Selenium', url: 'https://seeklogo.com/images/S/selenium-logo-A1B53CEFB0-seeklogo.com.png', destination: 'selenium.dev' },
-  { name: 'Jenkins', url: 'https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_jenkins_icon_130515.png', destination: 'https://www.jenkins.io/' }
+  { name: 'Jenkins', url: 'https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_jenkins_icon_130515.png', destination: 'https://www.jenkins.io/', },
+  { name: 'VS Code', url: 'https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_vscode_icon_130084.png', destination: 'https://code.visualstudio.com/', }
 ];
 
 
