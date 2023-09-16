@@ -3,23 +3,6 @@ import transcriptPDF from '../src/files/Transcript.pdf'
 import profileImageLight from './files/ProfileImage/profileImageLight.jpg'
 import profileImageDark from './files/ProfileImage/profileImageDark.jpg'
 
-const volunteer = [];
-const pet = [];
-
-for (let i = 1; i <= 10; i++) {
-  import(`../src/files/Pet/pet (${i}).jpg`).then(imageModule => {
-    pet.push(imageModule.default);
-    console.log(pet);
-  })
-}
-
-for (let i = 0; i < 10; i++) {
-  import(`../src/files/Pet/pet (${i + 1}).jpg`).then(imageModule => {
-    pet.push(imageModule.default);
-    console.log(pet);
-  })
-}
-
 const header = {
   homepage: '/',
   title: 'Shawn',
@@ -125,23 +108,61 @@ const skills = [
   'MySQL', 'AWS', 'Heroku', '.NET Framwork', 'ASP.NET', 'Selenium', 'Jenkins'
 ]
 
+const nums = {
+  volunteer: 6,
+  hobby: 16,
+  pet: 10,
+  travel: 18
+}
+
+const photos = {
+  volunteer: [],
+  hobby: [],
+  pet: [],
+  travel: []
+}
+
+for (let i = 1; i <= nums.volunteer; i++) {
+  import(`../src/files/Volunteer/volunteer (${i}).jpg`).then(imageModule => {
+    photos.volunteer.push(imageModule.default);
+  })
+}
+
+for (let i = 1; i <= nums.hobby; i++) {
+  import(`../src/files/Hobby/hobby (${i}).jpg`).then(imageModule => {
+    photos.hobby.push(imageModule.default);
+  })
+}
+
+for (let i = 1; i <= nums.pet; i++) {
+  import(`../src/files/Pet/pet (${i}).jpg`).then(imageModule => {
+    photos.pet.push(imageModule.default);
+  })
+}
+
+for (let i = 1; i <= nums.travel; i++) {
+  import(`../src/files/Travel/travel (${i}).jpg`).then(imageModule => {
+    photos.travel.push(imageModule.default);
+  })
+}
+
 const life = [
   {
     name: 'Volunteer',
-    photos: volunteer
+    photos: photos.volunteer
   },
   {
     name: 'Hobby',
-    photos: hobby
+    photos: photos.hobby
 
   },
   {
     name: 'Pet',
-    photos: pet
+    photos: photos.pet
   },
   {
     name: 'Travel',
-    photos: travel
+    photos: photos.travel
   }
 ]
 
