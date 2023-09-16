@@ -115,56 +115,36 @@ const nums = {
   travel: 18
 }
 
-const photos = {
-  volunteer: [],
-  hobby: [],
-  pet: [],
-  travel: []
-}
+async function loadPhotos(category, count) {
+  const photos = [];
 
-for (let i = 1; i <= nums.volunteer; i++) {
-  import(`../src/files/Volunteer/volunteer (${i}).jpg`).then(imageModule => {
-    photos.volunteer.push(imageModule.default);
-  })
-}
+  for (let i = 1; i <= count; i++) {
+    const imageModule = await import(`../src/files/${category}/${category.toLowerCase()} (${i}).jpg`);
+    photos.push(imageModule.default);
+  }
 
-for (let i = 1; i <= nums.hobby; i++) {
-  import(`../src/files/Hobby/hobby (${i}).jpg`).then(imageModule => {
-    photos.hobby.push(imageModule.default);
-  })
-}
-
-for (let i = 1; i <= nums.pet; i++) {
-  import(`../src/files/Pet/pet (${i}).jpg`).then(imageModule => {
-    photos.pet.push(imageModule.default);
-  })
-}
-
-for (let i = 1; i <= nums.travel; i++) {
-  import(`../src/files/Travel/travel (${i}).jpg`).then(imageModule => {
-    photos.travel.push(imageModule.default);
-  })
+  return photos;
 }
 
 const life = [
   {
     name: 'Volunteer',
-    photos: photos.volunteer
+    photos: await loadPhotos('Volunteer', nums.volunteer)
   },
   {
     name: 'Hobby',
-    photos: photos.hobby
-
+    photos: await loadPhotos('Hobby', nums.hobby)
   },
   {
     name: 'Pet',
-    photos: photos.pet
+    photos: await loadPhotos('Pet', nums.pet)
   },
   {
     name: 'Travel',
-    photos: photos.travel
+    photos: await loadPhotos('Travel', nums.travel)
   }
-]
+];
+
 
 const contact = {
   email: 'shiyang2575326696@gmail.com',
