@@ -17,6 +17,37 @@ const Life = () => {
   function closeModal() {
     setIsOpen(false);
   }
+
+  const volunteer = require.context('../../files/Volunteer', true);
+  const Volunteer = volunteer.keys().map(image => volunteer(image));
+
+  const hobby = require.context('../../files/Hobby', true);
+  const Hobby = hobby.keys().map(image => hobby(image));
+
+  const pet = require.context('../../files/Pet', true);
+  const Pet = pet.keys().map(image => pet(image));
+
+  const travel = require.context('../../files/Travel', true);
+  const Travel = travel.keys().map(image => travel(image));
+
+  const life = [
+    {
+      name: 'Volunteer',
+      photos: Volunteer
+    },
+    {
+      name: 'Hobby',
+      photos: Hobby
+    },
+    {
+      name: 'Pet',
+      photos: Pet
+    },
+    {
+      name: 'Travel',
+      photos: Travel
+    }
+  ];
   return (
     <section id='life' className='section life'>
       <h2 className='section__title'>Life</h2>

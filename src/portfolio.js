@@ -2,6 +2,7 @@ import resumePDF from '../src/files/Shiyang Zhao Resume.pdf'
 import transcriptPDF from '../src/files/Transcript.pdf'
 import profileImageLight from './files/ProfileImage/profileImageLight.jpg'
 import profileImageDark from './files/ProfileImage/profileImageDark.jpg'
+import React from 'react';
 
 const header = {
   homepage: '/',
@@ -31,14 +32,6 @@ const education = [
     GPA: '3.92',
     honor: ['New American University Scholarship UG', 'Dean List']
   }
-  // {
-  //   university: 'Arizona State University',
-  //   degree: 'B.S. Computer Science',
-  //   startDate: 'January 2020',
-  //   endDate: 'December 2022',
-  //   GPA: '3.92',
-  //   honor: ['New American University Scholarship UG', 'Dean List']
-  // }
 ]
 
 
@@ -131,44 +124,7 @@ const skills = [
   { name: 'VS Code', url: 'https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_vscode_icon_130084.png', destination: 'https://code.visualstudio.com/', }
 ];
 
-
-const nums = {
-  volunteer: 6,
-  hobby: 16,
-  pet: 10,
-  travel: 18
-}
-
-const importPhotos = async (category, count) => {
-  const photos = [];
-
-  for (let i = 1; i <= count; i++) {
-    const imageModule = await import(`../src/files/${category}/${category.toLowerCase()} (${i}).jpg`);
-    photos.push(imageModule.default);
-  }
-
-  return photos;
-}
-
-const life = [
-  {
-    name: 'Volunteer',
-    photos: await importPhotos('Volunteer', nums.volunteer)
-  },
-  {
-    name: 'Hobby',
-    photos: await importPhotos('Hobby', nums.hobby)
-  },
-  {
-    name: 'Pet',
-    photos: await importPhotos('Pet', nums.pet)
-  },
-  {
-    name: 'Travel',
-    photos: await importPhotos('Travel', nums.travel)
-  }
-];
-
+const life = ['Volunteer', 'Hobby', 'Pet', 'Travel'];
 
 const contact = {
   email: 'shiyang2575326696@gmail.com',
