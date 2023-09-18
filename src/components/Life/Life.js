@@ -1,7 +1,6 @@
 import uniqid from 'uniqid';
 import Modal from 'react-modal';
 import { Fade } from 'react-slideshow-image';
-import { life } from '../../portfolio';
 import './Life.css';
 import './Slider.css';
 import { useState } from 'react';
@@ -48,6 +47,7 @@ const Life = () => {
       photos: Travel
     }
   ];
+
   return (
     <section id='life' className='section life'>
       <h2 className='section__title'>Life</h2>
