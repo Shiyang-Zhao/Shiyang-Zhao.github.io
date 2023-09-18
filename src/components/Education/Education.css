@@ -70,4 +70,8 @@
   .education__grid {
     justify-content: center;
   }
+
+  .education__logo {
+    width: 30vw;
+  }
 }
