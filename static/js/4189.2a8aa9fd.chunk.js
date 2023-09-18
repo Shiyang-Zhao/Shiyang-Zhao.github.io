@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkportfolio=self.webpackChunkportfolio||[]).push([[4189],{4189:function(e,t,a){e.exports=a.p+"static/media/travel (17).79abffdc40eaabbe1996.jpg"}}]);
