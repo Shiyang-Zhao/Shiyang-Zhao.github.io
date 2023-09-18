@@ -27,7 +27,7 @@ const Education = () => {
                   </ul>
                 </div>
               </div>
-              <a href={ed.url} target='_blank'><img className='education__logo' src={ed.logo} /></a>
+              <a href={ed.url} target='_blank'><img className='education__logo' src={ed.logo} loading='lazy'/></a>
             </div>
           ))}
         </div>

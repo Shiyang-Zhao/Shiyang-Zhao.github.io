@@ -14,7 +14,7 @@ const Work = () => {
           {work.map((job) => (
             <div key={uniqid()} className='work__item'>
               <h3 className='work__title'><a href={job.url} target="_blank">
-                <img className='work__logo' src={job.logo} />
+                <img className='work__logo' src={job.logo} loading='lazy'/>
               </a>
                 {job.jobTitle}
               </h3>
