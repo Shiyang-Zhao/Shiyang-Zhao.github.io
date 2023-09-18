@@ -85,7 +85,7 @@ const projects = [
       '• Increased the efficiency of file sharing by 20% and user engagement by 40%',
       <br />, <br />,
       '• Received positive feedback from users, with a 90% satisfaction rate reported in user surveys'],
-    stack: ['Python', 'Django', 'Bootstrap', 'Font Awesome', 'Selenium', 'Jenkins', 'Git', 'Github'],
+    stack: ['Python', 'Django', 'Docker', 'Bootstrap', 'Font Awesome', 'Selenium', 'Jenkins', 'Git', 'Github'],
     sourceCode: 'https://github.com/Shiyang-Zhao?tab=repositories',
     livePreview: 'https://github.com/Shiyang-Zhao?tab=repositories',
   },

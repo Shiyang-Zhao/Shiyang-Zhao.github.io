@@ -22,6 +22,12 @@
   max-width: 350px;
   object-fit: contain;
   aspect-ratio: 16/9;
+  transition: all 0.3s ease;
+  background: transparent;
+}
+
+.education__logo:hover {
+  transform: scale(1.1);
 }
 
 .education__university {
