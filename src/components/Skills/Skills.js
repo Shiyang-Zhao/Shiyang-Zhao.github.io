@@ -13,7 +13,7 @@ const Skills = () => {
           {skills.map((skill) => (
             <li key={uniqid()} className='skills__list-item btn btn--plain' title={skill.name}>
               <a href={skill.destination}>
-                <img className='skills__list-item-icon' src={skill.url} />
+                <img className='skills__list-item-icon' loading='lazy' src={skill.url} />
               </a>
             </li>
           ))}

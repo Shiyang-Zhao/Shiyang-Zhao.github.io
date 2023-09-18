@@ -28,7 +28,7 @@ const Life = () => {
             <Fade>
               {l.photos.map((photo) => (
                 <div key={uniqid()} className='each-slide' onClick={() => { openModal(); setPhotos(photo) }}>
-                  <img className='life__img' src={photo} />
+                  <img className='life__img' loading='lazy' src={photo} />
                 </div>
               ))}
             </Fade>
