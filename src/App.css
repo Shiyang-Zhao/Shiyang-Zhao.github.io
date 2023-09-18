@@ -105,8 +105,23 @@ main {
 
 .section__title {
   text-align: center;
-  margin-bottom: 1em;
+  margin-bottom: 1rem;
   text-transform: uppercase;
+  cursor: pointer;
+  text-decoration: none;
+  border-radius: 50px;
+  border: none;
+  transition: all 0.5s ease 0s;
+}
+
+.section__title:hover {
+  color: #fff;
+  background-color: var(--clr-fg);
+  text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
+  box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+  -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+  -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+  transition: all 0.5s ease 0s;
 }
 
 .center {
