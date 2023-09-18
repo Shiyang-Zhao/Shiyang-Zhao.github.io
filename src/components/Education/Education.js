@@ -1,9 +1,11 @@
 import uniqid from 'uniqid'
 import { education } from '../../portfolio'
+import { ThemeContext } from '../../contexts/theme'
 import './Education.css'
-import React from 'react'
+import React, { useContext } from 'react'
 
 const Education = () => {
+  const [{ themeName }] = useContext(ThemeContext);
 
   return (
     <React.Fragment>
@@ -27,7 +29,13 @@ const Education = () => {
                   </ul>
                 </div>
               </div>
-              <a href={ed.url} target='_blank'><img className='education__logo' src={ed.logo} loading='lazy'/></a>
+              <a href={ed.url} target='_blank'>
+                {
+                  themeName === 'light' ?
+                    <img className='education__logo' src={ed.logoLight} loading='lazy' /> :
+                    <img className='education__logo' src={ed.logoDark} loading='lazy' />
+                }
+              </a>
             </div>
           ))}
         </div>
