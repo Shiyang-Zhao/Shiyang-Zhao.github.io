@@ -13,7 +13,11 @@ const Work = () => {
         <div className='work__grid'>
           {work.map((job) => (
             <div key={uniqid()} className='work__item'>
-              <h3 className='work__title'>{job.jobTitle}</h3>
+              <h3 className='work__title'><a href={job.url} target="_blank">
+                <img className='work__logo' src={job.logo} />
+              </a>
+                {job.jobTitle}
+              </h3>
               <p className='work__company'>{job.company}</p>
               <p className='work__dates'>{`${job.startDate} - ${job.endDate}`}</p>
               <p className='work__location'>{job.location}</p>

@@ -26,6 +26,8 @@ const about = {
 const education = [
   {
     university: 'Arizona State University',
+    logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/ASU_Athletics_Logo.svg/2560px-ASU_Athletics_Logo.svg.png',
+    url: 'https://www.asu.edu/',
     degree: 'B.S. Computer Science',
     startDate: 'January 2020',
     endDate: 'December 2022',
@@ -39,6 +41,8 @@ const work = [
   {
     jobTitle: 'Software Engineer',
     company: 'RND4IMPACT INC.',
+    logo: 'https://images.givelively.org/nonprofits/71ce9c26-4781-4f44-af1b-ad089973ccd1/logos/rnd4impact-inc_processed_553b1224b4c1f3473d32cdb4cf53ce0eec45319d72dc4b55bd93fb21a99bdf4a_logo.png',
+    url: 'https://www.rnd4impact.com/',
     startDate: 'March 2023',
     endDate: 'Present',
     location: '690 Saratoga Ave #100, San Jose, CA 95129',

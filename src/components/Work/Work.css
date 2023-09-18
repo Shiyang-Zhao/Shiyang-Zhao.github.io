@@ -16,6 +16,10 @@
   transition: all 0.2s linear;
 }
 
+.work__item:hover {
+  transform: translateY(-7px);
+}
+
 .work__title {
   font-size: 1.5em;
   margin-bottom: 0.5em;
@@ -23,6 +27,12 @@
 
 .work__company {
   font-weight: bold;
+}
+
+.work__logo {
+  max-width: 50px;
+  margin-right: 10px;
+  vertical-align: middle;
 }
 
 .work__dates,

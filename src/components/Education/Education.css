@@ -8,12 +8,20 @@
 
 .education__item {
   padding: 2em;
+  display: flex;
+  flex-direction: row;
   box-shadow: var(--shadow);
   transition: all 0.2s linear;
 }
 
 .education__item:hover {
   transform: translateY(-7px);
+}
+
+.education__logo {
+  max-width: 350px;
+  object-fit: contain;
+  aspect-ratio: 16/9;
 }
 
 .education__university {
