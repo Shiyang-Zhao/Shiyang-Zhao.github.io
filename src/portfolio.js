@@ -47,14 +47,34 @@ const work = [
     startDate: 'March 2023',
     endDate: 'Present',
     location: '690 Saratoga Ave #100, San Jose, CA 95129',
-    description: ['• Developed full-stack web applications that utilize technologies such as Java, Python, JavaScript, and their libraries and frameworks',
+    description: [
+      '•	Developed full-stack web applications that utilize technologies such as Java, Python, JavaScript including Spring Boot, React.js, Django',
       <br />,
-      '•	Collaborated with cross-functional teams to gather requirements, design system architectures, and implement solutions',
+      '•	Collaborated with a team of 5 members to gather requirements, design system architectures, and implement solutions',
       <br />,
-      '• Utilized agile development methodologies, Scrum, to deliver high-quality software products within scheduled deadlines, achieving a 95% on-time project delivery rate',
+      '•	Utilized Scrum, Jira to track the progress of the project, and Git for version control, achieving a 95% on-time project delivery rate',
       <br />,
-      '• Improved overall website performance by 30%, resulting in faster loading times, smoother user interactions, and an enhanced user experience'],
+      '•	Improved overall website performance by 30%, resulting in faster loading times, smoother user interactions, and an enhanced user experience'],
     skills: ['Java', 'Spring Boot', 'JavaScript', 'React.js', 'Node.js', 'Python', 'Django', 'MySQL', 'Heroku', 'AWS', 'Selenium', 'Jenkins']
+  },
+
+
+  {
+    jobTitle: 'Guest Experience Associate',
+    company: 'HOPE CHURCH MOVEMENT AT ASU',
+    logo: 'https://media.licdn.com/dms/image/C560BAQEC8Rbyw7vvvw/company-logo_200_200/0/1674601450872?e=1703116800&v=beta&t=k4ibJLH907S374BclLpFllZOOCzMXUQOwUb497f2aKg',
+    url: 'https://career.asu.edu/organizations/hope-church-movement-at-asu/',
+    startDate: 'April 2020',
+    endDate: 'December 2022',
+    location: '730 N Mill Ave, Tempe, AZ 85288',
+    description: [
+      '•	Developed interpersonal skills and leadership within a guest experience team of 30',
+      <br />,
+      '•	Created an immersive, inviting experience for 250 guests every time',
+      <br />,
+      '•	Collaborated with cross-functional teams to identify opportunities for enhancing efficiency in processes, resulting in a 23% increase in efficiency',
+      <br />],
+    skills: ['Leadership', 'Communication', 'Problem-Solving', 'Teamwork', 'Time Management', 'Positive Attitude', 'Time Management']
   }
 ]
 
@@ -62,41 +82,41 @@ const work = [
 const projects = [
   {
     name: 'EmploVerse',
-    description: ['• Developed EmploVerse, an employee management web application using Java Spring, React.js, and MySQL with RBAC and JWT for secure authentication',
+    description: [
+      '•	Built EmploVerse, an employee management web application using Java Spring, React.js, and MySQL, with RBAC and JWT for secure authentication',
       <br />, <br />,
-      '• Streamlined employee management processes, achieving up to 30% improvement in efficiency through seamless CRUD operations, advanced search capabilities, and simplified user access management',
+      '•	Developed CRUD operations, attendance tracking, RBAC, and payroll system, resulting in a 35% improvement in efficiency in employee management',
       <br />, <br />,
-      '• Implemented real-time chat functionality, resulting in a powerful 45% reduction in email correspondence for internal communication',
+      '•	Implemented real-time chat functionality using WebSocket, resulting in a powerful 30% reduction in email correspondence for internal communication',
       <br />, <br />,
-      '• Achieved a remarkable adoption rate, with 80% of the organization employees actively using EmploVerse for daily employee management tasks',
-      <br />, <br />,
-      '• Utilized AWS and Heroku to deploy and manage, ensuring seamless scalability, robust security, and efficient backend services'],
-    stack: ['Java', 'Spring Boot', 'JavaScript', 'React.js', 'MySQL', 'Heroku', 'AWS'],
+      '•	Utilized AWS and Heroku to deploy and manage, ensuring seamless scalability, robust security, and efficient backend services',
+      <br />],
+    stack: ['Java', 'Spring Boot', 'JavaScript', 'React.js', 'WebScket', 'MySQL', 'Heroku', 'AWS'],
     sourceCode: 'https://github.com/Shiyang-Zhao?tab=repositories',
     livePreview: 'https://github.com/Shiyang-Zhao?tab=repositories',
   },
   {
     name: 'Metasphere',
-    description: ['• Developed Metasphere, a dynamic social media web application utilizing Python, Django, PostgreSQL, Bootstrap, and Font Awesome',
+    description: [
+      '•	Developed Metasphere, a dynamic social media web application utilizing Python, Django, React.js, PostgreSQL, Bootstrap, and Docker',
       <br />, <br />,
-      '• Implemented a robust search, file sharing, and lively comments, and fosters vibrant conversations through private messaging and group chats',
+      '•	Implemented a robust search, file sharing, and lively comments, and fosters vibrant conversations by private messaging and group chats utilizing WebSocket and Django Channels',
       <br />, <br />,
-      '• Integrate Jenkins with GitHub using webhooks and Selenium to automate CI/CD pipeline',
+      '•	Integrated Jenkins with Webhooks in Github and Selenium to automate CI/CD pipeline',
       <br />, <br />,
-      '• Increased the efficiency of file sharing by 20% and user engagement by 40%',
-      <br />, <br />,
-      '• Received positive feedback from users, with a 90% satisfaction rate reported in user surveys'],
-    stack: ['Python', 'Django', 'Docker', 'Bootstrap', 'Font Awesome', 'Selenium', 'Jenkins', 'Git', 'Github'],
+      '•	Increased the efficiency of file sharing by 20% and user engagement by 40%',
+      <br />],
+    stack: ['Python', 'Django', 'JavaScript', 'React.js', 'Docker', 'Bootstrap', 'Selenium', 'Jenkins', 'Git', 'Github'],
     sourceCode: 'https://github.com/Shiyang-Zhao?tab=repositories',
     livePreview: 'https://github.com/Shiyang-Zhao?tab=repositories',
   },
-  {
-    name: 'Python Crawler',
-    description: ['• Developed a python crawler to simplify the process of gathering and organizing information about graduate admission requirements for various universities and institutions.'],
-    stack: ['Python', 'Scrapy'],
-    sourceCode: 'https://github.com/Shiyang-Zhao?tab=repositories',
-    livePreview: 'https://github.com/Shiyang-Zhao?tab=repositories',
-  },
+  // {
+  //   name: 'Python Crawler',
+  //   description: ['• Developed a python crawler to simplify the process of gathering and organizing information about graduate admission requirements for various universities and institutions.'],
+  //   stack: ['Python', 'Scrapy'],
+  //   sourceCode: 'https://github.com/Shiyang-Zhao?tab=repositories',
+  //   livePreview: 'https://github.com/Shiyang-Zhao?tab=repositories',
+  // },
 ]
 
 const skills = [
