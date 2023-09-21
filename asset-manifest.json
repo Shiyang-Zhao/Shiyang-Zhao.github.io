@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.b5d1d606.css",
-    "main.js": "/static/js/main.3ab3818c.js",
+    "main.css": "/static/css/main.312bcd6a.css",
+    "main.js": "/static/js/main.f6a3c7b0.js",
     "static/media/volunteer (5).jpg": "/static/media/volunteer (5).a0ea220a83a22828e7ca.jpg",
     "static/media/travel (7).jpg": "/static/media/travel (7).64d04330bde63e69e2e6.jpg",
     "static/media/travel (6).jpg": "/static/media/travel (6).d21318fba9a124461f40.jpg",
@@ -44,7 +44,6 @@
     "static/media/volunteer (1).jpg": "/static/media/volunteer (1).108318b799cf87a1dfd3.jpg",
     "static/media/travel (10).jpg": "/static/media/travel (10).26f8a4836d0abe6b29ad.jpg",
     "static/media/travel (17).jpg": "/static/media/travel (17).79abffdc40eaabbe1996.jpg",
-    "static/media/hobby (16).jpg": "/static/media/hobby (16).55848fca5ed146f2ecee.jpg",
     "static/media/hobby (1).jpg": "/static/media/hobby (1).1d5ba4fb61e4cabfee13.jpg",
     "static/media/travel (11).jpg": "/static/media/travel (11).e323537c437c7ce00b26.jpg",
     "static/media/travel (12).jpg": "/static/media/travel (12).7c2128d30a6ac6fe3a40.jpg",
@@ -57,11 +56,11 @@
     "static/media/travel (13).jpg": "/static/media/travel (13).e9fbcb1ba7dfadbb2742.jpg",
     "static/media/Transcript.pdf": "/static/media/Transcript.5bc319930d4878c7fac5.pdf",
     "index.html": "/index.html",
-    "main.b5d1d606.css.map": "/static/css/main.b5d1d606.css.map",
-    "main.3ab3818c.js.map": "/static/js/main.3ab3818c.js.map"
+    "main.312bcd6a.css.map": "/static/css/main.312bcd6a.css.map",
+    "main.f6a3c7b0.js.map": "/static/js/main.f6a3c7b0.js.map"
   },
   "entrypoints": [
-    "static/css/main.b5d1d606.css",
-    "static/js/main.3ab3818c.js"
+    "static/css/main.312bcd6a.css",
+    "static/js/main.f6a3c7b0.js"
   ]
 }
