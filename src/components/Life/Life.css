@@ -56,3 +56,8 @@
     grid-template-columns: repeat(auto-fit, minmax(18em, 1fr));
   }
 }
+
+.modal2-image{
+  width: 10rem;
+  aspect-ratio: auto;
+}
