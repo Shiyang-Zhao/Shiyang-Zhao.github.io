@@ -5,6 +5,9 @@ import './Life.css';
 import './Slider.css';
 import { useState } from 'react';
 
+import Gallery from "react-photo-gallery";
+import { SortableContainer, SortableElement } from "react-sortable-hoc";
+
 const Life = () => {
   const [photo, setPhoto] = useState();
   const [modalIsOpen, setModelIsOpen] = useState(false);
@@ -29,31 +32,25 @@ const Life = () => {
   const travel = require.context('../../files/Travel', true);
   const Travel = travel.keys().map(image => travel(image));
 
-  const life = [
-    {
-      name: 'Volunteer',
-      photos: Volunteer
-    },
-    {
-      name: 'Hobby',
-      photos: Hobby
-    },
-    {
-      name: 'Pet',
-      photos: Pet
-    },
-    {
-      name: 'Travel',
-      photos: Travel
-    }
-  ];
+
+  const [activeSection, setActiveSection] = useState(Volunteer);
+
+  const switchSection = (section) => {
+    setActiveSection(section);
+  };
 
   return (
     <section id='life' className='section life'>
       <h2 className='section__title'>Life</h2>
+      <div className='nav__bar'>
+        <button onClick={() => switchSection(Volunteer)}>Volunteer</button>
+        <button onClick={() => switchSection(Hobby)}>Hobby</button>
+        <button onClick={() => switchSection(Pet)}>Pet</button>
+        <button onClick={() => switchSection(Travel)}>Travel</button>
+      </div>
 
       <div className='life__grid'>
-        {life.map((l) => (
+        {/* {life.map((l) => (
           <div key={uniqid()} className='life__item'>
             <h3>{l.name}</h3>
             <Fade>
@@ -64,11 +61,22 @@ const Life = () => {
               ))}
             </Fade>
           </div>
-        ))}
+        ))} */}
+
+        <div className='life__images'>
+          {activeSection.map((photo) => (
+            <div key={uniqid()} onClick={() => { setPhoto(photo); openModal() }}>
+              <img src={photo} loading='lazy' />
+            </div>
+          ))}
+        </div>
+
+
+
       </div>
 
       <Modal className='modal' isOpen={modalIsOpen} onRequestClose={closeModal}>
-        <img src={photo} />
+        <img src={photo} loading='lazy' />
       </Modal>
     </section>
   )

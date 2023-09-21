@@ -11,7 +11,6 @@
   box-shadow: var(--shadow);
   text-align: center;
   transition: all 0.2s linear;
-  /* Add a maximum width to prevent exceeding 100% */
 }
 
 .life__item:hover {
@@ -55,4 +54,40 @@
     justify-content: center;
     grid-template-columns: repeat(auto-fit, minmax(18em, 1fr));
   }
+}
+
+.nav__bar {
+  display: flex;
+  margin-bottom: 10px;
+  background-color: var(--clr-bg-alt);
+  box-shadow: var(--shadow);
+  justify-content: space-between;
+}
+
+.nav__bar button {
+  flex: 1;
+  color: var(--clr-fg-alt);
+  padding: 10px 0;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.nav__bar button:hover,
+.nav__bar button:focus {
+  color: var(--clr-bg);
+  background-color: var(--clr-fg);
+
+}
+
+.life__images {
+  column-count: 4;
+  column-gap: 5px;
+}
+
+.life__images img {
+  width: 100%;
+  display: block;
+  break-inside: avoid;
+  margin-bottom: 5px;
+  cursor: pointer;
 }
