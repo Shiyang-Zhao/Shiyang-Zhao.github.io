@@ -19,20 +19,52 @@ const Life = () => {
   }
 
   const volunteer = require.context('../../files/Volunteer', true);
-  const Volunteer = volunteer.keys().map(image => ({ 'src': volunteer(image), 'width': '', 'height': '' }));
+  const Volunteer = volunteer.keys().map(image => {
+    const img = new Image();
+    img.src = volunteer(image);
+    return {
+      src: volunteer(image),
+      width: img.width,
+      height: img.height
+    };
+  });
 
   const hobby = require.context('../../files/Hobby', true);
-  const Hobby = hobby.keys().map(image => ({ 'src': hobby(image), 'width': '', 'height': '' }));
+  const Hobby = hobby.keys().map(image => {
+    const img = new Image();
+    img.src = hobby(image);
+    return {
+      src: hobby(image),
+      width: img.width,
+      height: img.height
+    };
+  });
 
   const pet = require.context('../../files/Pet', true);
-  const Pet = pet.keys().map(image => ({ 'src': pet(image), 'width': '', 'height': '' }));
+  const Pet = pet.keys().map(image => {
+    const img = new Image();
+    img.src = pet(image);
+    return {
+      src: pet(image),
+      width: img.width,
+      height: img.height
+    };
+  });
 
   const travel = require.context('../../files/Travel', true);
-  const Travel = travel.keys().map(image => ({ 'src': travel(image), 'width': '', 'height': '' }));
+  const Travel = travel.keys().map(image => {
+    const img = new Image();
+    img.src = travel(image);
+    return {
+      src: travel(image),
+      width: img.width,
+      height: img.height
+    };
+  });
 
   const [activeSection, setActiveSection] = useState(Volunteer);
 
-  const SortablePhoto = SortableElement(photo => <Photo {...photo} />);
+  const SortablePhoto = SortableElement(photo => <Photo {...photo} onClick={() => { console.log(photo); setPhoto(photo); openModal() }} />);
   const SortableGallery = SortableContainer(({ activeSection }) => (
     <Gallery photos={activeSection} renderImage={props => <SortablePhoto {...props} />} />
   ));
