@@ -1,6 +1,6 @@
 import uniqid from 'uniqid';
 import Modal from 'react-modal';
-import { Fade } from 'react-slideshow-image';
+import { Fade, Slide } from 'react-slideshow-image';
 import './Life.css';
 import './Slider.css';
 import { useState } from 'react';
@@ -28,9 +28,6 @@ const Life = () => {
 
   const travel = require.context('../../files/Travel', true);
   const Travel = travel.keys().map(image => travel(image));
-
-  console.log(Pet)
-
 
   const life = [
     {
