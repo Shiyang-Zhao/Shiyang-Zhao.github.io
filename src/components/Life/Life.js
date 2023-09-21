@@ -7,24 +7,14 @@ import { useState } from 'react';
 
 const Life = () => {
   const [photo, setPhoto] = useState();
-  const [photos, setPhotos] = useState([]);
-  const [modal1IsOpen, setModel1IsOpen] = useState(false);
-  const [modal2IsOpen, setModel2IsOpen] = useState(false);
+  const [modalIsOpen, setModelIsOpen] = useState(false);
 
-  function openModal1() {
-    setModel1IsOpen(true);
+  function openModal() {
+    setModelIsOpen(true);
   }
 
-  function closeModal1() {
-    setModel1IsOpen(false);
-  }
-
-  function openModal2() {
-    setModel2IsOpen(true);
-  }
-
-  function closeModal2() {
-    setModel2IsOpen(false);
+  function closeModal() {
+    setModelIsOpen(false);
   }
 
   const volunteer = require.context('../../files/Volunteer', true);
@@ -38,6 +28,9 @@ const Life = () => {
 
   const travel = require.context('../../files/Travel', true);
   const Travel = travel.keys().map(image => travel(image));
+
+  console.log(Pet)
+
 
   const life = [
     {
@@ -65,10 +58,10 @@ const Life = () => {
       <div className='life__grid'>
         {life.map((l) => (
           <div key={uniqid()} className='life__item'>
-            <h3 onClick={() => { setPhotos(l.photos); openModal2(); }}>{l.name}</h3>
+            <h3>{l.name}</h3>
             <Fade>
               {l.photos.map((photo) => (
-                <div key={uniqid()} className='each-slide' onClick={() => { setPhoto(photo); openModal1() }}>
+                <div key={uniqid()} className='each-slide' onClick={() => { setPhoto(photo); openModal() }}>
                   <img className='life__img' loading='lazy' src={photo} />
                 </div>
               ))}
@@ -77,14 +70,8 @@ const Life = () => {
         ))}
       </div>
 
-      <Modal className='modal1' isOpen={modal1IsOpen} onRequestClose={closeModal1}>
+      <Modal className='modal' isOpen={modalIsOpen} onRequestClose={closeModal}>
         <img src={photo} />
-      </Modal>
-
-      <Modal className='modal2' isOpen={modal2IsOpen} onRequestClose={closeModal2}>
-        {photos.map((photo) => (
-          <img className='modal2-image' loading='lazy' src={photo} />
-        ))}
       </Modal>
     </section>
   )
