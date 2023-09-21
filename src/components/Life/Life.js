@@ -32,12 +32,35 @@ const Life = () => {
   const travel = require.context('../../files/Travel', true);
   const Travel = travel.keys().map(image => travel(image));
 
-
   const [activeSection, setActiveSection] = useState(Volunteer);
 
   const switchSection = (section) => {
     setActiveSection(section);
   };
+
+  // const getSection = (section) => {
+  //   let data, Data;
+  //   if (section === 'Volunteer') {
+  //     data = require.context('../../files/Volunteer', true);
+
+  //   } else if (section === 'Hobby') {
+  //     data = require.context('../../files/Hobby', true);
+
+  //   } else if (section === 'Pet') {
+  //     data = require.context('../../files/Pet', true);
+
+  //   } else if (section === 'Travel') {
+  //     data = require.context('../../files/Travel', true);
+  //   }
+  //   Data = data.keys().map(image => data(image));
+  //   return Data;
+  // }
+
+  // const [activeSection, setActiveSection] = useState(getSection('Volunteer'));
+
+  // const switchSection = (section) => {
+  //   setActiveSection(getSection(section));
+  // };
 
   return (
     <section id='life' className='section life'>
@@ -70,9 +93,6 @@ const Life = () => {
             </div>
           ))}
         </div>
-
-
-
       </div>
 
       <Modal className='modal' isOpen={modalIsOpen} onRequestClose={closeModal}>
