@@ -1,12 +1,10 @@
-import uniqid from 'uniqid';
-import Modal from 'react-modal';
-import { Fade, Slide } from 'react-slideshow-image';
 import './Life.css';
-import './Slider.css';
+import Modal from 'react-modal';
 import { useState } from 'react';
-
+import { arrayMoveMutable } from "array-move";
 import Gallery from "react-photo-gallery";
 import { SortableContainer, SortableElement } from "react-sortable-hoc";
+import Photo from './Photo';
 
 const Life = () => {
   const [photo, setPhoto] = useState();
@@ -21,21 +19,51 @@ const Life = () => {
   }
 
   const volunteer = require.context('../../files/Volunteer', true);
-  const Volunteer = volunteer.keys().map(image => volunteer(image));
+  const Volunteer = volunteer.keys().map(image => {
+    const src = volunteer(image);
+    const width = 4;
+    const height = 3;
+    console.log({ src, width, height })
+    return { src, width, height };
+  });
 
   const hobby = require.context('../../files/Hobby', true);
-  const Hobby = hobby.keys().map(image => hobby(image));
+  const Hobby = hobby.keys().map(image => {
+    const src = hobby(image);
+    const width = 4;
+    const height = 3;
+    return { src, width, height };
+  });
 
   const pet = require.context('../../files/Pet', true);
-  const Pet = pet.keys().map(image => pet(image));
+  const Pet = pet.keys().map(image => {
+    const src = pet(image)
+    const width = 4;
+    const height = 3;
+    return { src, width, height };
+  });
 
   const travel = require.context('../../files/Travel', true);
-  const Travel = travel.keys().map(image => travel(image));
+  const Travel = travel.keys().map(image => {
+    const src = travel(image);
+    const width = 4;
+    const height = 3;
+    return { src, width, height };
+  });
 
   const [activeSection, setActiveSection] = useState(Volunteer);
 
+  const SortablePhoto = SortableElement(item => <Photo {...item} />);
+  const SortableGallery = SortableContainer(() => (
+    <Gallery photos={activeSection} renderImage={props => <SortablePhoto {...props} />} />
+  ));
+
   const switchSection = (section) => {
     setActiveSection(section);
+  };
+
+  const onSortEnd = ({ oldIndex, newIndex }) => {
+    arrayMoveMutable(activeSection, oldIndex, newIndex);
   };
 
   // const getSection = (section) => {
@@ -86,13 +114,14 @@ const Life = () => {
           </div>
         ))} */}
 
-        <div className='life__images'>
+        {/* <div className='life__images'>
           {activeSection.map((photo) => (
             <div key={uniqid()} onClick={() => { setPhoto(photo); openModal() }}>
               <img src={photo} loading='lazy' />
             </div>
           ))}
-        </div>
+        </div> */}
+        <SortableGallery activeSection={activeSection} onSortEnd={onSortEnd} axis={"xy"} />
       </div>
 
       <Modal className='modal' isOpen={modalIsOpen} onRequestClose={closeModal}>
