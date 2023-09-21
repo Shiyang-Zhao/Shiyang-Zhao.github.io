@@ -1,3 +1,4 @@
+import './Life.css';
 import React from "react";
 
 const imgWithClick = { cursor: "pointer" };
@@ -19,7 +20,7 @@ const Photo = ({ index, onClick, photo, margin, direction, top, left }) => {
             style={onClick ? { ...imgStyle, ...imgWithClick } : imgStyle}
             {...photo}
             onClick={onClick ? handleClick : null}
-            alt="img"
+            loading='lazy'
         />
     );
 };
