@@ -22,16 +22,16 @@ const Life = () => {
   };
 
 
-  const volunteerContext = require.context('../../files/VolunteerTest', true);
+  const volunteerContext = require.context('../../files/Volunteer', true);
   const volunteer = useMemo(() => createImageArray(volunteerContext), []);
 
-  const hobbyContext = require.context('../../files/HobbyTest', true);
+  const hobbyContext = require.context('../../files/Hobby', true);
   const hobby = useMemo(() => createImageArray(hobbyContext), []);
 
-  const petContext = require.context('../../files/PetTest', true);
+  const petContext = require.context('../../files/Pet', true);
   const pet = useMemo(() => createImageArray(petContext), []);
 
-  const travelContext = require.context('../../files/TravelTest', true);
+  const travelContext = require.context('../../files/Travel', true);
   const travel = useMemo(() => createImageArray(travelContext), []);
 
   useEffect(() => {
