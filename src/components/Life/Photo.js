@@ -21,7 +21,7 @@ const Photo = ({ index, onClick, photo, margin, direction, top, left }) => {
             {...photo}
             onClick={onClick ? handleClick : null}
             loading='lazy'
-            title='Drag me'
+            title='Drag me or open in new tab'
         />
     );
 };
