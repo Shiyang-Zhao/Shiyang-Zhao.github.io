@@ -91,7 +91,14 @@
   margin-bottom: 5px;
   cursor: pointer;
   object-fit: cover;
+  aspect-ratio: auto;
   animation: slideFromTop 0.4s ease;
+}
+
+.life__images img:hover {
+  z-index: 3;
+  transform: scale(2);
+  object-fit: contain;
 }
 
 @keyframes slideFromTop {
