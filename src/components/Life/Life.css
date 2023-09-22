@@ -25,7 +25,7 @@
   cursor: pointer;
 }
 
-.life__img {
+/* .life__img {
   display: block;
   max-width: 100%;
   max-height: 100%;
@@ -47,7 +47,7 @@
 
   transform: translate(-50%, -50%);
   aspect-ratio: auto;
-}
+} */
 
 @media only screen and (max-width: 800px) {
   .life__grid {
@@ -80,9 +80,8 @@
 }
 
 .life__images {
-  column-count: 4;
+  column-count: 5;
   column-gap: 5px;
-
 }
 
 .life__images img {
@@ -91,7 +90,8 @@
   break-inside: avoid;
   margin-bottom: 5px;
   cursor: pointer;
-  animation: slideFromTop 0.3s ease;
+  object-fit: cover;
+  animation: slideFromTop 0.4s ease;
 }
 
 @keyframes slideFromTop {
