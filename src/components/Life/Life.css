@@ -92,23 +92,21 @@
   cursor: pointer;
   object-fit: cover;
   aspect-ratio: auto;
-  animation: slideFromTop 0.4s ease;
+  animation: flip 1s ease;
+  transition: all 0.3s ease;
 }
 
 .life__images img:hover {
-  z-index: 3;
   transform: scale(2);
   object-fit: contain;
 }
 
-@keyframes slideFromTop {
+@keyframes flip {
   0% {
-    transform: translateY(-100%);
-    opacity: 0;
+    transform: perspective(400px) rotateY(0);
   }
 
   100% {
-    transform: translateY(0);
-    opacity: 1;
+    transform: perspective(400px) rotateY(360deg);
   }
 }

@@ -1,57 +1,44 @@
 import './Life.css';
-import { useState } from 'react';
+import uniqid from 'uniqid'
+import React, { useEffect, useState, useMemo } from 'react';
 import { arrayMoveMutable } from "array-move";
 import Gallery from "react-photo-gallery";
 import { SortableContainer, SortableElement } from "react-sortable-hoc";
 import Photo from './Photo';
 
 const Life = () => {
+  const createImageArray = (context) => {
+    return context.keys().map(image => {
+      const img = new Image();
+      const src = context(image);
+      img.src = src;
+      img.loading = 'lazy';
+      return {
+        src,
+        width: img.width,
+        height: img.height
+      };
+    });
+  };
 
-  const volunteer = require.context('../../files/Volunteer', true);
-  const Volunteer = volunteer.keys().map(image => {
-    const img = new Image();
-    img.src = volunteer(image);
-    return {
-      src: volunteer(image),
-      width: img.width,
-      height: img.height
-    };
-  });
 
-  const hobby = require.context('../../files/Hobby', true);
-  const Hobby = hobby.keys().map(image => {
-    const img = new Image();
-    img.src = hobby(image);
-    return {
-      src: hobby(image),
-      width: img.width,
-      height: img.height
-    };
-  });
+  const volunteerContext = require.context('../../files/Volunteer', true);
+  const volunteer = useMemo(() => createImageArray(volunteerContext), []);
 
-  const pet = require.context('../../files/Pet', true);
-  const Pet = pet.keys().map(image => {
-    const img = new Image();
-    img.src = pet(image);
-    return {
-      src: pet(image),
-      width: img.width,
-      height: img.height
-    };
-  });
+  const hobbyContext = require.context('../../files/Hobby', true);
+  const hobby = useMemo(() => createImageArray(hobbyContext), []);
 
-  const travel = require.context('../../files/Travel', true);
-  const Travel = travel.keys().map(image => {
-    const img = new Image();
-    img.src = travel(image);
-    return {
-      src: travel(image),
-      width: img.width,
-      height: img.height
-    };
-  });
+  const petContext = require.context('../../files/Pet', true);
+  const pet = useMemo(() => createImageArray(petContext), []);
 
-  const [activeSection, setActiveSection] = useState(Volunteer);
+  const travelContext = require.context('../../files/Travel', true);
+  const travel = useMemo(() => createImageArray(travelContext), []);
+
+  useEffect(() => {
+    Promise.all([volunteer, hobby, pet, travel])
+  }, [volunteerContext, hobbyContext, petContext, travelContext]);
+
+  const [activeSection, setActiveSection] = useState(volunteer);
 
   const SortablePhoto = SortableElement(photo => <Photo {...photo} />);
   const SortableGallery = SortableContainer(({ activeSection }) => (
@@ -70,20 +57,13 @@ const Life = () => {
     <section id='life' className='section life'>
       <h2 className='section__title'>Life</h2>
       <div className='nav__bar'>
-        <button onClick={() => switchSection(Volunteer)}>Volunteer</button>
-        <button onClick={() => switchSection(Hobby)}>Hobby</button>
-        <button onClick={() => switchSection(Pet)}>Pet</button>
-        <button onClick={() => switchSection(Travel)}>Travel</button>
+        <button key={uniqid()} onClick={() => switchSection(volunteer)}>Volunteer</button>
+        <button key={uniqid()} onClick={() => switchSection(hobby)}>Hobby</button>
+        <button key={uniqid()} onClick={() => switchSection(pet)}>Pet</button>
+        <button key={uniqid()} onClick={() => switchSection(travel)}>Travel</button>
       </div>
 
       <div className='life__grid'>
-        {/* <div className='life__images'>
-          {activeSection.map((photo) => (
-            <div key={uniqid()} onClick={() => { setPhoto(photo); openModal() }}>
-              <img src={photo} loading='lazy' />
-            </div>
-          ))}
-        </div> */}
         <div className='life__images'>
           <SortableGallery activeSection={activeSection} onSortEnd={onSortEnd} axis={"xy"} />
         </div>
@@ -92,4 +72,4 @@ const Life = () => {
   )
 }
 
-export default Life
+export default Life;

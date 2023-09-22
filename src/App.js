@@ -1,6 +1,5 @@
 import './App.css'
 import { useContext, useState, useEffect, useRef } from 'react'
-import Modal from 'react-modal';
 import { ThemeContext } from './contexts/theme'
 import Background from './contexts/background'
 import Header from './components/Header/Header'
@@ -13,8 +12,6 @@ import Life from './components/Life/Life'
 import ScrollToTop from './components/ScrollToTop/ScrollToTop'
 import Contact from './components/Contact/Contact'
 import Footer from './components/Footer/Footer'
-
-Modal.setAppElement(document.getElementById('root'));
 
 const FadeInSection = (props) => {
   const [isVisible, setVisible] = useState(true);
