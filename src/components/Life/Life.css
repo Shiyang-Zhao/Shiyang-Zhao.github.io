@@ -59,12 +59,11 @@
 .nav__bar {
   display: flex;
   margin-bottom: 10px;
-  background-color: var(--clr-bg-alt);
   box-shadow: var(--shadow);
   justify-content: space-between;
 }
 
-.nav__bar button {
+.nav__bar__btn {
   flex: 1;
   color: var(--clr-fg-alt);
   padding: 10px 0;
@@ -72,11 +71,10 @@
   transition: all 0.3s ease;
 }
 
-.nav__bar button:hover,
-.nav__bar button:focus {
+.selected,
+.nav__bar__btn:hover {
   color: var(--clr-bg);
   background-color: var(--clr-fg);
-
 }
 
 .life__images {

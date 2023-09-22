@@ -39,14 +39,16 @@ const Life = () => {
   }, [volunteerContext, hobbyContext, petContext, travelContext]);
 
   const [activeSection, setActiveSection] = useState(volunteer);
+  const [selectedSection, setSelectedSection] = useState('volunteer');
 
   const SortablePhoto = SortableElement(photo => <Photo {...photo} />);
   const SortableGallery = SortableContainer(({ activeSection }) => (
     <Gallery photos={activeSection} renderImage={props => <SortablePhoto {...props} />} />
   ));
 
-  const switchSection = (selectedSection) => {
-    setActiveSection(selectedSection);
+  const switchSection = (activeSection, selectedSection) => {
+    setActiveSection(activeSection);
+    setSelectedSection(selectedSection);
   };
 
   const onSortEnd = ({ oldIndex, newIndex }) => {
@@ -57,10 +59,15 @@ const Life = () => {
     <section id='life' className='section life'>
       <h2 className='section__title'>Life</h2>
       <div className='nav__bar'>
-        <button key={uniqid()} onClick={() => switchSection(volunteer)}>Volunteer</button>
-        <button key={uniqid()} onClick={() => switchSection(hobby)}>Hobby</button>
-        <button key={uniqid()} onClick={() => switchSection(pet)}>Pet</button>
-        <button key={uniqid()} onClick={() => switchSection(travel)}>Travel</button>
+        {['volunteer', 'hobby', 'pet', 'travel'].map(section => (
+          <button
+            className={selectedSection === section ? 'selected nav__bar__btn' : 'nav__bar__btn'}
+            key={uniqid()}
+            onClick={() => switchSection(eval(section), section)}
+          >
+            {section.charAt(0).toUpperCase() + section.slice(1)}
+          </button>
+        ))}
       </div>
 
       <div className='life__grid'>
