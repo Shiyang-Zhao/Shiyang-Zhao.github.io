@@ -1,5 +1,4 @@
 import './Life.css';
-import Modal from 'react-modal';
 import { useState } from 'react';
 import { arrayMoveMutable } from "array-move";
 import Gallery from "react-photo-gallery";
@@ -7,16 +6,6 @@ import { SortableContainer, SortableElement } from "react-sortable-hoc";
 import Photo from './Photo';
 
 const Life = () => {
-  const [photo, setPhoto] = useState();
-  const [modalIsOpen, setModelIsOpen] = useState(false);
-
-  function openModal() {
-    setModelIsOpen(true);
-  }
-
-  function closeModal() {
-    setModelIsOpen(false);
-  }
 
   const volunteer = require.context('../../files/Volunteer', true);
   const Volunteer = volunteer.keys().map(image => {
@@ -64,7 +53,7 @@ const Life = () => {
 
   const [activeSection, setActiveSection] = useState(Volunteer);
 
-  const SortablePhoto = SortableElement(photo => <Photo {...photo} onClick={() => { console.log(photo); setPhoto(photo); openModal() }} />);
+  const SortablePhoto = SortableElement(photo => <Photo {...photo} />);
   const SortableGallery = SortableContainer(({ activeSection }) => (
     <Gallery photos={activeSection} renderImage={props => <SortablePhoto {...props} />} />
   ));
@@ -99,10 +88,6 @@ const Life = () => {
           <SortableGallery activeSection={activeSection} onSortEnd={onSortEnd} axis={"xy"} />
         </div>
       </div>
-
-      <Modal className='modal' isOpen={modalIsOpen} onRequestClose={closeModal}>
-        <img src={photo} loading='lazy' />
-      </Modal>
     </section>
   )
 }

@@ -82,6 +82,7 @@
 .life__images {
   column-count: 4;
   column-gap: 5px;
+
 }
 
 .life__images img {
@@ -90,4 +91,17 @@
   break-inside: avoid;
   margin-bottom: 5px;
   cursor: pointer;
+  animation: slideFromTop 0.3s ease;
+}
+
+@keyframes slideFromTop {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
