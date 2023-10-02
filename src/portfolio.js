@@ -30,10 +30,10 @@ const education = [
     logoDark: 'https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExbmp4anVzYmxmMW1tbXd4cXBqNG9neGE2c3k1cTRzajFrM3B1aDl3dCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/jtvEC41AVdyfZVbGKj/giphy.gif',
     url: 'https://www.asu.edu/',
     degree: 'B.S. Computer Science',
-    startDate: 'January 2020',
-    endDate: 'December 2022',
+    startDate: '01/2020',
+    endDate: '12/2022',
     GPA: '3.92',
-    honor: ['New American University Scholarship UG', 'Dean List']
+    honor: ['Summa Cum Laude', 'New American University Scholarship UG', 'Dean List']
   }
 ]
 
@@ -44,17 +44,17 @@ const work = [
     company: 'RND4IMPACT INC.',
     logo: 'https://images.givelively.org/nonprofits/71ce9c26-4781-4f44-af1b-ad089973ccd1/logos/rnd4impact-inc_processed_553b1224b4c1f3473d32cdb4cf53ce0eec45319d72dc4b55bd93fb21a99bdf4a_logo.png',
     url: 'https://www.rnd4impact.com/',
-    startDate: 'March 2023',
-    endDate: 'Present',
+    startDate: '03/2023',
+    endDate: '09/2023',
     location: '690 Saratoga Ave #100, San Jose, CA 95129',
     description: [
-      '•	Developed full-stack web applications that utilize technologies such as Java, Python, JavaScript including Spring Boot, React.js, Django',
+      '•	Developed full-stack web applications that utilize technologies such as Java, Python, and JavaScript including Spring Boot, React.js, Django',
       <br />,
-      '•	Collaborated with a team of 5 members to gather requirements, design system architectures, and implement solutions',
+      '•	Collaborated with a team of 5 members to gather requirements, design system architectures, and deliver solutions',
       <br />,
-      '•	Utilized Scrum, Jira to track the progress of the project, and Git for version control, achieving a 95% on-time project delivery rate',
+      '•	Streamlined project tracking using Scrum methodologies and Jira, while maintaining version control via Git',
       <br />,
-      '•	Improved overall website performance by 30%, resulting in faster loading times, smoother user interactions, and an enhanced user experience'],
+      '•	Enhanced website performance by 30%, leading to improved load times and superior user experience'],
     skills: ['Java', 'Spring Boot', 'JavaScript', 'React.js', 'Node.js', 'Python', 'Django', 'MySQL', 'Heroku', 'AWS', 'Selenium', 'Jenkins']
   },
 
@@ -64,15 +64,15 @@ const work = [
     company: 'HOPE CHURCH MOVEMENT AT ASU',
     logo: 'https://media.licdn.com/dms/image/C560BAQEC8Rbyw7vvvw/company-logo_200_200/0/1674601450872?e=1703116800&v=beta&t=k4ibJLH907S374BclLpFllZOOCzMXUQOwUb497f2aKg',
     url: 'https://career.asu.edu/organizations/hope-church-movement-at-asu/',
-    startDate: 'April 2020',
-    endDate: 'December 2022',
+    startDate: '04/2020',
+    endDate: '12/2022',
     location: '730 N Mill Ave, Tempe, AZ 85288',
     description: [
-      '•	Developed interpersonal skills and leadership within a guest experience team of 30',
+      '•	Developed effective communication and leadership within a guest experience team of 30',
       <br />,
-      '•	Created an immersive, inviting experience for 250 guests every time',
+      '•	•	Delivered exceptional experiences to over 250 guests consistently',
       <br />,
-      '•	Collaborated with cross-functional teams to identify opportunities for enhancing efficiency in processes, resulting in a 23% increase in efficiency',
+      '•	Collaborated with cross-functional teams to distribute tasks efficiently, resulting in a 23% increase in efficiency',
       <br />],
     skills: ['Leadership', 'Communication', 'Problem-Solving', 'Teamwork', 'Time Management', 'Positive Attitude', 'Time Management']
   }
@@ -83,13 +83,13 @@ const projects = [
   {
     name: 'EmploVerse',
     description: [
-      '•	Built EmploVerse, an employee management web application using Java Spring, React.js, and MySQL, with RBAC and JWT for secure authentication',
+      '•	Collaborated with a team of 5 members to build EmploVerse, a Java Spring-based web application, complemented with React.js and MySQL',
       <br />, <br />,
-      '•	Developed CRUD operations, attendance tracking, RBAC, and payroll system, resulting in a 35% improvement in efficiency in employee management',
+      '•	Developed CRUD operations, attendance tracking for 5 departments, RBAC across 4 levels, and JWT authentication',
       <br />, <br />,
-      '•	Implemented real-time chat functionality using WebSocket, resulting in a powerful 30% reduction in email correspondence for internal communication',
+      '•	Introduced real-time chat via WebSocket, cutting down email correspondence by 30% for internal communications',
       <br />, <br />,
-      '•	Utilized AWS and Heroku to deploy and manage, ensuring seamless scalability, robust security, and efficient backend services',
+      '•	Deployed and maintained on AWS and Heroku, ensuring scalability, security, and backend efficiency',
       <br />],
     stack: ['Java', 'Spring Boot', 'JavaScript', 'React.js', 'WebScket', 'MySQL', 'Heroku', 'AWS'],
     sourceCode: 'https://github.com/Shiyang-Zhao?tab=repositories',
@@ -98,13 +98,13 @@ const projects = [
   {
     name: 'Metasphere',
     description: [
-      '•	Developed Metasphere, a dynamic social media web application utilizing Python, Django, React.js, PostgreSQL, Bootstrap, and Docker',
+      '•	Developed Metasphere individually, a dynamic social media web application utilizing Python, Django, React.js, PostgreSQL, and Docker',
       <br />, <br />,
-      '•	Implemented a robust search, file sharing, and lively comments, and fosters vibrant conversations by private messaging and group chats utilizing WebSocket and Django Channels',
+      '•	Fostered user interaction with a robust search, file sharing, commenting, private messaging, and group chats via WebSocket and Django Channels',
       <br />, <br />,
-      '•	Integrated Jenkins with Webhooks in Github and Selenium to automate CI/CD pipeline',
+      '•	Streamlined the development process by integrating Jenkins with Github Webhooks and automating the CI/CD pipeline with Selenium',
       <br />, <br />,
-      '•	Increased the efficiency of file sharing by 20% and user engagement by 40%',
+      '•	Enhanced file-sharing efficiency by 20% and amplified user engagement by a notable 40%',
       <br />],
     stack: ['Python', 'Django', 'JavaScript', 'React.js', 'Docker', 'Bootstrap', 'Selenium', 'Jenkins', 'Git', 'Github'],
     sourceCode: 'https://github.com/Shiyang-Zhao?tab=repositories',
