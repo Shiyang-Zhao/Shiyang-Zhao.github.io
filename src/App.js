@@ -61,7 +61,7 @@ const App = () => {
       <Header />
 
       <main>
-        <Background />
+        {/* <Background /> */}
         <FadeInSection>
           <About />
         </FadeInSection>
