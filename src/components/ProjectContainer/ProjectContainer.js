@@ -18,7 +18,7 @@ const ProjectContainer = ({ project }) => (
       </ul>
     )}
 
-    {project.sourceCode && (
+    {/* {project.sourceCode && (
       <a
         href={project.sourceCode}
         aria-label='source code'
@@ -26,7 +26,7 @@ const ProjectContainer = ({ project }) => (
       >
         <GitHubIcon />
       </a>
-    )}
+    )} */}
     {/*{project.livePreview && (
       <a
         href={project.livePreview}

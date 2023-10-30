@@ -12,7 +12,7 @@ const Contact = () => {
     <section className='section contact center' id='contact'>
       <h2 className='section__title'>Contact</h2>
       <div>
-        {social.github && (
+        {/* {social.github && (
           <a
             href={social.github}
             aria-label='github'
@@ -22,7 +22,7 @@ const Contact = () => {
           >
             <GitHubIcon />
           </a>
-        )}
+        )} */}
 
         {social.linkedin && (
           <a
