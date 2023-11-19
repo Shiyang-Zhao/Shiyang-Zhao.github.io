@@ -61,7 +61,7 @@ const work = [
 
   {
     jobTitle: 'Guest Experience Associate',
-    company: 'HOPE CHURCH MOVEMENT AT ASU',
+    company: 'HOPE CHURCH MOVEMENT',
     logo: 'https://media.licdn.com/dms/image/C560BAQEC8Rbyw7vvvw/company-logo_200_200/0/1674601450872?e=1703116800&v=beta&t=k4ibJLH907S374BclLpFllZOOCzMXUQOwUb497f2aKg',
     url: 'https://hopechurchmovement.com/',
     startDate: '04/2020',
