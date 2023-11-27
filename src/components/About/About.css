@@ -16,11 +16,8 @@
   cursor: pointer;
   border-radius: 50%;
   border: 3px solid #fff;
-  /* Add a white border around the image */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  /* Add a subtle shadow */
   transition: all 0.3s ease;
-  /* Add a smooth transition effect */
 }
 
 .profile__image__dark {
