@@ -81,6 +81,21 @@ const work = [
 
 const projects = [
   {
+    name: 'Sales Prediction of Walmart',
+    description: [
+      '•	Utilized Python, linear regression, and Machine Learning techniques to predict sales across various Walmart departments',
+      <br />, <br />,
+      '•	Analyzed historical markdown data from 45 Walmart stores to understand the impact of holiday markdown events',
+      <br />, <br />,
+      '•	Leveraged NumPy and Pandas for data manipulation and Scikit-Learn for dimensionality reduction, significantly boosting the predictive accuracy of the model',
+      <br />, <br />,
+      '•	Achieved a 20% improvement in sales forecasting accuracy with the model implementation',
+      <br />],
+    stack: ['Python', 'NumPy', 'Pandas', 'Scikit-Learn', 'Machine Learning'],
+    sourceCode: 'https://github.com/Shiyang-Zhao?tab=repositories',
+    livePreview: 'https://github.com/Shiyang-Zhao?tab=repositories',
+  },
+  {
     name: 'EmploVerse',
     description: [
       '•	Collaborated with a team of 5 members to build EmploVerse, a Java Spring-based web application, complemented with React.js and MySQL',
@@ -92,8 +107,8 @@ const projects = [
       '•	Deployed and maintained on AWS and Heroku, ensuring scalability, security, and backend efficiency',
       <br />],
     stack: ['Java', 'Spring Boot', 'JavaScript', 'React.js', 'WebScket', 'MySQL', 'Heroku', 'AWS'],
-    sourceCode: 'https://github.com/Shiyang-Zhao?tab=repositories',
-    livePreview: 'https://github.com/Shiyang-Zhao?tab=repositories',
+    sourceCode: 'https://github.com/Shiyang-Zhao/EmploVerse-Backend',
+    livePreview: 'https://github.com/Shiyang-Zhao/EmploVerse-Backend',
   },
   {
     name: 'Metasphere',
@@ -107,8 +122,8 @@ const projects = [
       '•	Enhanced file-sharing efficiency by 20% and amplified user engagement by a notable 40%',
       <br />],
     stack: ['Python', 'Django', 'JavaScript', 'React.js', 'Docker', 'Bootstrap', 'Selenium', 'Jenkins', 'Git', 'Github'],
-    sourceCode: 'https://github.com/Shiyang-Zhao?tab=repositories',
-    livePreview: 'https://github.com/Shiyang-Zhao?tab=repositories',
+    sourceCode: 'https://github.com/Shiyang-Zhao/Metasphere',
+    livePreview: 'https://github.com/Shiyang-Zhao/Metasphere',
   },
   // {
   //   name: 'Python Crawler',
