@@ -62,7 +62,7 @@ const work = [
   {
     jobTitle: 'Guest Experience Associate',
     company: 'HOPE CHURCH MOVEMENT',
-    logo: 'https://media.licdn.com/dms/image/C560BAQEC8Rbyw7vvvw/company-logo_200_200/0/1674601450872?e=1703116800&v=beta&t=k4ibJLH907S374BclLpFllZOOCzMXUQOwUb497f2aKg',
+    logo: 'https://yt3.googleusercontent.com/3T1BqVBZ7K6q0FJclQDswhAJxAvcCWtwkSCeomd5dHLfV8h3PDUFtMXgyBUSA440ixmIEUa6=s900-c-k-c0x00ffffff-no-rj',
     url: 'https://hopechurchmovement.com/',
     startDate: '04/2020',
     endDate: '12/2022',
