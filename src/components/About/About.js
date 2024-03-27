@@ -18,8 +18,8 @@ const About = () => {
     <div className='about'>
       <div className='about__left'>
         {themeName === 'light' ?
-          <img src={profileImageLight} alt='Profile' className='profile__image__light'/> :
-          <img src={profileImageDark} alt='Profile' className='profile__image__dark'/>
+          <img src={profileImageLight} alt='Profile' className='profile__image__light' /> :
+          <img src={profileImageDark} alt='Profile' className='profile__image__dark' />
         }
       </div>
 

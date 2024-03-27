@@ -1,5 +1,5 @@
 import './Life.css';
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useCallback } from 'react';
 
 const Life = () => {
   // Using useMemo to load all image contexts only once
@@ -21,9 +21,9 @@ const Life = () => {
   // Get active images based on the selected section
   const activeImages = useMemo(() => createImageArray(imageContexts[selectedSection]), [imageContexts, selectedSection]);
 
-  const switchSection = (sectionName) => {
+  const switchSection = useCallback((sectionName) => {
     setSelectedSection(sectionName);
-  };
+  });
 
   return (
     <section id='life' className='section life'>
@@ -46,7 +46,6 @@ const Life = () => {
           </div>
         ))}
       </div>
-
     </section>
   );
 };
