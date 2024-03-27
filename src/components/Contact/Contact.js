@@ -9,53 +9,31 @@ import './Contact.css'
 const Contact = () => {
   const { social } = about;
   return (
-    <section className='section contact center' id='contact'>
+    <section id='contact' className='section contact'>
       <h2 className='section__title'>Contact</h2>
-      <div>
-        {/* {social.github && (
-          <a
-            href={social.github}
-            aria-label='github'
-            className='link link--icon'
-            target='_blank'
-            rel="noreferrer"
-          >
+      <div className='icons'>
+        {social.github && (
+          <a href={social.github} aria-label='github' className='link link--icon' target='_blank' rel="noreferrer">
             <GitHubIcon />
           </a>
-        )} */}
-
+        )}
         {social.linkedin && (
-          <a
-            href={social.linkedin}
-            aria-label='linkedin'
-            className='link link--icon'
-            target='_blank'
-            rel="noreferrer"
-          >
+          <a href={social.linkedin} aria-label='linkedin' className='link link--icon' target='_blank' rel="noreferrer">
             <LinkedInIcon />
           </a>
         )}
-
         {social.instagram && (
-          <a
-            href={social.instagram}
-            aria-label='instagram'
-            className='link link--icon'
-            target='_blank'
-            rel="noreferrer"
-          >
+          <a href={social.instagram} aria-label='instagram' className='link link--icon' target='_blank' rel="noreferrer">
             <InstagramIcon />
           </a>
         )}
-        {contact.email && <a
-          href={`mailto:${contact.email}`}
-          aria-label='email'
-          className='link link--icon'
-          rel="noreferrer"
-        >
-          <EmailIcon />
-        </a>}
+        {contact.email && (
+          <a href={`mailto:${contact.email}`} aria-label='email' className='link link--icon' rel="noreferrer">
+            <EmailIcon />
+          </a>
+        )}
       </div>
+
     </section >
   )
 }

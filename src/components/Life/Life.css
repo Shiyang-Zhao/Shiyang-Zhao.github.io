@@ -2,52 +2,24 @@
   max-width: 1100px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(22em, 1fr));
-  grid-gap: 2em;
+  grid-template-columns: repeat(auto-fill, minmax(12em, 1fr));
+  grid-gap: 1em;
 }
 
-.life__item {
-  padding: 2em;
-  box-shadow: var(--shadow);
-  text-align: center;
-  transition: all 0.2s linear;
-}
-
-.life__item:hover {
-  transform: translateY(-7px);
-}
-
-.each-slide {
-  height: 250px;
+.life__images {
+  max-width: 100%;
+  max-height: 200px;
+  overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
-  cursor: pointer;
 }
 
-/* .life__img {
-  display: block;
+.life__image {
   max-width: 100%;
   max-height: 100%;
   object-fit: contain;
-  border-radius: 4px;
-  aspect-ratio: auto;
 }
-
-.modal {
-  padding: 20px;
-}
-
-.modal img {
-  top: 50%;
-  left: 50%;
-  max-width: 80vw;
-  max-height: 100vh;
-  position: absolute;
-
-  transform: translate(-50%, -50%);
-  aspect-ratio: auto;
-} */
 
 @media only screen and (max-width: 800px) {
   .life__grid {
@@ -75,36 +47,4 @@
 .nav__bar__btn:hover {
   color: var(--clr-bg);
   background-color: var(--clr-fg);
-}
-
-.life__images {
-  column-count: 5;
-  column-gap: 5px;
-}
-
-.life__images img {
-  width: 100%;
-  display: block;
-  break-inside: avoid;
-  margin-bottom: 5px;
-  cursor: pointer;
-  object-fit: cover;
-  aspect-ratio: auto;
-  animation: flip 1s ease;
-  transition: all 0.3s ease;
-}
-
-.life__images img:hover {
-  transform: scale(2);
-  object-fit: contain;
-}
-
-@keyframes flip {
-  0% {
-    transform: perspective(400px) rotateY(0);
-  }
-
-  100% {
-    transform: perspective(400px) rotateY(360deg);
-  }
 }
