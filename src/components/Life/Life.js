@@ -16,14 +16,18 @@ const Life = () => {
   };
 
   // State to manage the currently active section
+  const [animate, setAnimate] = useState(false);
   const [selectedSection, setSelectedSection] = useState('volunteer');
 
   // Get active images based on the selected section
   const activeImages = useMemo(() => createImageArray(imageContexts[selectedSection]), [imageContexts, selectedSection]);
 
+  // Modified switchSection to toggle animation
   const switchSection = useCallback((sectionName) => {
     setSelectedSection(sectionName);
-  });
+    setAnimate(false); // Reset animation
+    setTimeout(() => setAnimate(true), 10); // Trigger animation
+  }, []);
 
   return (
     <section id='life' className='section life'>
@@ -39,10 +43,10 @@ const Life = () => {
           </button>
         ))}
       </div>
-      <div className='life__grid'>
+      <div className="life__grid">
         {activeImages.map((image, index) => (
           <div key={index} className="life__images">
-            <img src={image.src} alt="" loading="lazy" className="life__image" />
+            <img src={image.src} alt="" loading="lazy" className={`life__image ${animate ? 'animate' : ''}`} />
           </div>
         ))}
       </div>

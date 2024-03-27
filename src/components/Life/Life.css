@@ -54,3 +54,19 @@
   color: var(--clr-bg);
   background-color: var(--clr-fg);
 }
+
+.life__image.animate {
+  animation: fadeInAnimation 0.5s ease-in-out;
+}
+
+@keyframes fadeInAnimation {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
