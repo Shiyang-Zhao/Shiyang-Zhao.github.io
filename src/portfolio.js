@@ -1,7 +1,7 @@
 import resumePDF from '../src/files/Shiyang Zhao Resume.pdf'
 import transcriptPDF from '../src/files/Transcript.pdf'
-import profileImageLight from './files/ProfileImage/profileImageLight.jpg'
-import profileImageDark from './files/ProfileImage/profileImageDark.jpg'
+import profileImageLight from './files/ProfileImage/profileImageLight.webp'
+import profileImageDark from './files/ProfileImage/profileImageDark.webp'
 import React from 'react';
 
 const header = {

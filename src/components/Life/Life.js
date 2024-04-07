@@ -4,10 +4,10 @@ import React, { useState, useMemo, useEffect } from 'react';
 const Life = () => {
   // Preparing the image contexts
   const imageContexts = useMemo(() => ({
-    volunteer: require.context('../../files/Volunteer', true, /\.(png|jpe?g|svg)$/),
-    hobby: require.context('../../files/Hobby', true, /\.(png|jpe?g|svg)$/),
-    pet: require.context('../../files/Pet', true, /\.(png|jpe?g|svg)$/),
-    travel: require.context('../../files/Travel', true, /\.(png|jpe?g|svg)$/),
+    volunteer: require.context('../../files/Volunteer', true, /\.(webp)$/),
+    hobby: require.context('../../files/Hobby', true, /\.(webp)$/),
+    pet: require.context('../../files/Pet', true, /\.(webp)$/),
+    travel: require.context('../../files/Travel', true, /\.(webp)$/),
   }), []);
 
   // State to manage the currently active section and animation
