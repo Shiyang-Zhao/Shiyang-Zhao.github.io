@@ -15,7 +15,7 @@ import Footer from './components/Footer/Footer'
 
 const FadeInSection = (props) => {
   const [isVisible, setVisible] = useState(true);
-  const [prevScrollY, setPrevScrollY] = useState(window.scrollY); // Store previous scroll position
+  const [prevScrollY, setPrevScrollY] = useState(window.scrollY);
   const [scrollDir, setScrollDir] = useState("scrollDown");
   const domRef = useRef();
 
@@ -23,13 +23,12 @@ const FadeInSection = (props) => {
     const observer = new IntersectionObserver(entries => {
       entries.forEach(entry => setVisible(entry.isIntersecting));
     }, {
-      // Add a threshold of 10 pixels to the top and bottom
       rootMargin: '100px 0px',
+      threshold: 0.1
     });
 
     observer.observe(domRef.current);
 
-    // Update the previous scroll position on each scroll event
     const handleScroll = () => {
       setPrevScrollY(window.scrollY);
       if (prevScrollY < window.scrollY) {
@@ -42,7 +41,7 @@ const FadeInSection = (props) => {
 
     return () => {
       observer.unobserve(domRef.current);
-      window.removeEventListener('scroll', handleScroll); // Clean up the scroll event listener
+      window.removeEventListener('scroll', handleScroll);
     };
   }, [prevScrollY]);
 

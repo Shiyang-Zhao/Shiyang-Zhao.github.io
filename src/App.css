@@ -94,9 +94,8 @@ button {
 }
 
 main {
-  max-width: 1100px;
-  width: 95%;
   margin: 0 auto;
+  max-width: 1500px;
 }
 
 .section {
@@ -228,7 +227,6 @@ main {
   transform: translateY(-5px);
 }
 
-/* Fade-in effect from the top */
 .scrollUp {
   opacity: 0;
   transform: translateY(-20vh);
@@ -237,10 +235,9 @@ main {
 .fade-in-section.is-visible.scrollUp {
   opacity: 1;
   transform: translateY(0);
-  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  transition: all 0.6s ease-out;
 }
 
-/* Fade-in effect from the bottom */
 .scrollDown {
   opacity: 0;
   transform: translateY(20vh);
@@ -249,7 +246,19 @@ main {
 .fade-in-section.is-visible.scrollDown {
   opacity: 1;
   transform: translateY(0);
-  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  transition: all 0.6s ease-out;
+}
+
+@media screen and (min-width: 1000px) { /* Adjust the breakpoint as needed */
+  html, body {
+    overflow-x: hidden;
+  }
+}
+
+@media screen and (max-width: 800px) { /* Adjust the breakpoint as needed */
+  html, body {
+    overflow-x: auto;
+  }
 }
 
 @media only screen and (max-width: 800px) {
