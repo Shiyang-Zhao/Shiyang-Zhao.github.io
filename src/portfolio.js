@@ -13,7 +13,7 @@ const about = {
   name: 'Shiyang Zhao',
   role: 'Software Engineer',
   description:
-    'Computer Science Bachelor graduated from Arizona State University with experience in full-stack development',
+    'Computer Science Bachelor graduated from Arizona State University with experience in Full-Stack Development and Machine Learning',
   resume: resumePDF,
   transcript: transcriptPDF,
   social: {
@@ -26,26 +26,24 @@ const about = {
 const education = [
   {
     university: 'Arizona State University',
-    logoLight: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/ASU_Athletics_Logo.svg/2560px-ASU_Athletics_Logo.svg.png',
-    logoDark: 'https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExbmp4anVzYmxmMW1tbXd4cXBqNG9neGE2c3k1cTRzajFrM3B1aDl3dCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/jtvEC41AVdyfZVbGKj/giphy.gif',
+    logo: 'https://upload.wikimedia.org/wikipedia/en/a/a1/Arizona_State_University_seal.svg',
     url: 'https://www.asu.edu/',
     degree: 'B.S. Computer Science',
     startDate: '01/2020',
     endDate: '12/2022',
     GPA: '3.92',
-    honor: ['Summa Cum Laude', 'New American University Scholarship UG', 'Dean List']
+    honor: ['Summa Cum Laude', 'New American University Scholarship UG', 'Dean\'s List']
   },
-  // {
-  //   university: 'Coming soon',
-  //   logoLight: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/ASU_Athletics_Logo.svg/2560px-ASU_Athletics_Logo.svg.png',
-  //   logoDark: 'https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExbmp4anVzYmxmMW1tbXd4cXBqNG9neGE2c3k1cTRzajFrM3B1aDl3dCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/jtvEC41AVdyfZVbGKj/giphy.gif',
-  //   url: 'https://www.asu.edu/',
-  //   degree: 'Coming soon',
-  //   startDate: '01/2020',
-  //   endDate: '12/2022',
-  //   GPA: 'Coming soon',
-  //   honor: ['Coming soon']
-  // }
+  {
+    university: 'University of Illinois Urbana-Champaign',
+    logo: 'https://upload.wikimedia.org/wikipedia/commons/a/af/University_of_Illinois_seal.svg',
+    url: 'https://illinois.edu/',
+    degree: 'Master of Computer Science',
+    startDate: '08/2024',
+    endDate: '05/2025',
+    GPA: '4.00',
+    honor: ['Coming soon']
+  }
 ]
 
 
@@ -68,8 +66,6 @@ const work = [
       '•	Enhanced website performance by 30%, leading to improved load times and superior user experience'],
     skills: ['Java', 'Spring Boot', 'JavaScript', 'React.js', 'Node.js', 'Python', 'Django', 'MySQL', 'Heroku', 'AWS', 'Selenium', 'Jenkins']
   },
-
-
   {
     jobTitle: 'Guest Experience Associate',
     company: 'HOPE CHURCH MOVEMENT',

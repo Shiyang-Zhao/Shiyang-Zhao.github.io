@@ -13,9 +13,10 @@ const Work = () => {
         <div className='work__grid'>
           {work.map((job) => (
             <div key={uniqid()} className='work__item'>
-              <h3 className='work__title'><a href={job.url} target="_blank">
-                <img className='work__logo' src={job.logo} loading='lazy'/>
-              </a>
+              <h3 className='work__title'>
+                <a href={job.url} target='_blank' rel='noreferrer'>
+                  <img className='work__logo' alt='logo' src={job.logo} loading='lazy' />
+                </a>
                 {job.jobTitle}
               </h3>
               <p className='work__company'>{job.company}</p>
