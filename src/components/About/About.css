@@ -5,40 +5,35 @@
 
 .about__left {
   flex: 0 0 auto;
-  /* This prevents the image from growing */
   margin-right: 20px;
-  /* Add some space between the image and content */
 }
 
 .profile__image__light,
 .profile__image__dark {
-  width: 450px;
+  width: 30rem;
   cursor: pointer;
-  border-radius: 50%;
-  border: 3px solid #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  /* border-radius: 50%; */
+  /* border: 3px solid #fff; */
+  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
   transition: all 0.3s ease;
 }
 
-.profile__image__dark {
+/* .profile__image__dark {
   border: 3px solid #23283e;
-}
+} */
 
-/* Hover effect: Increase the size and the shadow on hover */
-.profile__image__light:hover,
+/* .profile__image__light:hover,
 .profile__image__dark:hover {
   border-color: var(--clr-primary);
   transform: scale(1.05);
   box-shadow: 0 4px 8px var(--clr-primary);
-}
+} */
 
 .about__right {
   flex: 1;
   text-align: center;
   display: flex;
-  /* Use flex to center the about_greeting horizontally */
   flex-direction: column;
-  /* Stack the content vertically */
 }
 
 .about__role {
@@ -208,12 +203,12 @@
     object-fit: cover;
   }
 
-  .profile__image__light:hover,
+  /* .profile__image__light:hover,
   .profile__image__dark:hover {
     border-color: var(--clr-primary);
     transform: scale(1.05);
     box-shadow: 0 4px 8px var(--clr-primary);
-  }
+  } */
 
   .about__right {
     margin-top: 120px;
@@ -230,10 +225,6 @@
   .about__greeting h1 {
     font-size: 40px;
     margin: 0 auto;
-  }
-
-  .profile__image {
-    width: 300px;
   }
 
   .about__role {

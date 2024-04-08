@@ -34,6 +34,17 @@ const education = [
     endDate: '12/2022',
     GPA: '3.92',
     honor: ['Summa Cum Laude', 'New American University Scholarship UG', 'Dean List']
+  },
+  {
+    university: 'Coming soon',
+    logoLight: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/ASU_Athletics_Logo.svg/2560px-ASU_Athletics_Logo.svg.png',
+    logoDark: 'https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExbmp4anVzYmxmMW1tbXd4cXBqNG9neGE2c3k1cTRzajFrM3B1aDl3dCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/jtvEC41AVdyfZVbGKj/giphy.gif',
+    url: 'https://www.asu.edu/',
+    degree: 'Coming soon',
+    startDate: '01/2020',
+    endDate: '12/2022',
+    GPA: 'Coming soon',
+    honor: ['Coming soon']
   }
 ]
 
