@@ -7,7 +7,7 @@ const Life = () => {
     volunteer: require.context('../../files/Volunteer', true, /\.(webp)$/),
     hobby: require.context('../../files/Hobby', true, /\.(webp)$/),
     pet: require.context('../../files/Pet', true, /\.(webp)$/),
-    travel: require.context('../../files/Travel', true, /\.(webp)$/),
+    trip: require.context('../../files/Trip', true, /\.(webp)$/),
   }), []);
 
   // State to manage the currently active section and animation

@@ -164,7 +164,7 @@ const skills = [
   { name: 'VS Code', url: 'https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_vscode_icon_130084.png', destination: 'https://code.visualstudio.com/', }
 ];
 
-const life = ['Volunteer', 'Hobby', 'Pet', 'Travel'];
+const life = ['Volunteer', 'Hobby', 'Pet', 'Trip'];
 
 const contact = {
   email: 'shiyang2575326696@gmail.com',
