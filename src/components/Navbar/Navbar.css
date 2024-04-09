@@ -9,7 +9,7 @@
 
 .nav__list-item {
   margin-left: 1.5em;
-  transition: all 0.3s ease;
+  transition: transform 0.3s ease;
 }
 
 .nav__list-item:hover {
@@ -22,7 +22,7 @@
 
 .nav__theme {
   margin-top: 0.4em;
-  transition: all 0.3s ease;
+  transition: transform 0.3s ease;
 }
 
 .nav__theme:hover{

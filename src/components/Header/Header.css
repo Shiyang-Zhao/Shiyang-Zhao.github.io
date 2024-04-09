@@ -1,5 +1,5 @@
 .header {
-  height: 6em;
+  height: 4em;
   max-width: 1500px;
   margin: 0 auto;
   margin-bottom: 5rem;
@@ -9,7 +9,7 @@
 
 .header h3 {
   z-index: 1;
-  transition: all 0.3s ease;
+  transition: transform 0.3s ease;
 }
 
 .header h3:hover {

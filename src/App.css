@@ -84,13 +84,13 @@ button {
 }
 
 .dark {
-  --clr-bg: #23283e;
-  --clr-bg-alt: #2a2f4c;
-  --clr-fg: #bdbddd;
-  --clr-fg-alt: #cdcdff;
-  --clr-primary: #90a0d9;
-  --shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
-    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  --clr-bg: #000000;
+  --clr-bg-alt: #2b2b2b;
+  --clr-fg: #ffffff;
+  --clr-fg-alt: #a9a9a9;
+  --clr-primary: #b0b0b0;
+  --shadow: rgba(80, 80, 80, 0.5) 0px 15px 50px 0px, /* Lighter gray for the main shadow */
+            rgba(80, 80, 80, 0.3) 0px 5px 15px 0px; /* Matching lighter gray for the inner shadow, increased opacity */
 }
 
 main {
@@ -99,28 +99,15 @@ main {
 }
 
 .section {
-  margin: 5rem 2rem;
+  margin: 6rem 2rem;
 }
 
 .section__title {
   text-align: center;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   text-transform: uppercase;
   cursor: pointer;
   text-decoration: none;
-  border-radius: 50px;
-  border: none;
-  transition: all 0.5s ease 0s;
-}
-
-.section__title:hover {
-  color: #fff;
-  background-color: var(--clr-fg);
-  text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
-  box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
-  -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
-  -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
-  transition: all 0.5s ease 0s;
 }
 
 .center {
@@ -235,7 +222,7 @@ main {
 .fade-in-section.is-visible.scrollUp {
   opacity: 1;
   transform: translateY(0);
-  transition: all 0.6s ease-out;
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
 
 .scrollDown {
@@ -246,17 +233,23 @@ main {
 .fade-in-section.is-visible.scrollDown {
   opacity: 1;
   transform: translateY(0);
-  transition: all 0.6s ease-out;
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
 
-@media screen and (min-width: 1000px) { /* Adjust the breakpoint as needed */
-  html, body {
+@media screen and (min-width: 1000px) {
+
+  /* Adjust the breakpoint as needed */
+  html,
+  body {
     overflow-x: hidden;
   }
 }
 
-@media screen and (max-width: 800px) { /* Adjust the breakpoint as needed */
-  html, body {
+@media screen and (max-width: 800px) {
+
+  /* Adjust the breakpoint as needed */
+  html,
+  body {
     overflow-x: auto;
   }
 }
