@@ -44,7 +44,6 @@ const About = () => {
               .start();
           }}></Typewriter>
         </div>
-        <div className='about__desc2'>{description}</div>
         <div className='about__contact center'>
           {resume && (
             <a href={resume} target="_blank" rel="noreferrer">

@@ -27,13 +27,6 @@
   transform: scale(2);
 }
 
-@media only screen and (max-width: 800px) {
-  .life__grid {
-    justify-content: center;
-    grid-template-columns: repeat(auto-fit, minmax(18em, 1fr));
-  }
-}
-
 .nav__bar {
   display: flex;
   margin-bottom: 1.5rem;
@@ -68,5 +61,12 @@
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .life__grid {
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(18em, 1fr));
   }
 }

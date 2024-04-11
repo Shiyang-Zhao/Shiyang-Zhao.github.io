@@ -15,9 +15,3 @@
 .header h3:hover {
   transform: scale(1.1);
 }
-
-@media (max-width: 600px) {
-  .header {
-    height: 6em;
-  }
-}

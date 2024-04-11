@@ -10,7 +10,7 @@
   transition: all 0.2s linear;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 900px) {
   .projects__grid {
     justify-content: center;
   }

@@ -1,5 +1,6 @@
 .about {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   align-items: center;
 }
 
@@ -18,15 +19,8 @@
 }
 
 .about__right {
-  flex: 1;
   text-align: center;
-  display: flex;
-  flex-direction: column;
   animation: slideLeft 1s ease forwards;
-}
-
-.about__role {
-  margin-top: 1.2em;
 }
 
 .about__desc1,
@@ -36,12 +30,8 @@
   margin-top: 2.4em;
 }
 
-.about__desc2 {
-  display: none;
-}
-
 .about__contact {
-  align-self: center;
+  display: inline-flex;
 }
 
 .about .link--icon {
@@ -179,7 +169,7 @@
   }
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 900px) {
   .about {
     display: flex;
     flex-direction: column;
@@ -193,7 +183,7 @@
   }
 
   .about__right {
-    margin-top: 120px;
+    margin-top: 6rem;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -205,16 +195,12 @@
   }
 
   .about__greeting h1 {
-    font-size: 40px;
+    font-size: 2.5rem;
     margin: 0 auto;
   }
 
   .about__desc1 {
     display: none;
-  }
-
-  .about__desc2 {
-    display: flex;
   }
 
   .about__role {

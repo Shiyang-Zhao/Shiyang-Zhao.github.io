@@ -51,19 +51,13 @@ button {
   cursor: pointer;
 }
 
-@media (max-width: 900px) {
-  h1 {
-    font-size: 2.6rem;
-  }
-}
-
-
 .app {
   font-family: 'Poppins', sans-serif;
   line-height: 1.5;
   color: var(--clr-fg);
   background-color: var(--clr-bg);
   transition: background-color 0.4s ease-out;
+  overflow: hidden;
 }
 
 .matrixCanvas {
@@ -237,26 +231,9 @@ main {
   transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
 
-@media screen and (min-width: 1000px) {
-
-  /* Adjust the breakpoint as needed */
-  html,
-  body {
-    overflow-x: hidden;
+@media (max-width: 900px) {
+  h1 {
+    font-size: 2.6rem;
   }
 }
 
-@media screen and (max-width: 800px) {
-
-  /* Adjust the breakpoint as needed */
-  html,
-  body {
-    overflow-x: auto;
-  }
-}
-
-@media only screen and (max-width: 800px) {
-  .app {
-    overflow-x: hidden;
-  }
-}

@@ -64,7 +64,7 @@
   margin-bottom: 0.25em;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 900px) {
   .education__grid {
     justify-content: center;
   }

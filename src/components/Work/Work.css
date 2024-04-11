@@ -71,7 +71,7 @@
 }
 
 /* Responsive styles for screen sizes up to 800px */
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 900px) {
   .work__grid {
     justify-content: center;
   }
