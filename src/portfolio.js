@@ -40,8 +40,8 @@ const education = [
     url: 'https://illinois.edu/',
     degree: 'Master of Computer Science',
     startDate: '08/2024',
-    endDate: '05/2025',
-    GPA: '4.00',
+    endDate: '12/2025',
+    GPA: 'N/A',
     honor: ['Coming soon']
   }
 ]
