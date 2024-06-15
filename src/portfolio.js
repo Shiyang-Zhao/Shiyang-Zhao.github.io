@@ -17,7 +17,7 @@ const about = {
   resume: resumePDF,
   transcript: transcriptPDF,
   social: {
-    linkedin: 'https://www.linkedin.com/in/shiyang-zhao-0a3a411a0/',
+    linkedin: 'https://www.linkedin.com/in/shiyang-zhao/',
     github: 'https://github.com/Shiyang-Zhao',
     instagram: 'https://www.instagram.com/shawn_zhao0/'
   },
