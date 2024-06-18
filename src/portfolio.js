@@ -167,8 +167,8 @@ const skills = [
   { name: 'Heroku', url: 'https://www.svgrepo.com/show/355052/heroku.svg', destination: 'https://dashboard.heroku.com/login' },
   { name: '.NET Framwork', url: 'https://static.wikia.nocookie.net/logopedia/images/c/c7/Microsoft_.NET_StartupImage.svg', destination: 'https://dotnet.microsoft.com/en-us/download/dotnet-framework' },
   { name: 'Selenium', url: 'https://seeklogo.com/images/S/selenium-logo-A1B53CEFB0-seeklogo.com.png', destination: 'selenium.dev' },
-  { name: 'Jenkins', url: 'https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_jenkins_icon_130515.png', destination: 'https://www.jenkins.io/', },
-  { name: 'VS Code', url: 'https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_vscode_icon_130084.png', destination: 'https://code.visualstudio.com/', }
+  { name: 'Jenkins', url: 'https://upload.wikimedia.org/wikipedia/commons/e/e9/Jenkins_logo.svg', destination: 'https://www.jenkins.io/', },
+  { name: 'VS Code', url: 'https://upload.wikimedia.org/wikipedia/commons/9/9a/Visual_Studio_Code_1.35_icon.svg', destination: 'https://code.visualstudio.com/', }
 ];
 
 const life = ['Volunteer', 'Hobby', 'Pet', 'Trip'];
