@@ -1,0 +1,70 @@
+.work__grid {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(18em, 1fr));
+  grid-gap: 2em;
+}
+
+.work__item {
+  padding: 2em;
+  box-shadow: var(--shadow);
+  transition: all 0.2s linear;
+}
+
+.work__title {
+  font-size: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+.work__company {
+  font-weight: bold;
+}
+
+.work__logo {
+  width: 4rem;
+  margin-right: 10px;
+  vertical-align: middle;
+  border-radius: 50%;
+}
+
+.work__dates,
+.work__location {
+  color: #999999;
+}
+
+.work__description {
+  margin-bottom: 0.5em;
+}
+
+.work__skills {
+  margin-top: 1em;
+}
+
+.work__skills-title {
+  margin-bottom: 0.5em;
+}
+
+.work__skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.work__skill {
+  margin-right: 1em;
+  margin-bottom: 0.5em;
+  padding: 0.3em 0.6em;
+  border-radius: 4px;
+  color: black;
+  background-color: rgb(184, 184, 184);
+  font-size: 0.9em;
+}
+
+/* Responsive styles for screen sizes up to 800px */
+@media only screen and (max-width: 900px) {
+  .work__grid {
+    justify-content: center;
+  }
+}

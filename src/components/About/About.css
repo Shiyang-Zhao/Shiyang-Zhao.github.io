@@ -1,0 +1,241 @@
+.about {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+.about__left {
+  margin: 0 5%;
+  animation: slideRight 1s ease forwards;
+}
+
+.profile__image__light,
+.profile__image__dark {
+  width: 30rem;
+  transform: translateY(-50px);
+  cursor: pointer;
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 1) 85%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  mask-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 1) 85%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+
+.about__right {
+  text-align: center;
+  animation: slideLeft 1s ease forwards;
+}
+
+.about__desc1,
+.about__contact {
+  font-size: 1rem;
+  max-width: 600px;
+  margin-top: 2.4em;
+}
+
+.about__contact {
+  display: inline-flex;
+}
+
+.about .link--icon {
+  margin-right: 0.8em;
+}
+
+.about .btn--outline {
+  margin-right: 1em;
+}
+
+.about__greeting h1 {
+  position: absolute;
+  transform: translate(20px, -100px);
+  font-size: 3.3rem;
+  color: transparent;
+
+  @media only screen and (max-width: 1100px) {
+    font-size: 2.5rem;
+  }
+
+  @media only screen and (max-width: 900px) {
+    font-size: 2rem;
+  }
+
+  @media only screen and (max-width: 700px) {
+    font-size: 1.6rem;
+  }
+
+  @media only screen and (max-width: 480px) {
+    font-size: 1.6rem;
+  }
+
+  &:hover span:nth-child(1) {
+    transform: translateY(-1rem);
+
+    @media only screen and (max-width: 1100px) {
+      transform: translateY(-0.7rem);
+    }
+
+    @media only screen and (max-width: 900px) {
+      transform: translateY(-0.55rem);
+    }
+
+    @media only screen and (max-width: 700px) {
+      transform: translateY(-0.47rem);
+    }
+
+    @media only screen and (max-width: 480px) {
+      transform: translateY(-0.4rem);
+    }
+  }
+
+  &:hover span:nth-child(2) {
+    transform: translateY(1rem);
+
+    @media only screen and (max-width: 1100px) {
+      transform: translateY(0.7rem);
+    }
+
+    @media only screen and (max-width: 900px) {
+      transform: translateY(0.55rem);
+    }
+
+    @media only screen and (max-width: 700px) {
+      transform: translateY(0.47rem);
+    }
+
+    @media only screen and (max-width: 480px) {
+      transform: translateY(0.4rem);
+    }
+  }
+
+  &:hover span:nth-child(3) {
+    opacity: 1;
+    transition: opacity 700ms ease;
+  }
+
+  & span:nth-child(1),
+  & span:nth-child(2) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: var(--clr-primary);
+    transition: transform 0.5s ease;
+    overflow: hidden;
+  }
+
+  & span:nth-child(1) {
+    clip-path: polygon(0 0, 100% 0%, 100% 50%, 0 50%);
+  }
+
+  & span:nth-child(2) {
+    clip-path: polygon(0 50%, 100% 50%, 100% 100%, 0 100%);
+  }
+
+  & span:nth-child(3) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 350ms ease;
+    font-size: 1.8rem;
+    color: #fff;
+    background: var(--clr-primary);
+    width: 97.5%;
+    padding-left: 5px;
+    text-align: center;
+    letter-spacing: 0.5rem;
+    word-spacing: 1rem;
+    line-height: 100%;
+
+    @media only screen and (max-width: 1100px) {
+      font-size: 1.2rem;
+    }
+
+    @media only screen and (max-width: 900px) {
+      font-size: 1rem;
+      width: 97%;
+      letter-spacing: 4px;
+    }
+
+    @media only screen and (max-width: 700px) {
+      font-size: 0.85rem;
+      width: 96%;
+      letter-spacing: 3px;
+      word-spacing: 0.5rem;
+    }
+
+    @media only screen and (max-width: 480px) {
+      font-size: 0.65rem;
+      letter-spacing: 2px;
+      word-spacing: 0.2rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .profile__image__light,
+  .profile__image__dark {
+    aspect-ratio: 1/1;
+    object-fit: cover;
+  }
+
+  .about__right {
+    margin-top: 6rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about__greeting {
+    width: fit-content;
+    height: fit-content;
+  }
+
+  .about__greeting h1 {
+    font-size: 2.5rem;
+    margin: 0 auto;
+  }
+
+  .about__desc1 {
+    display: none;
+  }
+
+  .about__role {
+    margin: 0 auto 2rem auto;
+  }
+}
+
+@keyframes slideRight {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideLeft {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}

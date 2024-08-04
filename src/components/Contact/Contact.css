@@ -1,0 +1,13 @@
+.contact {
+  flex-direction: column;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.link--icon {
+  margin: 0 10px;
+}
