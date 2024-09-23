@@ -52,6 +52,32 @@ const education = [
 const work = [
   {
     jobTitle: "Software Engineer",
+    company: "Civilience",
+    logo: "/assets/images/Logo/civilience.webp",
+    url: "https://civilience.social/solutions/",
+    startDate: "08/2024",
+    endDate: "Present",
+    location: "Omaha, NE 68131",
+    description: [
+      "•	Developed and maintained web applications using React.js, enhancing user experience",
+      "•	Integrated AWS services into web applications with AWS Amplify, streamlining deployment and reducing deployment time by 20%",
+      "•	Implemented user authentication with AWS Cognito and managed databases using AWS DynamoDB and PostgreSQL for improved security and scalability",
+      "•	Built and managed serverless APIs using AWS Lambda and API Gateway, reducing server costs by 25%",
+    ],
+    skills: [
+      "Java",
+      "React.js",
+      "Next.js",
+      "AWS Cognito",
+      "AWS Amplify",
+      "AWS Lambda",
+      "AWS API Gateway",
+      "AWS DynamoDB",
+      "PostgreSQL",
+    ],
+  },
+  {
+    jobTitle: "Software Engineer",
     company: "RND4IMPACT INC.",
     logo: "/assets/images/Logo/rnd4impact.webp",
     url: "https://www.rnd4impact.com/",
@@ -59,15 +85,16 @@ const work = [
     endDate: "03/2024",
     location: "690 Saratoga Ave #100, San Jose, CA 95129",
     description: [
-      "•	Developed full-stack web applications that utilize technologies such as Java, Python, and JavaScript including Spring Boot, React.js, Django",
-      "•	Collaborated with a team of 5 members to gather requirements, design system architectures, and deliver solutions",
-      "•	Streamlined project tracking using Scrum methodologies and Jira, while maintaining version control via Git",
-      "•	Enhanced website performance by 30%, leading to improved load times and superior user experience",
+      "•	Developed full-stack web applications using technologies such as Java, Python, and TypeScript, with frameworks like Spring Boot, Next.js, and Django",
+      "•	Implemented RESTful APIs and integrated third-party services to enhance functionality and scalability",
+      "•	Automated deployment processes using CI/CD pipelines with Jenkins, resulting in a 40% reduction in deployment time",
+      "•	Optimized code quality and reduced bugs by 20% using Selenium for automated testing",
     ],
     skills: [
       "Java",
       "Spring Boot",
       "JavaScript",
+      "TypeScript",
       "React.js",
       "Node.js",
       "Python",
@@ -106,12 +133,33 @@ const work = [
 
 const projects = [
   {
+    "name": "Distributed Systems",
+    "description": [
+      "•	Developed a distributed system that combines a log querying service and a group membership service to improve debugging and system monitoring",
+      "•	Implemented a Distributed Log Querier to execute grep commands across multiple virtual machines, enhancing speed and efficiency by performing local, parallel queries and ensuring fault tolerance, improving query performance by 40%",
+      "•	Designed a Distributed Group Membership Service with two failure detection variants—Basic SWIM-style Ping-Ack and Ping-Ack with Suspicion—to maintain an updated list of connected machines and detect failures quickly, reducing detection time by 50%",
+      "•	Integrated both services to log and query membership changes and failures, providing a scalable, efficient, and fault-tolerant system capable of handling multiple simultaneous machine failures. The solution was recognized as the best in Java by the professor for its optimal performance and design"
+    ],
+    "stack": [
+      "Java",
+      "Bash",
+      "Distributed Systems",
+      "SWIM Protocol",
+      "Sockets",
+      "Multiple threads",
+      "CS VM Cluster",
+      "Git"
+    ],
+    sourceCode: "https://courses.grainger.illinois.edu/cs425/fa2024/assignments.html",
+    livePreview: "https://courses.grainger.illinois.edu/cs425/fa2024/MPDemos/mp1-java-fa24.tar.gz",
+  },
+  {
     name: "Metasphere",
     description: [
-      "•	Developed Metasphere individually, a dynamic social media web application utilizing Python, Django, React.js, PostgreSQL, and Docker",
-      "•	Fostered user interaction with a robust search, file sharing, commenting, private messaging, and group chats via WebSocket and Django Channels",
-      "•	Streamlined the development process by integrating Jenkins with Github Webhooks and automating the CI/CD pipeline with Selenium",
-      "•	Enhanced file-sharing efficiency by 20% and amplified user engagement by a notable 40%",
+      "•	Developed Metasphere, a dynamic social media platform merging Reddit and Instagram features using Django and PostgreSQL",
+      "•	Implemented posts, chat, comments, stories, and notifications with real-time updates via WebSocket, Django Channels, and task scheduling with Celery",
+      "•	Streamlined CI/CD by integrating Jenkins with GitHub Webhooks and automating the pipeline with Selenium, ensuring efficient and reliable deployments",
+      "•	Boosted performance by optimizing database queries, implementing caching, and refining backend processes, reducing server response times by 30% and increasing data processing efficiency by 25%",
     ],
     stack: [
       "Python",
@@ -131,16 +179,18 @@ const projects = [
   {
     name: "EmploVerse",
     description: [
-      "•	Collaborated with a team of 5 members to build EmploVerse, a Java Spring-based web application, complemented with React.js and MySQL",
-      "•	Developed CRUD operations, attendance tracking for 5 departments, RBAC across 4 levels, and JWT authentication",
-      "•	Introduced real-time chat via WebSocket, cutting down email correspondence by 30% for internal communications",
-      "•	Deployed and maintained on AWS and Heroku, ensuring scalability, security, and backend efficiency",
+      "•	Developed EmploVerse, an employee management application using Java Spring, Next.js, and MySQL",
+      "•	Implemented attendance tracking, RBAC across 4 levels, secure JWT authentication, and performance management to automate administrative tasks by 45%",
+      "•	Utilized real-time chat and notifications via WebSocket, improving internal communication by 30%",
+      "•	Deployed on AWS, using S3 for storage, RDS for databases, EC2 for computing, and auto-scaling with load balancing for traffic management and efficiency",
     ],
     stack: [
       "Java",
       "Spring Boot",
       "JavaScript",
+      "TypeScript",
       "React.js",
+      "Next.js",
       "WebScket",
       "MySQL",
       "Heroku",
@@ -149,25 +199,6 @@ const projects = [
     sourceCode: "https://github.com/Shiyang-Zhao/EmploVerse-Backend",
     livePreview: "https://github.com/Shiyang-Zhao/EmploVerse-Backend",
   },
-  {
-    name: "Sales Prediction of Walmart",
-    description: [
-      "•	Utilized Python, linear regression, and Machine Learning techniques to predict sales across various Walmart departments",
-      "•	Analyzed historical markdown data from 45 Walmart stores to understand the impact of holiday markdown events",
-      "•	Leveraged NumPy and Pandas for data manipulation and Scikit-Learn for dimensionality reduction, significantly boosting the predictive accuracy of the model",
-      "•	Achieved a 20% improvement in sales forecasting accuracy with the model implementation",
-    ],
-    stack: ["Python", "NumPy", "Pandas", "Scikit-Learn", "Machine Learning"],
-    sourceCode: "https://github.com/Shiyang-Zhao?tab=repositories",
-    livePreview: "https://github.com/Shiyang-Zhao?tab=repositories",
-  },
-  // {
-  //   name: 'Python Crawler',
-  //   description: ['• Developed a python crawler to simplify the process of gathering and organizing information about graduate admission requirements for various universities and institutions.'],
-  //   stack: ['Python', 'Scrapy'],
-  //   sourceCode: 'https://github.com/Shiyang-Zhao?tab=repositories',
-  //   livePreview: 'https://github.com/Shiyang-Zhao?tab=repositories',
-  // },
 ];
 
 const skills = [
