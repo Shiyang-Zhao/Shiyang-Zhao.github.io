@@ -26,7 +26,7 @@ const Education: React.FC = () => {
                         loading="lazy"
                       />
                     </Link>
-                    {ed.university}
+                    <div>{ed.university}</div>
                   </h3>
                   <p className="education__degree">{ed.degree}</p>
                   <p className="education__date">{`${ed.startDate} - ${ed.endDate}`}</p>
