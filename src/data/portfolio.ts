@@ -75,7 +75,7 @@ const work = [
     ],
   },
   {
-    jobTitle: "Software Engineer Intern",
+    jobTitle: "Software Engineer",
     company: "RND4IMPACT INC.",
     logo: "/assets/images/Logo/rnd4impact.webp",
     url: "https://www.rnd4impact.com/",
