@@ -24,8 +24,8 @@ const About: React.FC = () => {
             src={profileImageLight}
             alt="Profile"
             className="profile__image__light"
-            width={480}
-            height={480}
+            width={500}
+            height={500}
             priority
           />
         ) : (
@@ -33,8 +33,8 @@ const About: React.FC = () => {
             src={profileImageDark}
             alt="Profile"
             className="profile__image__dark"
-            width={480}
-            height={480}
+            width={500}
+            height={500}
             priority
           />
         )}
