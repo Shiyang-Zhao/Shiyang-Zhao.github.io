@@ -9,7 +9,7 @@ interface ThemeContextProps {
 const ThemeContext = createContext<ThemeContextProps | undefined>(undefined);
 
 export const ThemeProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
-    const [themeName, setThemeName] = useState<string>('dark');
+    const [themeName, setThemeName] = useState<string>('light');
 
     useEffect(() => {
         const storedTheme = localStorage.getItem('themeName');
