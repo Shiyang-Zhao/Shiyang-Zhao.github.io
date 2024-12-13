@@ -1,7 +1,6 @@
 const resumePDF = "/assets/files/Resume.pdf";
 const transcriptPDF = "/assets/files/Transcript.pdf";
-const profileImageLight = "/assets/images/ProfileImage/profileImageLight.webp";
-const profileImageDark = "/assets/images/ProfileImage/profileImageDark.webp";
+const profileImage = "/assets/images/ProfileImage/profileImage.webp";
 
 const header = {
   homepage: "/",
@@ -12,7 +11,7 @@ const about = {
   name: "Shiyang Zhao",
   role: "Software Engineer",
   description:
-    "I'm a Master in Computer Science student at the University of Illinois Urbana-Champaign. Passionate about software engineering and machine learning.",
+    "Pursuing a Master's in Computer Science at UIUC, with a passion for software engineering and machine learning.",
   resume: resumePDF,
   transcript: transcriptPDF,
   social: {
@@ -341,6 +340,5 @@ export {
   projects,
   skills,
   contact,
-  profileImageLight,
-  profileImageDark,
+  profileImage,
 };

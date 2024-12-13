@@ -52,7 +52,7 @@ button {
 }
 
 .app {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   line-height: 1.5;
   color: var(--clr-fg);
   background-color: var(--clr-bg);
@@ -84,8 +84,8 @@ button {
   --clr-fg: #ffffff;
   --clr-fg-alt: #a9a9a9;
   --clr-primary: #b0b0b0;
-  --shadow: rgba(150, 150, 150, 0.4) 0px 15px 30px 0px, /* Lighter gray for the main shadow, with softer spread */
-            rgba(150, 150, 150, 0.25) 0px 5px 10px 0px; /* Lighter gray for the inner shadow, with reduced opacity for subtlety */
+  --shadow: rgba(150, 150, 150, 0.4) 0px 15px 30px 0px,
+    rgba(150, 150, 150, 0.25) 0px 5px 10px 0px;
 }
 
 main {
@@ -121,7 +121,7 @@ main {
 }
 
 .link::before {
-  content: '';
+  content: "";
   display: inline;
   width: 0%;
   height: 0.2em;
@@ -169,7 +169,7 @@ main {
 }
 
 .btn--outline:before {
-  content: '';
+  content: "";
   position: absolute;
   background-color: var(--clr-primary);
   right: 100%;
@@ -236,4 +236,3 @@ main {
     font-size: 2.6rem;
   }
 }
-

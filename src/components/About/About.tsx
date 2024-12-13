@@ -5,7 +5,7 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import EmailIcon from "@mui/icons-material/EmailSharp";
 import Typewriter from "typewriter-effect";
-import { profileImageLight, profileImageDark } from "@/data/portfolio";
+import { profileImage } from "@/data/portfolio";
 import { useTheme } from "@/contexts/theme";
 import { about, contact } from "@/data/portfolio";
 import "./About.css";
@@ -21,7 +21,7 @@ const About: React.FC = () => {
       <div className="about__left">
         {themeName === "light" ? (
           <Image
-            src={profileImageLight}
+            src={profileImage}
             alt="Profile"
             className="profile__image__light"
             width={500}
@@ -30,7 +30,7 @@ const About: React.FC = () => {
           />
         ) : (
           <Image
-            src={profileImageDark}
+            src={profileImage}
             alt="Profile"
             className="profile__image__dark"
             width={500}
@@ -44,9 +44,9 @@ const About: React.FC = () => {
         {name && (
           <div className="about__greeting">
             <h1>
-              Hi, I am {name}
-              <span>Hi, I am {name}</span>
-              <span>Hi, I am {name}</span>
+              Hi, I'm {name}
+              <span>Hi, I'm {name}</span>
+              <span>Hi, I'm {name}</span>
               <span>Software Engineer</span>
             </h1>
           </div>
