@@ -44,9 +44,9 @@ const About: React.FC = () => {
         {name && (
           <div className="about__greeting">
             <h1>
-              Hi, I'm {name}
-              <span>Hi, I'm {name}</span>
-              <span>Hi, I'm {name}</span>
+              Hi, I&apos;m {name}
+              <span>Hi, I&apos;m {name}</span>
+              <span>Hi, I&apos;m {name}</span>
               <span>Software Engineer</span>
             </h1>
           </div>
