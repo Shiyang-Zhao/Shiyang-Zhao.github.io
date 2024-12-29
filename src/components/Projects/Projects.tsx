@@ -18,7 +18,10 @@ const Projects: React.FC = () => (
                 <h3>{project.name}</h3>
                 <div className="project__description">
                   {project.description.map((desc, index) => (
-                    <p key={index}>{desc}</p>
+                    <React.Fragment key={index}>
+                      <p>{desc}</p>
+                      <br />
+                    </React.Fragment>
                   ))}
                 </div>
                 {project.stack && (

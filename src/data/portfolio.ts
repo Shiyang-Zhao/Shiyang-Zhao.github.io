@@ -130,12 +130,18 @@ const work = [
 
 const projects = [
   {
-    "name": "Distributed File System - HyDFS",
+    "name": "Distributed Stream Processing System - RainStorm",
+    // "description": [
+    //   "•	Built HyDFS using Java, a distributed file system with consistent hashing, 3-second eventual consistency, and 4x faster reads by client caching on a 10-VM cluster",
+    //   "•	Designed RainStorm using Java for real-time stream processing with exactly-once semantics, tolerating up to 2 machine failures and efficiently processing large input streams",
+    //   "•	Optimized RainStorm with batched writes, achieving sub-4-second merge performance and outperforming Spark Streaming by 15% in throughput benchmarks",
+    //   "•	Enhanced resilience and scalability with 2-second fault detection, state recovery using HyDFS logs, and dynamic task rescheduling"
+    // ],
     "description": [
-      "•	Built a Hybrid Distributed File System (HyDFS) in Java across a 10-VM cluster, using Cassandra-style consistent hashing for distributed file mapping",
-      "•	Designed a membership protocol for failure detection, enabling failures to be detected within 2 seconds and tolerating up to two machine failures with automatic re-replication",
-      "•	Achieved eventual consistency and ordered appends across replicas, with files syncing within 3 seconds, following Cassandra's resilience approach",
-      "•	Boosted read speeds with client caching, measuring latency across cache sizes and achieving merge performance within 4 seconds for 1000 concurrent appends"
+      "• Built HyDFS using Java, achieving 3-second eventual consistency and 4x faster reads via client caching on a 10-VM cluster",
+      "• Designed RainStorm for real-time stream processing with exactly-once semantics, tolerating up to 2 machine failures",
+      "• Optimized batched writes for sub-4-second merges, surpassing Spark Streaming throughput by 15%",
+      "• Enhanced resilience with 2-second fault detection and state recovery via HyDFS logs"
     ],
     "stack": [
       "Java",
@@ -149,16 +155,22 @@ const projects = [
       "Git",
       "GitLab",
     ],
-    sourceCode: "https://courses.grainger.illinois.edu/cs425/fa2024/assignments.html",
-    livePreview: "https://courses.grainger.illinois.edu/cs425/fa2024/MPDemos/mp1-java-fa24.tar.gz",
+    sourceCode: "https://github.com/Shiyang-Zhao/Distributed-Stream-Processing-System",
+    livePreview: "https://github.com/Shiyang-Zhao/Distributed-Stream-Processing-System",
   },
   {
     name: "Social Media Web Application - Metasphere",
-    description: [
-      "•	Developed Metasphere, a dynamic social platform integrating Reddit-style posts, Instagram-like stories, and other interactive features, built with Django and PostgreSQL",
-      "•	Enabled real-time interactions with posts, chat, comments, stories, and notifications using WebSocket, Django Channels, and Celery task scheduling",
-      "•	Automated CI/CD using Jenkins, GitHub Webhooks, and Selenium, ensuring efficient, reliable deployments",
-      "•	Optimized performance by refining database queries, implementing caching, and streamlining backend processes, improving data retrieval speed by 22% and lowering server costs by 13%",
+    // description: [
+    //   "•	Developed Metasphere, a dynamic social platform integrating Reddit-style posts, Instagram-like stories, and other interactive features, built with Django and PostgreSQL",
+    //   "•	Enabled real-time interactions with posts, chat, comments, stories, and notifications using WebSocket, Django Channels, and Celery task scheduling",
+    //   "•	Automated CI/CD using Jenkins, GitHub Webhooks, and Selenium, ensuring efficient, reliable deployments",
+    //   "•	Optimized performance by refining database queries, implementing caching, and streamlining backend processes, improving data retrieval speed by 22% and lowering server costs by 13%",
+    // ],
+    "description": [
+      "• Developed a social platform blending Reddit-style posts and Instagram-like stories using Django and PostgreSQL",
+      "• Enabled real-time interactions with WebSocket, Django Channels, and Celery task scheduling",
+      "• Automated CI/CD with Jenkins and Selenium, ensuring seamless deployments",
+      "• Improved data retrieval speed by 22% and reduced server costs by 13% through database query optimization and caching"
     ],
     stack: [
       "Python",
@@ -177,11 +189,17 @@ const projects = [
   },
   {
     name: "Employee Management System - EmploVerse",
-    description: [
-      "•	Developed EmploVerse, an employee management application using Java Spring, Next.js, and MySQL",
-      "•	Implemented attendance tracking, RBAC across 4 levels, secure JWT authentication, and performance management to automate administrative tasks by 45%",
-      "•	Utilized real-time chat and notifications via WebSocket, improving internal communication by 30%",
-      "•	Deployed on AWS, using S3 for storage, RDS for databases, EC2 for computing, and auto-scaling with load balancing for traffic management and efficiency",
+    // description: [
+    //   "•	Developed EmploVerse, an employee management application using Java Spring, Next.js, and MySQL",
+    //   "•	Implemented attendance tracking, RBAC across 4 levels, secure JWT authentication, and performance management to automate administrative tasks by 45%",
+    //   "•	Utilized real-time chat and notifications via WebSocket, improving internal communication by 30%",
+    //   "•	Deployed on AWS, using S3 for storage, RDS for databases, EC2 for computing, and auto-scaling with load balancing for traffic management and efficiency",
+    // ],
+    "description": [
+      "• Built EmploVerse, an employee management app with Java Spring, Next.js, and MySQL",
+      "• Automated 45% of administrative tasks with attendance tracking, RBAC, JWT authentication, and performance management",
+      "• Improved communication by 30% using real-time chat and notifications via WebSocket",
+      "• Deployed on AWS with S3, RDS, EC2, and auto-scaling for efficient traffic management"
     ],
     stack: [
       "Java",
@@ -195,8 +213,8 @@ const projects = [
       "Heroku",
       "AWS",
     ],
-    sourceCode: "https://github.com/Shiyang-Zhao/EmploVerse-Backend",
-    livePreview: "https://github.com/Shiyang-Zhao/EmploVerse-Backend",
+    sourceCode: "https://github.com/Shiyang-Zhao/Employee-Management-EmploVerse",
+    livePreview: "https://github.com/Shiyang-Zhao/Employee-Management-EmploVerse",
   },
 ];
 
