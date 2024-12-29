@@ -31,9 +31,13 @@ const Work: React.FC = () => {
                 <p className="work__company">{job.company}</p>
                 <p className="work__dates">{`${job.startDate} - ${job.endDate}`}</p>
                 <p className="work__location">{job.location}</p>
+                <br />
                 <div className="work__description">
                   {job.description.map((desc, index) => (
-                    <p key={index}>{desc}</p>
+                    <React.Fragment key={index}>
+                      <p>{desc}</p>
+                      <br />
+                    </React.Fragment>
                   ))}
                 </div>
                 <div className="work__skills">
