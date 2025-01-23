@@ -14,7 +14,7 @@ import Image from "next/image";
 
 const About: React.FC = () => {
   const { themeName } = useTheme();
-  const { name, role, description, resume, transcript, social } = about;
+  const { name, role, motto, description, resume, transcript, social } = about;
 
   return (
     <div className="about">
@@ -52,11 +52,20 @@ const About: React.FC = () => {
           </div>
         )}
 
-        {role && <h2 className="about__role">A {role}</h2>}
+        <div className="about__quote">
+          <pre>{motto}</pre>
+        </div>
+
+        {/* {role && <h2 className="about__role">A {role}</h2>} */}
+
         <div className="about__desc1">
           <Typewriter
             onInit={(typewriter) => {
-              typewriter.typeString(description).pauseFor(1000).start();
+              typewriter
+                .changeDelay(10)
+                .typeString(description)
+                .pauseFor(1000)
+                .start();
             }}
           />
         </div>

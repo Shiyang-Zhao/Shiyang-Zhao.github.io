@@ -10,8 +10,9 @@ const header = {
 const about = {
   name: "Shiyang Zhao",
   role: "Software Engineer",
+  motto: '"Learning and Labor"',
   description:
-    "Pursuing a Master's in Computer Science at UIUC, with a passion for software engineering and machine learning.",
+    "Pursuing a Master's in Computer Science at UIUC, with a passion for software engineering and machine learning",
   resume: resumePDF,
   transcript: transcriptPDF,
   social: {

@@ -7,19 +7,8 @@
 .about__left {
   margin: 0 13%;
   animation: slideRight 1s ease forwards;
+  z-index: 10;
 }
-
-/* .profile__image__light,
-.profile__image__dark {
-  width: 30rem;
-  transform: translateY(-50px);
-  cursor: pointer;
-  border-radius: 50%;
-  -webkit-mask-image: radial-gradient(circle, rgba(0, 0, 0, 1) 65%, rgba(0, 0, 0, 0) 70%);
-  mask-image: radial-gradient(circle, rgba(0, 0, 0, 1) 65%, rgba(0, 0, 0, 0) 70%);
-  -webkit-mask-composite: destination-in;
-  mask-composite: intersect;
-} */
 
 .profile__image__light,
 .profile__image__dark {
@@ -29,16 +18,12 @@
   border-radius: 50%;
   border: 5px solid var(--clr-primary);
   background: var(--clr-bg-alt);
-  -webkit-mask-image: radial-gradient(
-    circle,
-    rgba(0, 0, 0, 1) 75%,
-    rgba(0, 0, 0, 0) 80%
-  );
-  mask-image: radial-gradient(
-    circle,
-    rgba(0, 0, 0, 1) 75%,
-    rgba(0, 0, 0, 0) 80%
-  );
+  -webkit-mask-image: radial-gradient(circle,
+      rgba(0, 0, 0, 1) 75%,
+      rgba(0, 0, 0, 0) 80%);
+  mask-image: radial-gradient(circle,
+      rgba(0, 0, 0, 1) 75%,
+      rgba(0, 0, 0, 0) 80%);
   -webkit-mask-composite: destination-in;
   mask-composite: intersect;
   box-shadow: var(--shadow);
@@ -57,23 +42,40 @@
   animation: slideLeft 1s ease forwards;
 }
 
-.about__desc1,
-.about__contact {
+.about__quote pre {
+  display: inline-block;
+  font-size: 1.2rem;
+  font-family: "Courier New", Courier, monospace;
+  background: var(--clr-bg-alt);
+  color: var(--clr-fg-alt);
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  box-shadow: var(--shadow);
+  border: 1px solid var(--clr-primary);
+  white-space: pre-wrap;
+  width: 75%;
+  max-width: 100%;
+  text-align: center;
+}
+
+.about__desc1 {
   font-size: 1rem;
-  max-width: 600px;
-  margin-top: 2.4em;
+  max-width: 95%;
+  margin-top: 2rem;
+  text-align: center;
 }
 
 .about__contact {
   display: inline-flex;
+  margin-top: 2rem;
 }
 
 .about .link--icon {
-  margin-right: 0.8em;
+  margin-right: 0.8rem;
 }
 
 .about .btn--outline {
-  margin-right: 1em;
+  margin-right: 1rem;
 }
 
 .about__greeting h1 {
@@ -203,7 +205,7 @@
   }
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1100px) {
   .about {
     display: flex;
     flex-direction: column;
