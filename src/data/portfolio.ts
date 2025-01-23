@@ -51,7 +51,7 @@ const education = [
 
 const work = [
   {
-    jobTitle: "Software Engineer Intern",
+    jobTitle: "Backend Software Engineer Intern",
     company: "Civilience",
     logo: "/assets/images/Logo/civilience.webp",
     url: "https://civilience.social/solutions/",
@@ -59,10 +59,11 @@ const work = [
     endDate: "Present",
     location: "Omaha, NE 68131",
     description: [
-      "•	Built serverless APIs with AWS Lambda and API Gateway, reducing response time by 200ms and cutting server costs by 14%",
-      "•	Secured authentication with AWS Cognito and managed data with DynamoDB and RDS (MySQL)",
-      "•	Implemented real-time monitoring using AWS CloudTrail and CloudWatch, accelerating issue resolution",
-      "•	Enhanced access control effectiveness by 16% on AWS EC2 and Amplify through automated IAM roles and policies",
+      "• Built serverless RESTful APIs with AWS Lambda, Python (Flask), and Node.js (Express), reducing response time by 50ms and cutting server costs by 14%",
+      "• Migrated legacy APIs to a microservices architecture, reducing system latency by 30%",
+      "• Implemented real-time monitoring and alerts using AWS CloudTrail and CloudWatch",
+      "• Secured authentication with AWS Cognito and managed large-scale data using DynamoDB and RDS",
+      "• Automated 100+ IAM role assignments for AWS EC2 and Amplify, enhancing access control efficiency by 16% and reducing manual errors by 25%"
     ],
     skills: [
       "Java",
@@ -75,7 +76,7 @@ const work = [
     ],
   },
   {
-    jobTitle: "Software Engineer",
+    jobTitle: "Full Stack Software Engineer",
     company: "RND4IMPACT INC.",
     logo: "/assets/images/Logo/rnd4impact.webp",
     url: "https://www.rnd4impact.com/",
@@ -83,10 +84,11 @@ const work = [
     endDate: "03/2024",
     location: "690 Saratoga Ave #100, San Jose, CA 95129",
     description: [
-      "•	Built full-stack web applications with Java, Python, TypeScript, Spring Boot, Next.js, and Django",
-      "•	Developed RESTful APIs with Spring Boot and Django, integrating Google Cloud and AWS for enhanced cloud functionality",
-      "•	Reduced deployment time by 26% through automation of build, test, and deployment processes using Jenkins CI/CD pipelines",
-      "•	Increased software reliability with Selenium regression tests, identifying issues early and reducing bugs by 21%",
+      "• Built backend services with Django and PostgreSQL, delivering secure APIs with role-based access control",
+      "• Developed Spring Boot microservices with AWS RDS and S3, enabling scalable data and file storage",
+      "• Created responsive frontend applications using Next.js and TypeScript, enhancing user engagement",
+      "• Automated CI/CD pipelines in Jenkins with unit tests and containerization, cutting deployment time by 26%",
+      "• Improved software reliability with Selenium regression tests, reducing production bugs by 21%"
     ],
     skills: [
       "Java",
@@ -131,20 +133,13 @@ const work = [
 
 const projects = [
   {
-    "name": "Distributed Stream Processing System - RainStorm",
-    // "description": [
-    //   "•	Built HyDFS using Java, a distributed file system with consistent hashing, 3-second eventual consistency, and 4x faster reads by client caching on a 10-VM cluster",
-    //   "•	Designed RainStorm using Java for real-time stream processing with exactly-once semantics, tolerating up to 2 machine failures and efficiently processing large input streams",
-    //   "•	Optimized RainStorm with batched writes, achieving sub-4-second merge performance and outperforming Spark Streaming by 15% in throughput benchmarks",
-    //   "•	Enhanced resilience and scalability with 2-second fault detection, state recovery using HyDFS logs, and dynamic task rescheduling"
-    // ],
-    "description": [
-      "• Built HyDFS using Java, achieving 3-second eventual consistency and 4x faster reads via client caching on a 10-VM cluster",
-      "• Designed RainStorm for real-time stream processing with exactly-once semantics, tolerating up to 2 machine failures",
-      "• Optimized batched writes for sub-4-second merges, surpassing Spark Streaming throughput by 15%",
-      "• Enhanced resilience with 2-second fault detection and state recovery via HyDFS logs"
+    name: "Distributed Stream Processing System - RainStorm",
+    description: [
+      "• Built HyDFS, a distributed file system with caching, achieving 4x faster reads on a 10-VM cluster",
+      "• Designed RainStorm for real-time processing, surpassing Spark Streaming by 15% in throughput",
+      "• Improved resilience with 2-second fault detection, state recovery, and dynamic task rescheduling",
     ],
-    "stack": [
+    stack: [
       "Java",
       "Bash",
       "Distributed Systems",
@@ -161,17 +156,10 @@ const projects = [
   },
   {
     name: "Social Media Web Application - Metasphere",
-    // description: [
-    //   "•	Developed Metasphere, a dynamic social platform integrating Reddit-style posts, Instagram-like stories, and other interactive features, built with Django and PostgreSQL",
-    //   "•	Enabled real-time interactions with posts, chat, comments, stories, and notifications using WebSocket, Django Channels, and Celery task scheduling",
-    //   "•	Automated CI/CD using Jenkins, GitHub Webhooks, and Selenium, ensuring efficient, reliable deployments",
-    //   "•	Optimized performance by refining database queries, implementing caching, and streamlining backend processes, improving data retrieval speed by 22% and lowering server costs by 13%",
-    // ],
-    "description": [
-      "• Developed a social platform blending Reddit-style posts and Instagram-like stories using Django and PostgreSQL",
-      "• Enabled real-time interactions with WebSocket, Django Channels, and Celery task scheduling",
-      "• Automated CI/CD with Jenkins and Selenium, ensuring seamless deployments",
-      "• Improved data retrieval speed by 22% and reduced server costs by 13% through database query optimization and caching"
+    description: [
+      "• Built a social platform with Reddit-style posts and Instagram-like stories using Django and PostgreSQL",
+      "• Enabled real-time interactions with posts, chat, and notifications using WebSocket and Celery",
+      "• Improved backend performance, boosting speed by 22% and reducing server costs by 13%"
     ],
     stack: [
       "Python",
@@ -190,17 +178,10 @@ const projects = [
   },
   {
     name: "Employee Management System - EmploVerse",
-    // description: [
-    //   "•	Developed EmploVerse, an employee management application using Java Spring, Next.js, and MySQL",
-    //   "•	Implemented attendance tracking, RBAC across 4 levels, secure JWT authentication, and performance management to automate administrative tasks by 45%",
-    //   "•	Utilized real-time chat and notifications via WebSocket, improving internal communication by 30%",
-    //   "•	Deployed on AWS, using S3 for storage, RDS for databases, EC2 for computing, and auto-scaling with load balancing for traffic management and efficiency",
-    // ],
-    "description": [
-      "• Built EmploVerse, an employee management app with Java Spring, Next.js, and MySQL",
-      "• Automated 45% of administrative tasks with attendance tracking, RBAC, JWT authentication, and performance management",
-      "• Improved communication by 30% using real-time chat and notifications via WebSocket",
-      "• Deployed on AWS with S3, RDS, EC2, and auto-scaling for efficient traffic management"
+    description: [
+      "• Built a feature-rich employee management app using Java Spring, Next.js, and MySQL",
+      "• Automated 45% of administrative tasks, including attendance tracking, RBAC, and reviews",
+      "• Deployed on AWS (S3, RDS, EC2) with auto-scaling for efficient traffic and resource management"
     ],
     stack: [
       "Java",
