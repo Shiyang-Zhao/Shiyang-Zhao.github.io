@@ -156,8 +156,8 @@ const projects = [
       "Git",
       "GitLab",
     ],
-    sourceCode: "https://github.com/Shiyang-Zhao/Distributed-Stream-Processing-System",
-    livePreview: "https://github.com/Shiyang-Zhao/Distributed-Stream-Processing-System",
+    sourceCode: "https://github.com/Shiyang-Zhao/Distributed-Stream-Processing-System-RainStorm",
+    livePreview: "https://github.com/Shiyang-Zhao/Distributed-Stream-Processing-System-RainStorm",
   },
   {
     name: "Social Media Web Application - Metasphere",
