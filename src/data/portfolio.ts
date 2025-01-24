@@ -12,7 +12,7 @@ const about = {
   role: "Software Engineer",
   motto: '"Learning and Labor"',
   description:
-    "Pursuing a Master's in Computer Science at UIUC, with a passion for software engineering and machine learning",
+    "Currently pursuing a Master's in Computer Science at UIUC, with a strong focus on software engineering and a deep passion for machine learning",
   resume: resumePDF,
   transcript: transcriptPDF,
   social: {
@@ -59,11 +59,11 @@ const work = [
     endDate: "Present",
     location: "Omaha, NE 68131",
     description: [
-      "• Built serverless RESTful APIs with AWS Lambda, Python (Flask), and Node.js (Express), reducing response time by 50ms and cutting server costs by 14%",
-      "• Migrated legacy APIs to a microservices architecture, reducing system latency by 30%",
-      "• Implemented real-time monitoring and alerts using AWS CloudTrail and CloudWatch",
-      "• Secured authentication with AWS Cognito and managed large-scale data using DynamoDB and RDS",
-      "• Automated 100+ IAM role assignments for AWS EC2 and Amplify, enhancing access control efficiency by 16% and reducing manual errors by 25%"
+      "•	Built serverless RESTful APIs with AWS Lambda, Python (Flask), and Node.js (Express), handling 50,000+ daily requests and improving response times by 22%",
+      "•	Migrated legacy APIs to a microservices architecture, decreasing average request latency from 150ms to 105ms and saving $1,200 annually in server costs",
+      "•	Implemented real-time monitoring and alerts using AWS CloudTrail and CloudWatch",
+      "•	Secured authentication with AWS Cognito and managed large-scale data using DynamoDB and RDS",
+      "•	Automated 100+ IAM role assignments for AWS EC2 and Amplify, saving 30 hours of manual effort each month",
     ],
     skills: [
       "Java",
@@ -84,11 +84,11 @@ const work = [
     endDate: "03/2024",
     location: "690 Saratoga Ave #100, San Jose, CA 95129",
     description: [
-      "• Built backend services with Django and PostgreSQL, delivering secure APIs with role-based access control",
-      "• Developed Spring Boot microservices with AWS RDS and S3, enabling scalable data and file storage",
-      "• Created responsive frontend applications using Next.js and TypeScript, enhancing user engagement",
-      "• Automated CI/CD pipelines in Jenkins with unit tests and containerization, cutting deployment time by 26%",
-      "• Improved software reliability with Selenium regression tests, reducing production bugs by 21%"
+      "•	Developed secure, scalable backend APIs with Django and PostgreSQL, boosting query time from 350ms to 200ms",
+      "•	Built Spring Boot microservices with AWS RDS and S3, enabling reliable storage for 500GB+ of data and files",
+      "•	Created a responsive frontend with Next.js and TypeScript, reducing page load time by 1.5 seconds",
+      "•	Automated CI/CD pipelines in Jenkins with unit tests, reducing deployment time by 26%",
+      "•	Enhanced software reliability with Selenium regression tests, resolving 70+ production bugs",
     ],
     skills: [
       "Java",
@@ -135,9 +135,9 @@ const projects = [
   {
     name: "Distributed Stream Processing System - RainStorm",
     description: [
-      "• Built HyDFS, a distributed file system with caching, achieving 4x faster reads on a 10-VM cluster",
-      "• Designed RainStorm for real-time processing, surpassing Spark Streaming by 15% in throughput",
-      "• Improved resilience with 2-second fault detection, state recovery, and dynamic task rescheduling",
+      "•	Built HyDFS, a distributed file system with caching, achieving 4x faster reads on a 10-VM cluster",
+      "•	Designed RainStorm for real-time processing, surpassing Spark Streaming by 15% in throughput",
+      "•	Improved resilience with 2-second fault detection, state recovery, and dynamic task rescheduling",
     ],
     stack: [
       "Java",
@@ -157,9 +157,9 @@ const projects = [
   {
     name: "Social Media Web Application - Metasphere",
     description: [
-      "• Built a social platform with Reddit-style posts and Instagram-like stories using Django and PostgreSQL",
-      "• Enabled real-time interactions with posts, chat, and notifications using WebSocket and Celery",
-      "• Improved backend performance, boosting speed by 22% and reducing server costs by 13%"
+      "•	Built a social platform with Reddit-style posts and Instagram-like stories using Django and PostgreSQL",
+      "•	Secured the platform with OAuth 2.0, supporting Google, GitHub, and Microsoft login",
+      "•	Enabled real-time interactions with posts, chat, and notifications using WebSocket and Celery",
     ],
     stack: [
       "Python",
@@ -173,15 +173,15 @@ const projects = [
       "Git",
       "Github",
     ],
-    sourceCode: "https://github.com/Shiyang-Zhao/Metasphere",
-    livePreview: "https://github.com/Shiyang-Zhao/Metasphere",
+    sourceCode: "https://github.com/Shiyang-Zhao/Social-Media-Metasphere",
+    livePreview: "https://github.com/Shiyang-Zhao/Social-Media-Metasphere",
   },
   {
     name: "Employee Management System - EmploVerse",
     description: [
-      "• Built a feature-rich employee management app using Java Spring, Next.js, and MySQL",
-      "• Automated 45% of administrative tasks, including attendance tracking, RBAC, and reviews",
-      "• Deployed on AWS (S3, RDS, EC2) with auto-scaling for efficient traffic and resource management"
+      "•	Built a feature-rich employee management app using Java Spring, Next.js, and MySQL",
+      "•	Automated 35% of administrative tasks, including attendance, payroll, and reviews",
+      "•	Designed role-based dashboards for 6 roles, enabling personalized data access and efficient workflows",
     ],
     stack: [
       "Java",
