@@ -51,7 +51,31 @@ const education = [
 
 const work = [
   {
-    jobTitle: "Backend Software Engineer Intern",
+    jobTitle: "Graduate Researcher",
+    company: "University of Illinois Urbana-Champaign",
+    logo: "/assets/images/Logo/uiuc logo.webp",
+    url: "https://illinois.edu/",
+    startDate: "01/2025",
+    endDate: "Present",
+    location: "Champaign, IL 61820",
+    description: [
+      "•	Conducting research on energy-efficient routing and power management for inter-satellite links (ISLs) in collaboration with PhD students Xiaojuan Ma and Shashwat Jaiswal, mentored by Prof. Indranil Gupta",
+      "•	Exploring energy-efficient strategies inspired by ad-hoc sensor networks, focusing on Transmission Power Control (TPC), Load Distribution, and Sleep Scheduling",
+      "•	Investigating advanced routing strategies such as ECARS, ERU-DOD, and ERA-DOD to balance energy efficiency and network performance in ISLs",
+      "•	Evaluating trade-offs between latency, power consumption, and network stability to enhance ISL longevity and reliability"
+    ],
+    skills: [
+      "Inter-Satellite Links (ISLs)",
+      "Energy-Efficient Routing",
+      "Power Management",
+      "Transmission Power Control (TPC)",
+      "Load Distribution",
+      "Sleep Scheduling", 
+      "Ad-hoc Sensor Networks",
+    ],
+  },
+  {
+    jobTitle: "Software Engineer Intern",
     company: "Civilience",
     logo: "/assets/images/Logo/civilience.webp",
     url: "https://civilience.social/solutions/",
@@ -76,13 +100,13 @@ const work = [
     ],
   },
   {
-    jobTitle: "Full Stack Software Engineer",
-    company: "RND4IMPACT INC.",
+    jobTitle: "Software Engineer",
+    company: "Rnd4impact",
     logo: "/assets/images/Logo/rnd4impact.webp",
     url: "https://www.rnd4impact.com/",
     startDate: "03/2023",
     endDate: "03/2024",
-    location: "690 Saratoga Ave #100, San Jose, CA 95129",
+    location: "San Jose, CA 95129",
     description: [
       "•	Developed secure, scalable backend APIs with Django and PostgreSQL, boosting query time from 350ms to 200ms",
       "•	Built Spring Boot microservices with AWS RDS and S3, enabling reliable storage for 500GB+ of data and files",
@@ -105,30 +129,7 @@ const work = [
       "Selenium",
       "Jenkins",
     ],
-  },
-  // {
-  //   jobTitle: "Guest Experience Associate",
-  //   company: "HOPE CHURCH MOVEMENT",
-  //   logo: "/assets/images/Logo/hopechurch.webp",
-  //   url: "https://hopechurchmovement.com/",
-  //   startDate: "04/2020",
-  //   endDate: "12/2022",
-  //   location: "730 N Mill Ave, Tempe, AZ 85288",
-  //   description: [
-  //     "•	Developed effective communication and leadership within a guest experience team of 30",
-  //     "•	Delivered exceptional experiences to over 250 guests consistently",
-  //     "•	Collaborated with cross-functional teams to distribute tasks efficiently, resulting in a 23% increase in efficiency",
-  //   ],
-  //   skills: [
-  //     "Leadership",
-  //     "Communication",
-  //     "Problem-Solving",
-  //     "Teamwork",
-  //     "Time Management",
-  //     "Positive Attitude",
-  //     "Time Management",
-  //   ],
-  // },
+  }
 ];
 
 const projects = [

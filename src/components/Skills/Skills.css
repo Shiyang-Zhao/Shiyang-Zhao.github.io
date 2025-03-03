@@ -10,9 +10,9 @@
   border-radius: 5px;
 }
 
-.skills__list-item:hover {
+/* .skills__list-item:hover {
   animation: shake 0.8s infinite;
-}
+} */
 
 .skills__list-item-icon {
   width: 3rem;
