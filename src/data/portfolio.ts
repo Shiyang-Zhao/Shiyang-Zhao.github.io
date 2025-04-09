@@ -242,11 +242,6 @@ const skills = [
     destination: "https://www.djangoproject.com/",
   },
   {
-    name: "D3.js",
-    url: "/assets/images/Logo/d3.webp",
-    destination: "https://d3js.org/",
-  },
-  {
     name: "Spring Boot",
     url: "/assets/images/Logo/spring.webp",
     destination: "https://spring.io/",
