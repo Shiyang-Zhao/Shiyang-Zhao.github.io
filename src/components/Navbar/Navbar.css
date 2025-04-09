@@ -1,0 +1,8 @@
+.navbar {
+  background-color: var(--clr-bg);
+  color: var(--clr-text);
+}
+
+.navbar-link {
+  color: var(--clr-text);
+}

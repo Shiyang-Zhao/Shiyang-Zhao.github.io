@@ -1,0 +1,25 @@
+.skills-section {
+  background-color: var(--clr-bg);
+  color: var(--clr-text);
+}
+
+.skill-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--clr-text);
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.skill-item:hover {
+  transform: translateY(-4px);
+  color: var(--clr-primary);
+}
+
+.icon-wrapper {
+  transition: transform 0.2s ease;
+}
+
+.skill-item:hover .icon-wrapper {
+  transform: scale(1.05);
+}

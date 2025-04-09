@@ -1,0 +1,9 @@
+.education-section {
+  background-color: var(--clr-bg);
+  color: var(--clr-text);
+}
+
+.education-card {
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--clr-border);
+}

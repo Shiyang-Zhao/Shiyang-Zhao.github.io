@@ -1,0 +1,8 @@
+.about-section {
+  background-color: var(--clr-bg);
+  color: var(--clr-text);
+}
+
+.about-text {
+  color: var(--clr-text);
+}

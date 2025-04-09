@@ -1,0 +1,9 @@
+.footer-section {
+  background-color: var(--clr-bg);
+  color: var(--clr-text);
+  border-top: 1px solid var(--clr-border);
+}
+
+.footer-link {
+  color: var(--clr-primary);
+}

@@ -1,0 +1,9 @@
+.projects-section {
+  background-color: var(--clr-bg);
+  color: var(--clr-text);
+}
+
+.project-card {
+  background-color: var(--clr-card-bg);
+  border-color: var(--clr-border);
+}
