@@ -1,6 +1,7 @@
 import Link from "next/link";
 import "./Work.css";
 import { work } from "@/data/portfolio";
+import Image from "next/image";
 
 export default function Work() {
   return (
@@ -13,10 +14,12 @@ export default function Work() {
               key={idx}
               className="work-card flex flex-col md:flex-row md:items-start gap-6"
             >
-              <img
+              <Image
                 src={job.logo}
                 alt={`${job.company} logo`}
-                className="w-16 h-16 object-contain"
+                width={64}
+                height={64}
+                className="object-contain"
               />
               <div className="flex-1">
                 <div className="flex flex-wrap justify-between items-center">

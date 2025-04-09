@@ -1,6 +1,7 @@
 import Link from "next/link";
 import "./Education.css";
 import { education } from "@/data/portfolio";
+import Image from "next/image";
 
 export default function Education() {
   return (
@@ -13,10 +14,12 @@ export default function Education() {
               key={idx}
               className="education-card flex flex-col md:flex-row md:items-start gap-6"
             >
-              <img
+              <Image
                 src={edu.logo}
                 alt={`${edu.university} logo`}
-                className="w-16 h-16 object-contain"
+                width={64}
+                height={64}
+                className="object-contain"
               />
               <div className="flex-1">
                 <div className="flex flex-wrap justify-between items-center">
@@ -33,7 +36,9 @@ export default function Education() {
                   </span>
                 </div>
 
-                <p className="text-[var(--clr-text)] opacity-90">{edu.degree}</p>
+                <p className="text-[var(--clr-text)] opacity-90">
+                  {edu.degree}
+                </p>
                 <p className="text-sm text-[var(--clr-text)] opacity-70 mb-2">
                   {edu.GPA}
                 </p>

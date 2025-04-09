@@ -1,6 +1,7 @@
 import Link from "next/link";
 import "./Skills.css";
 import { skills } from "@/data/portfolio";
+import Image from "next/image";
 
 export default function Skills() {
   return (
@@ -18,10 +19,12 @@ export default function Skills() {
               title={skill.name}
             >
               <div className="icon-wrapper bg-white p-3 rounded shadow w-fit mx-auto mb-2">
-                <img
+                <Image
                   src={skill.url}
                   alt={skill.name}
-                  className="w-10 h-10 object-contain"
+                  width={40}
+                  height={40}
+                  className="object-contain"
                 />
               </div>
               <p className="text-sm opacity-90">{skill.name}</p>
