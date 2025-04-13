@@ -142,8 +142,8 @@ const projects = [
       "Multithreading",
       "Socket Programming",
     ],
-    sourceCode: "https://github.com/Shiyang-Zhao/Distributed-Stream-Processing-System-RainStorm",
-    livePreview: "https://github.com/Shiyang-Zhao/Distributed-Stream-Processing-System-RainStorm",
+    sourceCode: "https://github.com/Shiyang-Zhao/rainstorm",
+    livePreview: "https://github.com/Shiyang-Zhao/rainstorm",
   },
   {
     name: "Metasphere",
@@ -158,8 +158,8 @@ const projects = [
       "PostgreSQL",
       "Selenium",
     ],
-    sourceCode: "https://github.com/Shiyang-Zhao/Social-Media-Metasphere",
-    livePreview: "https://github.com/Shiyang-Zhao/Social-Media-Metasphere",
+    sourceCode: "https://github.com/Shiyang-Zhao/metasphere",
+    livePreview: "https://github.com/Shiyang-Zhao/metasphere",
   },
   {
     name: "EmploVerse",
@@ -175,8 +175,8 @@ const projects = [
       "MySQL",
       "AWS",
     ],
-    sourceCode: "https://github.com/Shiyang-Zhao/Employee-Management-EmploVerse",
-    livePreview: "https://github.com/Shiyang-Zhao/Employee-Management-EmploVerse",
+    sourceCode: "https://github.com/Shiyang-Zhao/emploverse",
+    livePreview: "https://github.com/Shiyang-Zhao/emploverse",
   },
 ];
 
