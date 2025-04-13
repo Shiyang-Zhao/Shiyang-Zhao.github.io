@@ -23,22 +23,24 @@ export default function Work() {
               />
               <div className="flex-1">
                 <div className="flex flex-wrap justify-between items-center">
-                  <Link
-                    href={job.url}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="text-xl font-semibold hover:underline"
-                  >
-                    {job.company}
-                  </Link>
+                  {/* 👇 Bold Job Title */}
+                  <span className="text-xl font-semibold">{job.jobTitle}</span>
+
                   <span className="text-sm text-[var(--clr-text)] opacity-80">
                     {job.startDate} – {job.endDate}
                   </span>
                 </div>
 
-                <p className="text-[var(--clr-text)] opacity-90">
-                  {job.jobTitle}
-                </p>
+                {/* 👇 Company Name as a link */}
+                <Link
+                  href={job.url}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="hover:underline text-[var(--clr-text)] opacity-90"
+                >
+                  {job.company}
+                </Link>
+
                 <p className="text-sm text-[var(--clr-text)] opacity-70 mb-2">
                   {job.location}
                 </p>
