@@ -78,7 +78,7 @@ const work = [
     logo: "/assets/images/Logo/civilience.webp",
     url: "https://civilience.social/solutions/",
     startDate: "08/2024",
-    endDate: "Present",
+    endDate: "04/2025",
     location: "Omaha, NE 68131",
     description: [
       "Built serverless RESTful APIs with AWS Lambda, Python (Flask), and Node.Built serverless RESTful APIs with AWS Lambda, Python (Flask), and Node.js (Express), handling 50,000+ daily requests and improving response times by 22%",
