@@ -8,7 +8,7 @@ const header = {
 };
 
 const about = {
-  name: "Shiyang Zhao",
+  name: "Shawn Zhao",
   role: "Software Engineer",
   motto: "Learning and Labor",
   description:
@@ -131,10 +131,32 @@ const work = [
 
 const projects = [
   {
-    name: "RainStorm",
+    name: "GEMstack 3D Log Viewer",
+    startDate: "01/2025",
+    endDate: "05/2025",
     description: [
-      "Designed RainStorm for real-time processing, surpassing Spark Streaming by 15% in throughput",
-      "Improved resilience with 2-second fault detection, state recovery, and dynamic task rescheduling",
+      "Contributed to the open-source GEMstack by building a React-Three-Fiber 3D viewer for autonomous vehicle logs",
+      "Created a TypeScript log parser and timeline builder with Zustand for real-time multi-agent visualization",
+      "Achieved 60 FPS playback with smooth interpolation, camera controls, and optimized client-side rendering",
+    ],
+    stack: [
+      "TypeScript",
+      "Next.js",
+      "React.js",
+      "Three.js",
+      "Zustand",
+    ],
+    sourceCode: "https://github.com/krishauser/GEMstack/pulls?q=is%3Apr+is%3Aclosed+author%3AShiyang-Zhao",
+    livePreview: "https://github.com/krishauser/GEMstack/pulls?q=is%3Apr+is%3Aclosed+author%3AShiyang-Zhao",
+  },
+  {
+    name: "RainStorm",
+    startDate: "08/2024",
+    endDate: "12/2024",
+    description: [
+      "Built a membership-list protocol with gossip heartbeats, leader election, and node view for P2P coordination",
+      "Developed a multithreaded P2P file system with chunk replication and dynamic discovery for reliable data transfer",
+      "Implemented a real-time Java stream processing system with optimized pipelines (+15% throughput), 2s failure detection/recovery, and dynamic task rescheduling",
     ],
     stack: [
       "Java",
@@ -147,6 +169,8 @@ const projects = [
   },
   {
     name: "Metasphere",
+    startDate: "03/2024",
+    endDate: "06/2024",
     description: [
       "Built a social platform with Reddit-style posts and Instagram-like stories using Django and PostgreSQL",
       "Implemented real-time comments, stories, chat, and notifications with WebSocket and Celery",
@@ -163,6 +187,8 @@ const projects = [
   },
   {
     name: "EmploVerse",
+    startDate: "12/2023",
+    endDate: "02/2024",
     description: [
       "Built an employee management platform with attendance tracking, payroll, RBAC, and reviews",
       "Reduced manual workload by 45% through automation, increasing efficiency and streamlining administrative tasks",

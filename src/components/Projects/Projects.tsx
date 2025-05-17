@@ -15,9 +15,14 @@ export default function Projects() {
               key={project.name}
               className="project-card p-4 border rounded shadow"
             >
-              <h3 className="font-semibold text-xl text-[var(--clr-text)]">
-                {project.name}
-              </h3>
+              <div className="flex items-baseline justify-between">
+                <h3 className="font-semibold text-xl text-[var(--clr-text)]">
+                  {project.name}
+                </h3>
+                <span className="text-sm text-[var(--clr-text)] opacity-70">
+                  {project.startDate} – {project.endDate}
+                </span>
+              </div>
 
               <ul className="mt-2 list-disc list-outside pl-5 text-sm text-[var(--clr-text)] opacity-80 space-y-1">
                 {project.description.map((line, i) => (
