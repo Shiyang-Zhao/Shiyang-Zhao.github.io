@@ -59,10 +59,10 @@ const work = [
     endDate: "Present",
     location: "Champaign, IL 61820",
     description: [
-      "Conducted research on energy-efficient routing and power management for inter-satellite links (ISLs) in collaboration with PhD students Xiaojuan Ma and Shashwat Jaiswal, mentored by Prof. Indranil Gupta",
-      "Explored energy-efficient strategies inspired by ad-hoc sensor networks, focusing on Transmission Power Control, Load Distribution, and Sleep Scheduling",
-      "Investigated advanced routing strategies such as ECARS, ERU-DOD, and ERA-DOD to balance energy efficiency and network performance in ISLs",
-      "Evaluated trade-offs between latency, power consumption, and network stability to enhance ISL longevity and reliability"
+      "Conducted research on energy-aware routing and power optimization for inter-satellite links (ISLs) with Prof. Indranil Gupta, in collaboration with PhD students Xiaojuan Ma and Shashwat Jaiswal",
+      "Simulated dynamic LEO satellite constellations using StarryNet to evaluate latency, bandwidth, and routing performance under realistic orbital movement",
+      "Developed routing modules in StarryNet using Python, Docker, and BIRD, and built a modular BandwidthManager for adaptive ISL configuration",
+      "Implemented demand-aware bandwidth allocation with BandwidthManager, saving up to 25% energy while keeping latency within 10% of baseline"
     ],
     skills: [
       "Inter-Satellite Links (ISLs)",
@@ -81,10 +81,10 @@ const work = [
     endDate: "04/2025",
     location: "Omaha, NE 68131",
     description: [
-      "Built serverless RESTful APIs with AWS Lambda, Python (Flask), and Node.Built serverless RESTful APIs with AWS Lambda, Python (Flask), and Node.js (Express), handling 50,000+ daily requests and improving response times by 22%",
-      "Migrated legacy APIs to a microservicesMigrated legacy APIs to microservices architecture, decreasing request latency from 150ms to 105ms and saving $1,200 annually in server costs",
+      "Built serverless RESTful APIs with AWS Lambda, Python (Flask), and Node.js (Express), improving average response times by 22%",
+      "Migrated legacy APIs to microservices architecture, decreasing request latency from 150ms to 105ms and saving $1,200 annually in server costs",
       "Secured authentication with AWS Cognito and managed large-scale data using DynamoDB and RDS",
-      "Automated 100+ IAM role assignments for AWS EC2 and Amplify, saving 30 hours of manual effort each month",
+      "Automated 30+ IAM role assignments for AWS EC2 and Amplify, saving 30 hours of manual effort each month",
     ],
     skills: [
       "Python",
@@ -103,13 +103,12 @@ const work = [
     logo: "/assets/images/Logo/rnd4impact.webp",
     url: "https://www.rnd4impact.com/",
     startDate: "02/2023",
-    endDate: "03/2024",
+    endDate: "07/2024",
     location: "San Jose, CA 95129",
     description: [
       "Developed scalable APIs with Django and PostgreSQL, boosting query time from 350ms to 200ms",
-      "Built Spring Boot microservices with AWS RDS and S3, enabling scalable storage for 500GB+ of data",
-      "Created a responsive frontend with Next.js and TypeScript, reducing page load time by 1.5 seconds",
-      "Enhanced software reliability with Selenium regression tests, resolving 70+ production bugs",
+      "Built Spring Boot microservices with AWS RDS and S3, enabling scalable storage for 100 GB of structured and unstructured data",
+      "Improved software reliability by automating regression tests with Selenium, resolving 20+ production bugs",
     ],
     skills: [
       "Java",
