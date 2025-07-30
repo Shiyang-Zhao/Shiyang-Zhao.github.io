@@ -1,5 +1,5 @@
-const resumePDF = "/assets/files/Resume.pdf";
-const transcriptPDF = "/assets/files/Transcript.pdf";
+const resumePDF = "/assets/files/Shawn Zhao Resume.pdf";
+const transcriptPDF = "/assets/files/Unofficial Transcript.pdf";
 const profileImage = "/assets/images/ProfileImage/profileImage.webp";
 
 const header = {
