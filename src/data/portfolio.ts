@@ -108,6 +108,7 @@ const work = [
     description: [
       "Developed scalable APIs with Django and PostgreSQL, boosting query time from 350ms to 200ms",
       "Built Spring Boot microservices with AWS RDS and S3, enabling scalable storage for 100 GB of structured and unstructured data",
+      "Built a responsive frontend using React (Next.js) and TypeScript, improving load time by 800ms",
       "Improved software reliability by automating regression tests with Selenium, resolving 20+ production bugs",
     ],
     skills: [
