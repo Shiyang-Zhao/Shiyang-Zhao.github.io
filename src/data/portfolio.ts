@@ -59,18 +59,18 @@ const work = [
     endDate: "Present",
     location: "Champaign, IL 61820",
     description: [
-      "Conducted research on energy-aware routing and power optimization for inter-satellite links (ISLs) with Prof. Indranil Gupta, in collaboration with PhD students Xiaojuan Ma and Shashwat Jaiswal",
-      "Simulated dynamic LEO satellite constellations using StarryNet to evaluate latency, bandwidth, and routing performance under realistic orbital movement",
-      "Developed routing modules in StarryNet using Python, Docker, and BIRD, and built a modular BandwidthManager for adaptive ISL configuration",
-      "Implemented demand-aware bandwidth allocation with BandwidthManager, saving up to 25% energy while keeping latency within 10% of baseline"
+      "Researched energy-aware routing and power optimization for inter-satellite links (ISLs) with Prof. Indranil Gupta, collaborating with 2 PhD students on 5+ design iterations",
+      "Simulated 100+ dynamic LEO satellites and 20 ground stations in StarryNet to evaluate latency, bandwidth, and routing under realistic orbital motion",
+      "Built a modular BandwidthManager in StarryNet using Python, Docker, and iperf3 to support adaptive ISL bandwidth allocation modes",
+      "Implemented demand-aware allocation strategies, reducing energy usage by 25% while keeping latency within 10% of baseline across 50+ simulations"
     ],
     skills: [
       "Inter-Satellite Links (ISLs)",
-      "Energy-Efficient Routing",
-      "Power Management",
-      "Transmission Power Control",
-      "Sleep Scheduling",
-    ],
+      "Dynamic Bandwidth Allocation",
+      "Python",
+      "Docker",
+      "iperf3 (TCP/UDP)",
+    ]
   },
   {
     jobTitle: "Software Engineer Intern",
@@ -81,10 +81,10 @@ const work = [
     endDate: "04/2025",
     location: "Omaha, NE 68131",
     description: [
-      "Built serverless RESTful APIs with AWS Lambda, Python (Flask), and Node.js (Express), improving average response times by 22%",
-      "Migrated legacy APIs to microservices architecture, decreasing request latency from 150ms to 105ms and saving $1,200 annually in server costs",
-      "Secured authentication with AWS Cognito and managed large-scale data using DynamoDB and RDS",
-      "Automated 30+ IAM role assignments for AWS EC2 and Amplify, saving 30 hours of manual effort each month",
+      "Built serverless RESTful APIs using AWS Lambda, Python (Flask), and Node.js (Express), improving average response times by 22%",
+      "Migrated legacy APIs to a microservices architecture, reducing request latency from 150ms to 105ms and saving $1,200 annually in server costs",
+      "Secured user authentication using AWS Cognito and managed 500K+ records across DynamoDB and RDS, improving data access latency by 35ms",
+      "Automated 30+ IAM role assignments for AWS EC2 and Amplify using Terraform scripts, saving 30 hours of manual setup time per month"
     ],
     skills: [
       "Python",
@@ -106,10 +106,10 @@ const work = [
     endDate: "07/2024",
     location: "San Jose, CA 95129",
     description: [
-      "Developed scalable APIs with Django and PostgreSQL, boosting query time from 350ms to 200ms",
-      "Built Spring Boot microservices with AWS RDS and S3, enabling scalable storage for 100 GB of structured and unstructured data",
-      "Built a responsive frontend using React (Next.js) and TypeScript, improving load time by 800ms",
-      "Improved software reliability by automating regression tests with Selenium, resolving 20+ production bugs",
+      "Built notification and audit logging microservices in Python (Django) with PostgreSQL, delivering real-time alerts with under 1s latency for 7K+ daily events",
+      "Developed file upload and document management microservices in Java (Spring Boot) with AWS RDS and S3, supporting reliable processing of 1K+ files per week",
+      "Built a responsive frontend using React (Next.js) and TypeScript, reducing load time by 800ms",
+      "Automated regression testing with Selenium and Jenkins, saving 5+ hours of QA time per release and preventing 20+ bugs from reaching production"
     ],
     skills: [
       "Java",
@@ -137,7 +137,7 @@ const projects = [
     description: [
       "Contributed to the open-source GEMstack by building a React-Three-Fiber 3D viewer for autonomous vehicle logs",
       "Created a TypeScript log parser and timeline builder with Zustand for real-time multi-agent visualization",
-      "Achieved 60 FPS playback with smooth interpolation, camera controls, and optimized client-side rendering",
+      "Achieved 60 FPS playback with smooth interpolation, camera controls, and optimized client-side rendering"
     ],
     stack: [
       "TypeScript",
@@ -156,7 +156,7 @@ const projects = [
     description: [
       "Built a membership-list protocol with gossip heartbeats, leader election, and node view for P2P coordination",
       "Developed a multithreaded P2P file system with chunk replication and dynamic discovery for reliable data transfer",
-      "Implemented a real-time Java stream processing system with optimized pipelines (+15% throughput), 2s failure detection/recovery, and dynamic task rescheduling",
+      "Implemented a real-time Java stream processing system with optimized pipelines (+15% throughput), 2s failure detection/recovery, and dynamic task rescheduling"
     ],
     stack: [
       "Java",
