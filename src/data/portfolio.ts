@@ -51,7 +51,7 @@ const education = [
 
 const work = [
   {
-    jobTitle: "Graduate Researcher",
+    jobTitle: "Research Assistant",
     company: "University of Illinois Urbana-Champaign",
     logo: "/assets/images/Logo/uiuc logo.webp",
     url: "https://illinois.edu/",
