@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import { useTheme } from "@/contexts/theme";
 import { FiSun, FiMoon, FiMenu, FiX } from "react-icons/fi";
@@ -18,8 +18,28 @@ export default function Navbar() {
   const { themeName, toggleTheme } = useTheme();
   const [open, setOpen] = useState(false);
 
+  useEffect(() => {
+    document.body.style.overflow = open ? "hidden" : "";
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [open]);
+
+  useEffect(() => {
+    const onResize = () => {
+      if (window.innerWidth >= 768) {
+        setOpen(false);
+      }
+    };
+
+    window.addEventListener("resize", onResize);
+    onResize();
+
+    return () => window.removeEventListener("resize", onResize);
+  }, []);
+
   return (
-    <nav className="navbar fixed top-0 w-full z-50">
+    <nav className="navbar fixed top-0 w-full z-50 max-h-screen overflow-y-auto">
       <div className="w-full px-4 flex justify-between items-center py-4">
         <div className="text-xl font-bold">
           <Link href={header.homepage || "/"}>{header.title}</Link>
