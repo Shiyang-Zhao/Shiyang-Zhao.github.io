@@ -1,5 +1,7 @@
 .navbar {
-  background-color: var(--clr-bg);
+  background-color: color-mix(in srgb, var(--clr-bg) 50%, transparent);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
   color: var(--clr-text);
 }
 

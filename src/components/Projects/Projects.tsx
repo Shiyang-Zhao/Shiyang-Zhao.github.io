@@ -6,7 +6,7 @@ import { FiExternalLink } from "react-icons/fi";
 
 export default function Projects() {
   return (
-    <section id="projects" className="projects-section min-h-screen py-20 px-4">
+    <section id="projects" className="projects-section py-20 px-4">
       <div className="max-w-5xl mx-auto">
         <h2 className="text-3xl font-bold mb-8 text-center">Projects</h2>
         <div className="grid md:grid-cols-2 gap-6">
