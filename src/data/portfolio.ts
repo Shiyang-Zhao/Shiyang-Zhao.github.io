@@ -330,7 +330,9 @@ const skills = [
 ];
 
 const contact = {
-  email: "shiyang2575326696@gmail.com",
+  // email: "shiyang2575326696@gmail.com",
+  email: "shawnzhao189@gmail.com",
+
 };
 
 export {
