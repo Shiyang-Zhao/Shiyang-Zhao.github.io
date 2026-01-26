@@ -18,7 +18,6 @@ const about = {
   social: {
     linkedin: "https://www.linkedin.com/in/shiyang-zhao/",
     github: "https://github.com/Shiyang-Zhao",
-    instagram: "https://www.instagram.com/shawn_zhao0/",
   },
 };
 

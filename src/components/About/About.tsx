@@ -1,5 +1,5 @@
 import "./About.css";
-import { FaGithub, FaLinkedin, FaInstagram, FaEnvelope } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 import { about, contact, profileImage } from "@/data/portfolio";
 import Link from "next/link";
 import Image from "next/image";
@@ -48,17 +48,6 @@ export default function About() {
               <FaLinkedin />
             </Link>
           )}
-          {/* {about.social.instagram && (
-            <Link
-              href={about.social.instagram}
-              target="_blank"
-              rel="noreferrer"
-              aria-label="Instagram"
-              className="hover:text-pink-500 transition-colors"
-            >
-              <FaInstagram />
-            </Link>
-          )} */}
           {contact.email && (
             <Link
               href={`mailto:${contact.email}`}
