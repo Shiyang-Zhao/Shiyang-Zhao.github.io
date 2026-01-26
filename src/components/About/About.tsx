@@ -48,7 +48,7 @@ export default function About() {
               <FaLinkedin />
             </Link>
           )}
-          {about.social.instagram && (
+          {/* {about.social.instagram && (
             <Link
               href={about.social.instagram}
               target="_blank"
@@ -58,7 +58,7 @@ export default function About() {
             >
               <FaInstagram />
             </Link>
-          )}
+          )} */}
           {contact.email && (
             <Link
               href={`mailto:${contact.email}`}
