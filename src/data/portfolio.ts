@@ -58,8 +58,8 @@ const work = [
     endDate: "Present",
     location: "Champaign, IL 61820",
     description: [
-      "Researched energy-aware routing and power optimization for inter-satellite links (ISLs) with Prof. Indranil Gupta, collaborating with 2 PhD students on 5+ design iterations",
-      "Simulated 100+ dynamic LEO satellites and 20 ground stations in StarryNet to evaluate latency, bandwidth, and routing under realistic orbital motion",
+      "Containerized satellite network components with Docker and deployed them on Kubernetes to orchestrate and manage 100+ distributed simulation workloads",
+      "Designed and ran large-scale simulations of 100+ dynamic LEO satellites and 20 ground stations in StarryNet to evaluate latency, bandwidth, and routing under realistic orbital motion",
       "Built a modular BandwidthManager in StarryNet using Python, Docker, and iperf3 to support adaptive ISL bandwidth allocation modes",
       "Implemented demand-aware allocation strategies, reducing energy usage by 25% while keeping latency within 10% of baseline across 50+ simulations"
     ],
@@ -68,6 +68,7 @@ const work = [
       "Dynamic Bandwidth Allocation",
       "Python",
       "Docker",
+      "Kubernetes",
       "iperf3 (TCP/UDP)",
     ]
   },
@@ -212,24 +213,34 @@ const skills = [
     destination: "https://www.java.com/zh-CN/",
   },
   {
-    name: "JavaScript",
-    url: "/assets/images/Logo/js.webp",
-    destination: "https://www.javascript.com/",
-  },
-  {
     name: "Python",
     url: "/assets/images/Logo/python.webp",
     destination: "https://www.python.org/",
   },
   {
-    name: "C/C++",
-    url: "/assets/images/Logo/cplusplus.webp",
-    destination: "https://cplusplus.com/",
+    name: "Go",
+    url: "/assets/images/Logo/go.webp",
+    destination: "https://go.dev/",
+  },
+  {
+    name: "JavaScript",
+    url: "/assets/images/Logo/js.webp",
+    destination: "https://www.javascript.com/",
+  },
+  {
+    name: "TypeScript",
+    url: "/assets/images/Logo/ts.webp",
+    destination: "https://www.typescriptlang.org/",
   },
   {
     name: "C#",
     url: "/assets/images/Logo/csharp.webp",
     destination: "https://learn.microsoft.com/en-us/dotnet/csharp/",
+  },
+  {
+    name: "C/C++",
+    url: "/assets/images/Logo/cplusplus.webp",
+    destination: "https://cplusplus.com/",
   },
   {
     name: "Sass",
