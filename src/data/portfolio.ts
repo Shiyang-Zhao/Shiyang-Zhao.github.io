@@ -131,6 +131,26 @@ const work = [
 
 const projects = [
   {
+    name: "AI Log Analyzer",
+    startDate: "01/2026",
+    endDate: "04/2026",
+    description: [
+      "Built an AI backend service that ingests 10K+ simulated logs/day and generates structured incident reports",
+      "Created REST APIs for log ingestion, incident search, service filtering, and historical analysis",
+      "Implemented Redis async processing, error grouping, caching, and validation, cutting repeated LLM calls by 30%"
+    ],
+    stack: [
+      "Python",
+      "FastAPI",
+      "PostgreSQL",
+      "Redis",
+      "Docker",
+      "OpenAI API"
+    ],
+    sourceCode: "",
+    livePreview: "",
+  },
+  {
     name: "GEMstack 3D Log Viewer",
     startDate: "01/2025",
     endDate: "05/2025",
@@ -154,7 +174,7 @@ const projects = [
     startDate: "08/2024",
     endDate: "12/2024",
     description: [
-      "Built a membership-list protocol with gossip heartbeats, leader election, and node view for P2P coordination",
+      "Built a membership-list protocol with gossip heartbeats, leader election, and node tracking for P2P coordination",
       "Developed a multithreaded P2P file system with chunk replication and dynamic discovery for reliable data transfer",
       "Implemented a real-time Java stream processing system with optimized pipelines (+15% throughput), 2s failure detection/recovery, and dynamic task rescheduling"
     ],
@@ -167,43 +187,43 @@ const projects = [
     sourceCode: "https://github.com/Shiyang-Zhao/rainstorm",
     livePreview: "https://github.com/Shiyang-Zhao/rainstorm",
   },
-  {
-    name: "Metasphere",
-    startDate: "03/2024",
-    endDate: "06/2024",
-    description: [
-      "Built a social platform with Reddit-style posts and Instagram-like stories using Django and PostgreSQL",
-      "Implemented real-time comments, stories, chat, and notifications with WebSocket and Celery",
-    ],
-    stack: [
-      "Python",
-      "Django",
-      "React.js",
-      "PostgreSQL",
-      "Selenium",
-    ],
-    sourceCode: "https://github.com/Shiyang-Zhao/metasphere",
-    livePreview: "https://github.com/Shiyang-Zhao/metasphere",
-  },
-  {
-    name: "EmploVerse",
-    startDate: "12/2023",
-    endDate: "02/2024",
-    description: [
-      "Built an employee management platform with attendance tracking, payroll, RBAC, and reviews",
-      "Reduced manual workload by 45% through automation, increasing efficiency and streamlining administrative tasks",
-    ],
-    stack: [
-      "Java",
-      "Spring Boot",
-      "Next.js",
-      "WebScket",
-      "MySQL",
-      "AWS",
-    ],
-    sourceCode: "https://github.com/Shiyang-Zhao/emploverse",
-    livePreview: "https://github.com/Shiyang-Zhao/emploverse",
-  },
+  // {
+  //   name: "Metasphere",
+  //   startDate: "03/2024",
+  //   endDate: "06/2024",
+  //   description: [
+  //     "Built a social platform with Reddit-style posts and Instagram-like stories using Django and PostgreSQL",
+  //     "Implemented real-time comments, stories, chat, and notifications with WebSocket and Celery",
+  //   ],
+  //   stack: [
+  //     "Python",
+  //     "Django",
+  //     "React.js",
+  //     "PostgreSQL",
+  //     "Selenium",
+  //   ],
+  //   sourceCode: "https://github.com/Shiyang-Zhao/metasphere",
+  //   livePreview: "https://github.com/Shiyang-Zhao/metasphere",
+  // },
+  // {
+  //   name: "EmploVerse",
+  //   startDate: "12/2023",
+  //   endDate: "02/2024",
+  //   description: [
+  //     "Built an employee management platform with attendance tracking, payroll, RBAC, and reviews",
+  //     "Reduced manual workload by 45% through automation, increasing efficiency and streamlining administrative tasks",
+  //   ],
+  //   stack: [
+  //     "Java",
+  //     "Spring Boot",
+  //     "Next.js",
+  //     "WebScket",
+  //     "MySQL",
+  //     "AWS",
+  //   ],
+  //   sourceCode: "https://github.com/Shiyang-Zhao/emploverse",
+  //   livePreview: "https://github.com/Shiyang-Zhao/emploverse",
+  // },
 ];
 
 const skills = [
@@ -273,9 +293,24 @@ const skills = [
     destination: "https://nodejs.org/en",
   },
   {
+    name: "Express.js",
+    url: "/assets/images/Logo/express.webp",
+    destination: "https://expressjs.com/",
+  },
+  {
     name: "Django",
     url: "/assets/images/Logo/django.webp",
     destination: "https://www.djangoproject.com/",
+  },
+  {
+    name: "FastAPI",
+    url: "/assets/images/Logo/fastapi.webp",
+    destination: "https://fastapi.tiangolo.com/",
+  },
+  {
+    name: "Flask",
+    url: "/assets/images/Logo/flask.webp",
+    destination: "https://flask.palletsprojects.com/",
   },
   {
     name: "Spring Boot",
@@ -308,14 +343,59 @@ const skills = [
     destination: "https://www.mysql.com/",
   },
   {
+    name: "MongoDB",
+    url: "/assets/images/Logo/mongodb.webp",
+    destination: "https://www.mongodb.com/",
+  },
+  {
+    name: "SQLite",
+    url: "/assets/images/Logo/sqlite.webp",
+    destination: "https://sqlite.org/",
+  },
+  {
     name: "Docker",
     url: "/assets/images/Logo/docker.webp",
     destination: "https://www.docker.com/",
   },
   {
+    name: "Kubernetes",
+    url: "/assets/images/Logo/kubernetes.webp",
+    destination: "https://kubernetes.io/",
+  },
+  {
+    name: "Redis",
+    url: "/assets/images/Logo/redis.webp",
+    destination: "https://redis.io/",
+  },
+  {
+    name: "Terraform",
+    url: "/assets/images/Logo/terraform.webp",
+    destination: "https://developer.hashicorp.com/terraform",
+  },
+  {
     name: "AWS",
     url: "/assets/images/Logo/aws.webp",
     destination: "https://aws.amazon.com/cn/",
+  },
+  {
+    name: "GCP",
+    url: "/assets/images/Logo/gcp.webp",
+    destination: "https://cloud.google.com/",
+  },
+  {
+    name: "OpenAI API",
+    url: "/assets/images/Logo/openai.webp",
+    destination: "https://platform.openai.com/",
+  },
+  {
+    name: "Gemini API",
+    url: "/assets/images/Logo/gemini.webp",
+    destination: "https://ai.google.dev/",
+  },
+  {
+    name: "Claude API",
+    url: "/assets/images/Logo/claude.webp",
+    destination: "https://www.anthropic.com/api",
   },
   {
     name: "Heroku",
@@ -331,11 +411,6 @@ const skills = [
     name: "Jenkins",
     url: "/assets/images/Logo/jenkins.webp",
     destination: "https://www.jenkins.io/",
-  },
-  {
-    name: "VS Code",
-    url: "/assets/images/Logo/vscode.webp",
-    destination: "https://code.visualstudio.com/",
   },
 ];
 
