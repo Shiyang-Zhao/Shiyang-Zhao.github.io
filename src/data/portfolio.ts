@@ -50,7 +50,7 @@ const education = [
 
 const work = [
   {
-    jobTitle: "Research Assistant",
+    jobTitle: "Software Engineer",
     company: "University of Illinois Urbana-Champaign",
     logo: "/assets/images/Logo/uiuc logo.webp",
     url: "https://illinois.edu/",
