@@ -97,36 +97,36 @@ const work = [
       "PostgreSQL",
     ],
   },
-  // {
-  //   jobTitle: "Software Engineer",
-  //   company: "Rnd4impact",
-  //   logo: "/assets/images/Logo/rnd4impact.webp",
-  //   url: "https://www.rnd4impact.com/",
-  //   startDate: "02/2023",
-  //   endDate: "07/2024",
-  //   location: "San Jose, CA 95129",
-  //   description: [
-  //     "Built notification and audit logging microservices in Python (Django) with PostgreSQL, delivering real-time alerts with under 1s latency for 7K+ daily events",
-  //     "Developed file upload and document management microservices in Java (Spring Boot) with AWS RDS and S3, supporting reliable processing of 1K+ files per week",
-  //     "Built a responsive frontend using React (Next.js) and TypeScript, reducing load time by 800ms",
-  //     "Automated regression testing with Selenium and Jenkins, saving 5+ hours of QA time per release and preventing 20+ bugs from reaching production"
-  //   ],
-  //   skills: [
-  //     "Java",
-  //     "Python",
-  //     "JavaScript",
-  //     "TypeScript",
-  //     "Spring Boot",
-  //     "Django",
-  //     "Node.js",
-  //     "React.js",
-  //     "AWS",
-  //     "MySQL",
-  //     "PostgreSQL",
-  //     "Selenium",
-  //     "Jenkins",
-  //   ],
-  // }
+  {
+    jobTitle: "Software Engineer",
+    company: "Rnd4impact",
+    logo: "/assets/images/Logo/rnd4impact.webp",
+    url: "https://www.rnd4impact.com/",
+    startDate: "02/2023",
+    endDate: "07/2024",
+    location: "San Jose, CA 95129",
+    description: [
+      "Built notification and audit logging microservices in Python (Django) with PostgreSQL, delivering real-time alerts with under 1s latency for 7K+ daily events",
+      "Developed file upload and document management microservices in Java (Spring Boot) with AWS RDS and S3, supporting reliable processing of 1K+ files per week",
+      "Built a responsive frontend using React (Next.js) and TypeScript, reducing load time by 800ms",
+      "Automated regression testing with Selenium and Jenkins, saving 5+ hours of QA time per release and preventing 20+ bugs from reaching production"
+    ],
+    skills: [
+      "Java",
+      "Python",
+      "JavaScript",
+      "TypeScript",
+      "Spring Boot",
+      "Django",
+      "Node.js",
+      "React.js",
+      "AWS",
+      "MySQL",
+      "PostgreSQL",
+      "Selenium",
+      "Jenkins",
+    ],
+  }
 ];
 
 const projects = [
