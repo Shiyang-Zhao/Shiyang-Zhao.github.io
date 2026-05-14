@@ -76,7 +76,7 @@ const work = [
     jobTitle: "Software Engineer Intern",
     company: "Civilience",
     logo: "/assets/images/Logo/civilience.webp",
-    url: "https://civilience.social/solutions/",
+    url: "https://civilience.social/",
     startDate: "08/2024",
     endDate: "04/2025",
     location: "Omaha, NE 68131",
