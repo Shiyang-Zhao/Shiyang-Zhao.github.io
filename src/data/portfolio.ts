@@ -81,9 +81,9 @@ const work = [
     endDate: "04/2025",
     location: "Omaha, NE 68131",
     description: [
-      "Built serverless RESTful APIs using AWS Lambda, Python (Flask), and Node.js (Express), improving average response times by 22%",
-      "Migrated legacy APIs to a microservices architecture, reducing request latency from 150ms to 105ms and saving $1,200 annually in server costs",
-      "Secured user authentication using AWS Cognito and managed 500K+ records across DynamoDB and RDS, improving data access latency by 35ms",
+      "Built serverless RESTful APIs with AWS Lambda, Python (Flask), and Node.js (Express), improving average response times by 22%",
+      "Migrated legacy APIs to microservices architecture, decreasing request latency from 150ms to 105ms and saving $1,200 annually in server costs",
+      "Secured user authentication with AWS Cognito and managed 500K+ records across DynamoDB and RDS, improving data access latency by 35ms",
       "Automated 30+ IAM role assignments for AWS EC2 and Amplify using Terraform scripts, saving 30 hours of manual setup time per month"
     ],
     skills: [
@@ -103,12 +103,12 @@ const work = [
     logo: "/assets/images/Logo/rnd4impact.webp",
     url: "https://www.rnd4impact.com/",
     startDate: "02/2023",
-    endDate: "07/2024",
+    endDate: "03/2024",
     location: "San Jose, CA 95129",
     description: [
       "Built notification and audit logging microservices in Python (Django) with PostgreSQL, delivering real-time alerts with under 1s latency for 7K+ daily events",
       "Developed file upload and document management microservices in Java (Spring Boot) with AWS RDS and S3, supporting reliable processing of 1K+ files per week",
-      "Built a responsive frontend using React (Next.js) and TypeScript, reducing load time by 800ms",
+      "Implemented a responsive frontend using React (Next.js) and TypeScript, reducing load time by 800ms",
       "Automated regression testing with Selenium and Jenkins, saving 5+ hours of QA time per release and preventing 20+ bugs from reaching production"
     ],
     skills: [
@@ -131,12 +131,12 @@ const work = [
 
 const projects = [
   {
-    name: "AI Log Analyzer",
+    name: "LogSense AI",
     startDate: "01/2026",
     endDate: "04/2026",
     description: [
-      "Built an AI backend service that ingests 10K+ simulated logs/day and generates structured incident reports",
-      "Created REST APIs for log ingestion, incident search, service filtering, and historical analysis",
+      "Built a FastAPI backend that ingests 10K+ simulated logs/day and generates structured AI incident reports",
+      "Created REST APIs for ingestion, incident search, service filtering, and historical analysis",
       "Implemented Redis async processing, error grouping, caching, and validation, cutting repeated LLM calls by 30%"
     ],
     stack: [
