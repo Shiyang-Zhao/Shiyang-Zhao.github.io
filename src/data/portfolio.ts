@@ -174,9 +174,9 @@ const projects = [
     startDate: "08/2024",
     endDate: "12/2024",
     description: [
-      "Built a membership-list protocol with gossip heartbeats, leader election, and node tracking for P2P coordination",
+      "Built a membership protocol with gossip heartbeats, leader election, and node tracking for cluster management",
       "Developed a multithreaded P2P file system with chunk replication and dynamic discovery for reliable data transfer",
-      "Implemented a real-time Java stream processing system with optimized pipelines (+15% throughput), 2s failure detection/recovery, and dynamic task rescheduling"
+      "Built a real-time Java stream processing system with optimized pipelines (+15% throughput), 4s suspicion-based failure detection, and dynamic task rescheduling"
     ],
     stack: [
       "Java",
